@@ -61,6 +61,8 @@ nav:
     - About:
       - Contact: about/contact.md
       - Reporting Bugs: about/reporting_bugs.md
+    - Versions:
+      - Stable: '../latest/'
 
 # Theme Configuration
 theme:
@@ -83,7 +85,9 @@ extra:
   social:
     - type: 'github'
       link: 'https://github.com/eveseat/seat'
-# Tabs customisation
+  version: 3.0.x
+
+# Tabs customization
 extra_css:
     - css/extra_typo.css
     - css/extra_tabs.css

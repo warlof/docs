@@ -1,0 +1,77 @@
+name: github pages
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.6'
+          architecture: 'x64'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r ./requirements.txt
+          python3 -m pip install pyyaml
+
+      - name: Extract Branch Name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF##*/})"
+        id: extract_branch_name
+
+      # alter source configuration in order to properly built site-map
+      - name: Update base Uri (master)
+        run: echo -e "import yaml\nwith open('./mkdocs.yml') as f:\n\tmkdoc = yaml.load(f, Loader=yaml.SafeLoader);\nmkdoc['site_url'] += '/latest/';\nmkdoc['site_name'] += ' (Latest)';\nwith open('./mkdocs.yml', 'w') as f:\n\tyaml.dump(mkdoc, f);" | python3
+        if: steps.extract_branch_name.outputs.branch == 'master'
+
+      - name: Update base Uri (other)
+        run: echo -e "import yaml\nwith open('./mkdocs.yml') as f:\n\tmkdoc = yaml.load(f, Loader=yaml.SafeLoader);\nmkdoc['site_url'] += '/${{ steps.extract_branch_name.outputs.branch }}/';\nmkdoc['site_name'] += ' (${{ steps.extract_branch_name.outputs.branch }})';\nwith open('./mkdocs.yml', 'w') as f:\n\tyaml.dump(mkdoc, f);" | python3
+        if: steps.extract_branch_name.outputs.branch != 'master'
+
+      - name: Generate documentation
+        run: mkdocs build
+
+      # rename output directory to branch name
+      # use a special case to handle latest (master branch)
+      - name: Spawn version directory
+        run: |
+          mkdir ./versions
+          if [ ${{ steps.extract_branch_name.outputs.branch }} == "master" ]; then mv ./site ./versions/latest; else mv ./site ./versions/${{ steps.extract_branch_name.outputs.branch }}; fi
+
+      # ensure we redirect properly from root to latest documentation version
+      - name: Generate redirection
+        run: |
+          echo '<!DOCTYPE html>' >> ./versions/index.html
+          echo '<html>' >> ./versions/index.html
+          echo '<head>' >> ./versions/index.html
+          echo '<meta charset="utf-8" />' >> ./versions/index.html
+          echo '<title>SeAT Documentation</title>' >> ./versions/index.html
+          echo '<meta http-equiv="refresh" content="0; url=https://eveseat.github.io/docs/latest/" />' >> ./versions/index.html
+          echo '<link rel="canonical" content="https://eveseat.github.io/docs/latest/" />' >> ./versions/index.html
+          echo '</head>' >> ./versions/index.html
+          echo '</html>' >> ./versions/index.html
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # publish version sub-directory (should contain only current branch built doc)
+          publish_dir: ./versions
+          # ask to keep existing files on remote directory (ensure we maintain each version sub-directory)
+          keep_files: true
+          disable_nojekyll: true
