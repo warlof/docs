@@ -1,431 +1,1426 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Console - SeAT Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "Console";
-    var mkdocs_page_input_path = "changelogs/console.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
 
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> SeAT Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">General</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../reporting_bugs/">Reporting Bugs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../community_packages/">Community Packages</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Installation Guides</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/getting_started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/quick_install/">Quick Install</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/generic_installation/">Generic Installation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos6/">CentOS 6.x</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos7/">CentOS 7.x</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/ubuntu16x/">Ubuntu 16.x</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/developer_installation/">Development Project</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Upgrade Guides</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/general_upgrades/">General Upgrades</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/seat1_to_2/">SeAT 1.x to SeAT 2.0</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Email</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../email/mailgun/">Mailgun Setup</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../email/gmail/">Gmail Setup</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Admin Guides</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/sso/">Configuring Eve Online SSO</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/scaling_seat/">Scaled SeAT Deployments</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/rbac/">Role Based Access Control</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/tracking/">Understanding Tracking</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/seat_supervisor/">SeAT & Supervisor Integration</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/eveapi_admin_contact/">EVE Api Administrative Contact</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">SeAT API</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/overview/">Overview</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/eve_api_keys/">EVE Api Keys</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/seat_users/">SeAT Users</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/roles_permissions/">SeAT Roles, Permissions and Authorization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/characters/">Characters</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/corporations/">Corporations</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Changelogs</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../api/">Api</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Console</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#1016">1.0.16</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#1015">1.0.15</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#1014">1.0.14</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#1013">1.0.13</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#1012">1.0.12</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#1011">1.0.11</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#1010">1.0.10</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#109">1.0.9</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#108">1.0.8</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#107">1.0.7</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#106">1.0.6</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#105">1.0.5</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#104">1.0.4</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#103">1.0.3</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#102">1.0.2</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#101">1.0.1</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#100">1.0.0</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#10-pre-alpha">1.0-pre-alpha</a>
-    </li>
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../eveapi/">Eveapi</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../notifications/">Notifications</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../services/">Services</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../web/">Web</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Package Configurations</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/overview/">Overview</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/api/">Api</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/console/">Console</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/eveapi/">Eveapi</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/notifications/">Notifications</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/service/">Service</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/web/">Web</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/other/">Other</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Eve XML API Updater</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../eve_xml_api_updater/job_queue_flow/">Job Queue Flow</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developing For SeAT</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../development/general/">General Guide</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_breakdown/">Core Package Breakdown</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_development/">Package Development</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../todo/">TODO List</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">SeAT Documentation</a>
-      </nav>
-
+        <meta name="description" content="Simple EVE Api Tool Documentation">
       
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
+      
+        <link rel="canonical" href="https://eveseat.github.io/docs/changelogs/console/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Console - SeAT Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#757575">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../css/extra_typo.css">
+    
+      <link rel="stylesheet" href="../../css/extra_tabs.css">
+    
     
       
         
-          <li>Changelogs &raquo;</li>
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-119530306-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
         
-      
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-    <li>Console</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/eveseat/docs/edit/master/docs/changelogs/console.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <p><img alt="SeAT" src="http://i.imgur.com/aPPOxSK.png" /></p>
-<h1 id="console-change-logs">console change logs</h1>
-<p>Generated with: <code>git log --oneline --decorate</code></p>
-<h3 id="1016">1.0.16</h3>
-<pre><code>c356fd3 (tag: 1.0.16) Version Bump
-ebbebf2 Default to 6 hours to reap jobs
-40707ef Add missing trait
-</code></pre>
-
-<h3 id="1015">1.0.15</h3>
-<pre><code>43fc0b2 (tag: 1.0.15) Version Bump
-a1da1a0 Remove string concatenation causing systax errors
-</code></pre>
-
-<h3 id="1014">1.0.14</h3>
-<pre><code>57132cf (tag: 1.0.14) Version Bump
-8c9abec Fix eveseat/seat#127 by removing string concatenation in Class property
-</code></pre>
-
-<h3 id="1013">1.0.13</h3>
-<pre><code>974cfad (tag: 1.0.13) Version Bump
-f3f44dc Add analytics hit information.
-161cdee Add ClearExpired command
-a87e8d0 Add `seat:queue:clear-expired` command.
-</code></pre>
-
-<h3 id="1012">1.0.12</h3>
-<pre><code>a6e5e54 (tag: 1.0.12) Version Bump
-0c9f1c7 Add a console command to set the admin email address
-</code></pre>
-
-<h3 id="1011">1.0.11</h3>
-<pre><code>53fda6e (tag: 1.0.11) Version Bump
-bb9841c Fix eveseat/seat#83 by ensuring seat:admin:reset recovers admin roles
-</code></pre>
-
-<h3 id="1010">1.0.10</h3>
-<pre><code>8fb5ad1 (tag: 1.0.10) Version Bump
-3e1dca5 Update copyright
-d4b2b6f Code style fix
-</code></pre>
-
-<h3 id="109">1.0.9</h3>
-<pre><code>68e5638 (tag: 1.0.9) Version Bump
-8b3aef9 Use `class` notation
-</code></pre>
-
-<h3 id="108">1.0.8</h3>
-<pre><code>6a6d779 (tag: 1.0.8) Version Bump
-643479f Update diagnose with some more useful debug info
-0132b4e Add Github version lookup
-</code></pre>
-
-<h3 id="107">1.0.7</h3>
-<pre><code>18bf548 (tag: 1.0.7) Version Bump
-8934a36 Specify versions with ~
-</code></pre>
-
-<h3 id="106">1.0.6</h3>
-<pre><code>3f541b4 (tag: 1.0.6) Version Bump
-a49d908 Revert b7cac27ebe4a1de8
-</code></pre>
-
-<h3 id="105">1.0.5</h3>
-<pre><code>7e1d13d (tag: 1.0.5) Version Bump
-b7cac27 Drop guzzle version to match that of phealng
-91f2e03 Cleanups
-6361651 Add diagnose command
-123bc36 Update README.md
-</code></pre>
-
-<h3 id="104">1.0.4</h3>
-<pre><code>338a397 (tag: 1.0.4) Cleanup outputs and sink to a filehandler instead.
-</code></pre>
-
-<h3 id="103">1.0.3</h3>
-<pre><code>0f83a18 (tag: 1.0.3) Version Bump
-d0f6d31 Display versions in a table
-3d472d4 Add notifications version
-</code></pre>
-
-<h3 id="102">1.0.2</h3>
-<pre><code>65f650d (tag: 1.0.2) Versino Bump
-</code></pre>
-
-<h3 id="101">1.0.1</h3>
-<pre><code>2a2a350 (tag: 1.0.1) Add web and api versions
-</code></pre>
-
-<h3 id="100">1.0.0</h3>
-<pre><code>8cc907d (tag: 1.0.0) Update required eveseat package versions
-81fde9f Version Bump
-</code></pre>
-
-<h3 id="10-pre-alpha">1.0-pre-alpha</h3>
-<pre><code>fe0da9e (tag: 1.0-pre-alpha) Update README
-05e59b3 Add a cache clearing command
-41081d9 Add the UpdateSDE command
-9af76fb use ::class format
-7e0bae5 Add seat:admin:reset command
-9f4e15f Update to match eveseat/eveapi model refacto
-ee48a61 Add services version lookup
-5d7ca5f Add a 'live' status command
-bcd1feb Add command to update a single key
-ee43dc5 Add seat:keys:show command
-f72ba13 Style fix
-b4bcc04 Add the console.config and update version command
-8fe529d Refactor updater commands to the Eve\ namespace
-cc92c10 Ensure only enabled keys are queued for updates
-8f93faf Update to new eveapi version information location
-fa5513d Queue Jobs using the UpdatePublic Job
-887b89c Update readme with badges
-74f82f5 Prepare for packagist publish.
-a782121 Add the command to queue updates for API keys
-14edaa8 Make all commands honor the Job Container
-12538ef Add command for the Api CallList update
-31e0d06 Add EVE Map Update command
-20aa008 Add eve:update-eve command
-b9b7545 Add the EveUpdateServerStatus command
-c978b94 Add the add:job command for testing
-c01ddd9 Start the Console package
-f42ac27 first commit
-</code></pre>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../eveapi/" class="btn btn-neutral float-right" title="Eveapi">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../api/" class="btn btn-neutral" title="Api"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
+      <a href="#console-change-logs" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
     
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-      
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://eveseat.github.io/docs" title="SeAT Documentation" aria-label="SeAT Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              SeAT Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Console
+              
+            </span>
+          
         </div>
       </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
-    </section>
 
+  
+
+<a href="https://github.com/eveseat/docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    eveseat/docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://eveseat.github.io/docs" title="SeAT Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    SeAT Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/eveseat/docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    eveseat/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/requirements/" title="Requirements" class="md-nav__link">
+      Requirements
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/basic_installation/" title="Basic Installation" class="md-nav__link">
+      Basic Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/docker_installation/" title="Docker Installation" class="md-nav__link">
+      Docker Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Manual Installation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Manual Installation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/manual/getting_started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/manual/centos/" title="CentOS" class="md-nav__link">
+      CentOS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/manual/debian/" title="Debian" class="md-nav__link">
+      Debian
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/manual/ubuntu/" title="Ubuntu" class="md-nav__link">
+      Ubuntu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/manual/generic/" title="Generic" class="md-nav__link">
+      Generic
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Webservers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Webservers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/webservers/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/webservers/nginx/" title="Nginx" class="md-nav__link">
+      Nginx
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/webservers/traefik/" title="Traefik" class="md-nav__link">
+      Traefik
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/webservers/caddy/" title="Caddy" class="md-nav__link">
+      Caddy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../installation/webservers/apache/" title="Apache" class="md-nav__link">
+      Apache
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Upgrading
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Upgrading
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrading/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrading/from_seat_2_0/" title="From SeAT 2.0" class="md-nav__link">
+      From SeAT 2.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../upgrading/from_seat_1_0/" title="From SeAT 1.0" class="md-nav__link">
+      From SeAT 1.0
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/esi_configuration/" title="ESI Configuration" class="md-nav__link">
+      ESI Configuration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Email Setup
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Email Setup
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/email_setup/mailgun/" title="Mailgun" class="md-nav__link">
+      Mailgun
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/email_setup/gmail/" title="GMail" class="md-nav__link">
+      GMail
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/env_file_reference/" title="Env File Reference" class="md-nav__link">
+      Env File Reference
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/eve_administrative_contact/" title="EVE Administrative Contact" class="md-nav__link">
+      EVE Administrative Contact
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/configuration_overload/" title="Configuration Overload" class="md-nav__link">
+      Configuration Overload
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../configuration/sde_overload/" title="SDE Overload" class="md-nav__link">
+      SDE Overload
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Admin Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Admin Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../admin_guides/docker_admin/" title="Docker Admin" class="md-nav__link">
+      Docker Admin
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../admin_guides/role_based_access_control/" title="Role Based Access Control" class="md-nav__link">
+      Role Based Access Control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../admin_guides/understanding_tracking/" title="Understanding Tracking" class="md-nav__link">
+      Understanding Tracking
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../admin_guides/scaled_deployments/" title="Scaled Deployments" class="md-nav__link">
+      Scaled Deployments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developer Guides
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developer Guides
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/developer_installation/" title="Developer Installation" class="md-nav__link">
+      Developer Installation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/general_guide/" title="General Guide" class="md-nav__link">
+      General Guide
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/job_queue_flow/" title="Job Queue Flow" class="md-nav__link">
+      Job Queue Flow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/development_tips/" title="Development Tips" class="md-nav__link">
+      Development Tips
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/core_package_breakdown/" title="Core Package Breakdown" class="md-nav__link">
+      Core Package Breakdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/package_development/" title="Package Development" class="md-nav__link">
+      Package Development
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer_guides/seat_api/" title="SeAT API" class="md-nav__link">
+      SeAT API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../styling/" title="Styling" class="md-nav__link">
+      Styling
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../community_packages/" title="Community Packages" class="md-nav__link">
+      Community Packages
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/contact/" title="Contact" class="md-nav__link">
+      Contact
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/reporting_bugs/" title="Reporting Bugs" class="md-nav__link">
+      Reporting Bugs
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#10-pre-alpha" class="md-nav__link">
+    1.0-pre-alpha
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#100" class="md-nav__link">
+    1.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    1.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    1.0.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    1.0.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104" class="md-nav__link">
+    1.0.4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#105" class="md-nav__link">
+    1.0.5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#106" class="md-nav__link">
+    1.0.6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#107" class="md-nav__link">
+    1.0.7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#108" class="md-nav__link">
+    1.0.8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#109" class="md-nav__link">
+    1.0.9
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1010" class="md-nav__link">
+    1.0.10
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1011" class="md-nav__link">
+    1.0.11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1012" class="md-nav__link">
+    1.0.12
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1013" class="md-nav__link">
+    1.0.13
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1014" class="md-nav__link">
+    1.0.14
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1015" class="md-nav__link">
+    1.0.15
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1016" class="md-nav__link">
+    1.0.16
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1017" class="md-nav__link">
+    1.0.17
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-alpha1" class="md-nav__link">
+    2.0.0-alpha1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200-alpha2" class="md-nav__link">
+    2.0.0-alpha2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200" class="md-nav__link">
+    2.0.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#201" class="md-nav__link">
+    2.0.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#202" class="md-nav__link">
+    2.0.2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#203" class="md-nav__link">
+    2.0.3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#204" class="md-nav__link">
+    2.0.4
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/eveseat/docs/edit/master/docs/changelogs/console.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <p><img alt="SeAT" src="https://i.imgur.com/aPPOxSK.png" /></p>
+<h1 id="console-change-logs">console change logs<a class="headerlink" href="#console-change-logs" title="Permanent link">&para;</a></h1>
+<p>Generated with: <code>git log --pretty=format:"%h%&gt;(12)%ad %&lt;(7)%aN%d %s" --date=short</code></p>
+<h3 id="10-pre-alpha">1.0-pre-alpha<a class="headerlink" href="#10-pre-alpha" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">fe0da9e  2015-11-27 Leon Jacobs (tag: 1.0-pre-alpha) Update README</span>
+<span class="err">05e59b3  2015-11-20 Leon Jacobs Add a cache clearing command</span>
+<span class="err">41081d9  2015-11-03 Leon Jacobs Add the UpdateSDE command</span>
+<span class="err">9af76fb  2015-10-02 Leon Jacobs use ::class format</span>
+<span class="err">7e0bae5  2015-10-02 Leon Jacobs Add seat:admin:reset command</span>
+<span class="err">9f4e15f  2015-09-28 Leon Jacobs Update to match eveseat/eveapi model refacto</span>
+<span class="err">ee48a61  2015-09-24 Leon Jacobs Add services version lookup</span>
+<span class="err">5d7ca5f  2015-09-24 Leon Jacobs Add a &#39;live&#39; status command</span>
+<span class="err">bcd1feb  2015-09-24 Leon Jacobs Add command to update a single key</span>
+<span class="err">ee43dc5  2015-09-24 Leon Jacobs Add seat:keys:show command</span>
+<span class="err">f72ba13  2015-09-24 Leon Jacobs Style fix</span>
+<span class="err">b4bcc04  2015-09-24 Leon Jacobs Add the console.config and update version command</span>
+<span class="err">8fe529d  2015-09-24 Leon Jacobs Refactor updater commands to the Eve\ namespace</span>
+<span class="err">cc92c10  2015-09-23 Leon Jacobs Ensure only enabled keys are queued for updates</span>
+<span class="err">8f93faf  2015-09-23 Leon Jacobs Update to new eveapi version information location</span>
+<span class="err">fa5513d  2015-09-23 Leon Jacobs Queue Jobs using the UpdatePublic Job</span>
+<span class="err">887b89c  2015-09-16 Leon Jacobs Update readme with badges</span>
+<span class="err">74f82f5  2015-09-16 Leon Jacobs Prepare for packagist publish.</span>
+<span class="err">a782121  2015-09-04 Leon Jacobs Add the command to queue updates for API keys</span>
+<span class="err">14edaa8  2015-09-04 Leon Jacobs Make all commands honor the Job Container</span>
+<span class="err">12538ef  2015-09-03 Leon Jacobs Add command for the Api CallList update</span>
+<span class="err">31e0d06  2015-08-30 Leon Jacobs Add EVE Map Update command</span>
+<span class="err">20aa008  2015-08-29 Leon Jacobs Add eve:update-eve command</span>
+<span class="err">b9b7545  2015-08-29 Leon Jacobs Add the EveUpdateServerStatus command</span>
+<span class="err">c978b94  2015-08-29 Leon Jacobs Add the add:job command for testing</span>
+<span class="err">c01ddd9  2015-08-28 Leon Jacobs Start the Console package</span>
+<span class="err">f42ac27  2015-08-28 Leon Jacobs first commit</span>
+</code></pre></div>
+
+
+<h3 id="100">1.0.0<a class="headerlink" href="#100" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">8cc907d  2015-11-28 Leon Jacobs (tag: 1.0.0) Update required eveseat package versions</span>
+<span class="err">81fde9f  2015-11-28 Leon Jacobs Version Bump</span>
+</code></pre></div>
+
+
+<h3 id="101">1.0.1<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">2a2a350  2015-11-30 Leon Jacobs (tag: 1.0.1) Add web and api versions</span>
+</code></pre></div>
+
+
+<h3 id="102">1.0.2<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">65f650d  2015-12-01 Leon Jacobs (tag: 1.0.2) Versino Bump</span>
+</code></pre></div>
+
+
+<h3 id="103">1.0.3<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">0f83a18  2015-12-02 Leon Jacobs (tag: 1.0.3) Version Bump</span>
+<span class="err">d0f6d31  2015-12-02 Leon Jacobs Display versions in a table</span>
+<span class="err">3d472d4  2015-12-02 Leon Jacobs Add notifications version</span>
+</code></pre></div>
+
+
+<h3 id="104">1.0.4<a class="headerlink" href="#104" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">338a397  2015-12-04 Leon Jacobs (tag: 1.0.4) Cleanup outputs and sink to a filehandler instead.</span>
+</code></pre></div>
+
+
+<h3 id="105">1.0.5<a class="headerlink" href="#105" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">7e1d13d  2015-12-07 Leon Jacobs (tag: 1.0.5) Version Bump</span>
+<span class="err">b7cac27  2015-12-07 Leon Jacobs Drop guzzle version to match that of phealng</span>
+<span class="err">91f2e03  2015-12-07 Leon Jacobs Cleanups</span>
+<span class="err">6361651  2015-12-05 Leon Jacobs Add diagnose command</span>
+<span class="err">123bc36  2015-12-04 Leon Jacobs Update README.md</span>
+</code></pre></div>
+
+
+<h3 id="106">1.0.6<a class="headerlink" href="#106" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">3f541b4  2015-12-08 Leon Jacobs (tag: 1.0.6) Version Bump</span>
+<span class="err">a49d908  2015-12-08 Leon Jacobs Revert b7cac27ebe4a1de8</span>
+</code></pre></div>
+
+
+<h3 id="107">1.0.7<a class="headerlink" href="#107" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">18bf548  2015-12-24 Leon Jacobs (tag: 1.0.7) Version Bump</span>
+<span class="err">8934a36  2015-12-24 Leon Jacobs Specify versions with ~</span>
+</code></pre></div>
+
+
+<h3 id="108">1.0.8<a class="headerlink" href="#108" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">6a6d779  2015-12-26 Leon Jacobs (tag: 1.0.8) Version Bump</span>
+<span class="err">643479f  2015-12-26 Leon Jacobs Update diagnose with some more useful debug info</span>
+<span class="err">0132b4e  2015-12-26 Leon Jacobs Add Github version lookup</span>
+</code></pre></div>
+
+
+<h3 id="109">1.0.9<a class="headerlink" href="#109" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="mi">68</span><span class="n">e5638</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">29</span> <span class="n">Leon</span> <span class="nf">Jacobs</span> <span class="p">(</span><span class="n">tag</span><span class="p">:</span> <span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">)</span> <span class="n">Version</span> <span class="n">Bump</span>
+<span class="mi">8</span><span class="n">b3aef9</span>  <span class="mi">2015</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">29</span> <span class="n">Leon</span> <span class="n">Jacobs</span> <span class="k">Use</span> <span class="ss">`class`</span> <span class="n">notation</span>
+</code></pre></div>
+
+
+<h3 id="1010">1.0.10<a class="headerlink" href="#1010" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">8fb5ad1  2016-01-26 Leon Jacobs (tag: 1.0.10) Version Bump</span>
+<span class="err">3e1dca5  2016-01-26 Leon Jacobs Update copyright</span>
+<span class="err">d4b2b6f  2016-01-06 Leon Jacobs Code style fix</span>
+</code></pre></div>
+
+
+<h3 id="1011">1.0.11<a class="headerlink" href="#1011" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">53fda6e  2016-04-29 Leon Jacobs (tag: 1.0.11) Version Bump</span>
+<span class="err">bb9841c  2016-04-29 Leon Jacobs Fix eveseat/seat#83 by ensuring seat:admin:reset recovers admin roles</span>
+</code></pre></div>
+
+
+<h3 id="1012">1.0.12<a class="headerlink" href="#1012" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">a6e5e54  2016-05-05 Leon Jacobs (tag: 1.0.12) Version Bump</span>
+<span class="err">0c9f1c7  2016-05-01 Leon Jacobs Add a console command to set the admin email address</span>
+</code></pre></div>
+
+
+<h3 id="1013">1.0.13<a class="headerlink" href="#1013" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">974cfad  2016-07-23 Leon Jacobs (tag: 1.0.13) Version Bump</span>
+<span class="err">f3f44dc  2016-07-23 Leon Jacobs Add analytics hit information.</span>
+<span class="err">161cdee  2016-07-22 Leon Jacobs Add ClearExpired command</span>
+<span class="err">a87e8d0  2016-07-18 Leon Jacobs Add `seat:queue:clear-expired` command.</span>
+</code></pre></div>
+
+
+<h3 id="1014">1.0.14<a class="headerlink" href="#1014" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">57132cf  2016-07-26 Leon Jacobs (tag: 1.0.14) Version Bump</span>
+<span class="err">8c9abec  2016-07-26 Leon Jacobs Fix eveseat/seat#127 by removing string concatenation in Class property</span>
+</code></pre></div>
+
+
+<h3 id="1015">1.0.15<a class="headerlink" href="#1015" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">43fc0b2  2016-07-26 Leon Jacobs (tag: 1.0.15) Version Bump</span>
+<span class="err">a1da1a0  2016-07-26 Leon Jacobs Remove string concatenation causing systax errors</span>
+</code></pre></div>
+
+
+<h3 id="1016">1.0.16<a class="headerlink" href="#1016" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">c356fd3  2016-07-27 Leon Jacobs (tag: 1.0.16) Version Bump</span>
+<span class="err">ebbebf2  2016-07-27 Leon Jacobs Default to 6 hours to reap jobs</span>
+<span class="err">40707ef  2016-07-27 Leon Jacobs Add missing trait</span>
+</code></pre></div>
+
+
+<h3 id="1017">1.0.17<a class="headerlink" href="#1017" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">950768a  2016-10-13 Leon Jacobs (tag: 1.0.17) Version bump</span>
+<span class="err">5b6c15c  2016-08-26 Leon Jacobs Escape any special characters a password.</span>
+<span class="err">ffc04bf  2016-08-25 Leon Jacobs Code style and language fixes</span>
+<span class="err">bf32149  2016-08-25 Leon Jacobs Merge pull request #1 from warlof/master</span>
+<span class="err">5c7f85b  2016-08-23 elfaus  add a control for SDE version in order to avoid downloading it again allow the user to force an SDE re-installation using --force argument</span>
+</code></pre></div>
+
+
+<h3 id="200-alpha1">2.0.0-alpha1<a class="headerlink" href="#200-alpha1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">81c6385  2016-11-26 Leon Jacobs (tag: 2.0.0-alpha1) Update composer for 2.0 packages and version 2.0.0-alpha1</span>
+<span class="err">2952e40  2016-11-05 Leon Jacobs Code formatting fixes</span>
+<span class="err">9d189dc  2016-11-03 Leon Jacobs Rename Pillow to AccessManager and update calls argument list</span>
+<span class="err">cebd0ef  2016-10-29 Leon Jacobs Update to match new class names in eveapi repo</span>
+<span class="err">e1a95e9  2016-10-27 Leon Jacobs Correctly identify the current user running the command.</span>
+<span class="err">e83fb0e  2016-10-23 Leon Jacobs Use `dispatch()` helper instead of Trait</span>
+<span class="err">953d790  2016-10-23 Leon Jacobs Update PHP, Laravel &amp; Guzzle dependencies</span>
+</code></pre></div>
+
+
+<h3 id="200-alpha2">2.0.0-alpha2<a class="headerlink" href="#200-alpha2" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">a01282a  2016-11-26 Leon Jacobs (tag: 2.0.0-alpha2) Drop minimum stability, add prefer-stable and bump to 2.0.0-alpha2.</span>
+</code></pre></div>
+
+
+<h3 id="200">2.0.0<a class="headerlink" href="#200" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">6f57fa6  2016-12-08 Leon Jacobs (tag: 2.0.0) Version Bump! 2.0.0! ⚡️</span>
+<span class="err">05ec623  2016-11-29 Leon Jacobs Formatting and style fixes.</span>
+<span class="err">e5eee71  2016-11-28 Leon Jacobs Ensure the admin user is enabled when resetting the password.</span>
+</code></pre></div>
+
+
+<h3 id="201">2.0.1<a class="headerlink" href="#201" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">352d6ae  2016-12-21 Leon Jacobs (tag: 2.0.1) Version Bump</span>
+<span class="err">4112603  2016-12-21 Leon Jacobs Slightly increase wait time</span>
+<span class="err">7cba4f1  2016-12-21 Leon Jacobs Add `seat:keys:tail` command</span>
+<span class="err">868adc3  2016-12-12 Leon Jacobs Make clearing the pheal cache require a flag.</span>
+</code></pre></div>
+
+
+<h3 id="202">2.0.2<a class="headerlink" href="#202" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">9c80eee  2016-12-22 Leon Jacobs (tag: 2.0.2) Version bump</span>
+<span class="err">ca24d69  2016-12-22 Leon Jacobs Give the server status call priority</span>
+</code></pre></div>
+
+
+<h3 id="203">2.0.3<a class="headerlink" href="#203" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">5e0fd35  2017-01-12 Leon Jacobs (tag: 2.0.3) Version Bump</span>
+<span class="err">a0dc02d  2017-01-04 Leon Jacobs Update styleci config</span>
+<span class="err">197d773  2017-01-02 Leon Jacobs Apply fixes from StyleCI (#2)</span>
+<span class="err">3774d3f  2017-01-02 Leon Jacobs Add StyleCI badge</span>
+<span class="err">aa138a7  2017-01-02 Leon Jacobs Add StyleCI Configuration</span>
+<span class="err">429b084  2017-01-01 Leon Jacobs Style fixes</span>
+</code></pre></div>
+
+
+<h3 id="204">2.0.4<a class="headerlink" href="#204" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="err">8d09f93  2017-01-26 Leon Jacobs (HEAD -&gt; 2.x, tag: 2.0.4, origin/master, origin/HEAD, origin/2.x, master) Version Bump</span>
+<span class="err">d4d1160  2017-01-25 mrurb   Fixed UpdateSde not using port (#3)</span>
+<span class="err">a9a25d9  2017-01-20 Leon Jacobs Add codeclimate configuration</span>
+</code></pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2015 - 2019 Leon Jacobs
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/eveseat/seat" target="_blank" rel="noopener" title="github" class="md-footer-social__link fa fa-github"></a>
+    
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+  </div>
+</footer>
       
-          <a href="https://github.com/eveseat/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+    </div>
+    
+      <script src="../../assets/javascripts/application.c33a9706.js"></script>
       
+      <script>app.initialize({version:"1.1",url:{base:"../.."}})</script>
       
-        <span><a href="../api/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <script src="../../js/extra_tabs.js"></script>
       
-      
-        <span style="margin-left: 15px"><a href="../eveapi/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
-
-</body>
+    
+  </body>
 </html>
