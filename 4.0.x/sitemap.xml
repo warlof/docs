@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://warlof.github.io/eveseat-docs/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/requirements/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/requirements/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/basic_installation/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/basic_installation/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/docker_installation/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/docker_installation/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/manual/getting_started/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/manual/getting_started/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/manual/centos/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/manual/centos/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/manual/debian/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/manual/debian/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/manual/ubuntu/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/manual/ubuntu/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/manual/generic/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/manual/generic/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/webservers/general/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/webservers/general/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/webservers/nginx/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/webservers/nginx/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/webservers/traefik/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/webservers/traefik/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/webservers/caddy/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/webservers/caddy/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/installation/webservers/apache/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/installation/webservers/apache/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/upgrading/general/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/upgrading/general/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/upgrading/from_seat_2_0/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/upgrading/from_seat_2_0/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/upgrading/from_seat_1_0/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/upgrading/from_seat_1_0/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/esi_configuration/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/esi_configuration/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/email_setup/mailgun/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/email_setup/mailgun/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/email_setup/gmail/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/email_setup/gmail/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/env_file_reference/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/env_file_reference/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/eve_administrative_contact/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/eve_administrative_contact/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/configuration_overload/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/configuration_overload/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/configuration/sde_overload/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/configuration/sde_overload/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/admin_guides/docker_admin/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/admin_guides/docker_admin/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/admin_guides/role_based_access_control/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/admin_guides/role_based_access_control/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/admin_guides/understanding_tracking/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/admin_guides/understanding_tracking/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/admin_guides/scaled_deployments/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/admin_guides/scaled_deployments/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/developer_installation/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/developer_installation/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/general_guide/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/general_guide/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/job_queue_flow/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/job_queue_flow/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/development_tips/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/development_tips/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/core_package_breakdown/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/core_package_breakdown/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/package_development/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/package_development/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/developer_guides/seat_api/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/developer_guides/seat_api/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/styling/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/styling/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/community_packages/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/community_packages/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/troubleshooting/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/troubleshooting/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/about/contact/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/about/contact/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://warlof.github.io/eveseat-docs/about/reporting_bugs/</loc>
+     <loc>https://warlof.github.io/eveseat-docs/4.0.x/about/reporting_bugs/</loc>
      <lastmod>2020-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
