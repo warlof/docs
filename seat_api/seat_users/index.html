@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>SeAT Users - SeAT Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "SeAT Users";
+    var mkdocs_page_input_path = "seat_api/seat_users.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SeAT Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">General</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../reporting_bugs/">Reporting Bugs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../community_packages/">Community Packages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/getting_started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/quick_install/">Quick Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/generic_installation/">Generic Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos6/">CentOS 6.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos7/">CentOS 7.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/ubuntu16x/">Ubuntu 16.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/developer_installation/">Development Project</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Upgrade Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/general_upgrades/">General Upgrades</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/seat1_to_2/">SeAT 1.x to SeAT 2.0</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Email</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/mailgun/">Mailgun Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/gmail/">Gmail Setup</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Admin Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/sso/">Configuring Eve Online SSO</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/scaling_seat/">Scaled SeAT Deployments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/rbac/">Role Based Access Control</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/tracking/">Understanding Tracking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/seat_supervisor/">SeAT & Supervisor Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/eveapi_admin_contact/">EVE Api Administrative Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">SeAT API</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../eve_api_keys/">EVE Api Keys</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">SeAT Users</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../roles_permissions/">SeAT Roles, Permissions and Authorization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../characters/">Characters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../corporations/">Corporations</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Changelogs</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/services/">Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/web/">Web</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package Configurations</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/service/">Service</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/web/">Web</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/other/">Other</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Eve XML API Updater</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../eve_xml_api_updater/job_queue_flow/">Job Queue Flow</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developing For SeAT</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/general/">General Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_breakdown/">Core Package Breakdown</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_development/">Package Development</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../todo/">TODO List</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SeAT Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SeAT API &raquo;</li>
+        
+      
+    
+    <li>SeAT Users</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/eveseat/docs/edit/master/docs/seat_api/seat_users.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="SeAT" src="http://i.imgur.com/aPPOxSK.png" /></p>
+<h1 id="seat-users">SeAT Users</h1>
+<p>All endpoints in this document are for version1 (<code>/api/v1</code>) of the SeAT API.<br />
+All methods below have the requests and responses sampled using <a href="https://github.com/jkbrzt/httpie">httpie</a>.</p>
+<h1 id="available-methods">Available Methods</h1>
+<ul>
+<li><a href="#list-all-users">List All</a></li>
+<li><a href="#show-user-detail">Show Detail</a></li>
+<li><a href="#add-a-seat-user">Add a User</a></li>
+<li><a href="#edit-a-user">Edit a User</a></li>
+<li><a href="#delete-a-user">Delete a User</a></li>
+</ul>
+<hr />
+<h3 id="list-all-users">List all Users</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>GET</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/user</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>List all SeAT Users from the database.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http get http://localhost:8000/api/v1/user Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    {
+        &quot;active&quot;: 0,
+        &quot;created_at&quot;: &quot;2015-11-21 14:12:07&quot;,
+        &quot;email&quot;: &quot;admin@seat.local&quot;,
+        &quot;id&quot;: 1,
+        &quot;last_login&quot;: &quot;2015-11-29 08:18:28&quot;,
+        &quot;last_login_source&quot;: &quot;::1&quot;,
+        &quot;name&quot;: &quot;admin&quot;,
+        &quot;updated_at&quot;: &quot;2015-11-29 08:18:28&quot;
+    },
+    {
+        &quot;active&quot;: 0,
+        &quot;created_at&quot;: &quot;2015-11-26 18:58:29&quot;,
+        &quot;email&quot;: &quot;test@test.com&quot;,
+        &quot;id&quot;: 2,
+        &quot;last_login&quot;: &quot;2015-11-26 18:58:29&quot;,
+        &quot;last_login_source&quot;: &quot;::1&quot;,
+        &quot;name&quot;: &quot;test&quot;,
+        &quot;updated_at&quot;: &quot;2015-11-26 21:11:12&quot;
+    }
+]
+</code></pre>
+
+<hr />
+<h3 id="show-user-detail">Show User Detail</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>GET</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/user/{identifier}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Get details for a single SeAT User. Shows owned EVE API keys, Roles and Affiliations.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>identifier</strong> - The identifier for the user. Can be either the user_id or name.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http get http://localhost:8000/api/v1/user/test Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">{
+    &quot;active&quot;: 0,
+    &quot;affiliations&quot;: [],
+    &quot;created_at&quot;: &quot;2015-11-26 18:58:29&quot;,
+    &quot;email&quot;: &quot;test@test.com&quot;,
+    &quot;id&quot;: 2,
+    &quot;keys&quot;: [
+        {
+            &quot;created_at&quot;: &quot;2015-11-21 14:12:40&quot;,
+            &quot;disabled_calls&quot;: null,
+            &quot;enabled&quot;: 1,
+            &quot;key_id&quot;: 1234,
+            &quot;last_error&quot;: &quot;221:Illegal page request! Please verify the access granted by the key you are using!&quot;,
+            &quot;updated_at&quot;: &quot;2015-11-21 14:14:17&quot;,
+            &quot;user_id&quot;: 2,
+            &quot;v_code&quot;: &quot;JYKyPvIv75PN58UWcRcPHrtYKb4ySThFBk3n2qN4eaYGgCr1mrJbOwvQfHqNnf5k&quot;
+        }
+    ],
+    &quot;last_login&quot;: &quot;2015-11-26 18:58:29&quot;,
+    &quot;last_login_source&quot;: &quot;::1&quot;,
+    &quot;name&quot;: &quot;test&quot;,
+    &quot;roles&quot;: [
+        {
+            &quot;id&quot;: 2,
+            &quot;pivot&quot;: {
+                &quot;role_id&quot;: 2,
+                &quot;user_id&quot;: 2
+            },
+            &quot;title&quot;: &quot;Corp Accountant&quot;
+        }
+    ],
+    &quot;updated_at&quot;: &quot;2015-11-26 21:11:12&quot;
+}
+</code></pre>
+
+<hr />
+<h3 id="add-a-seat-user">Add a SeAT User</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>POST</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/user</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Adds a SeAT user.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>username</strong> - The username.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>email</strong> - The email address.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>password</strong> - The password for the user.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http post http://localhost:8000/api/v1/user Accept:application/json X-Token:123456 \
+    username=api_user email=test@localhost.local password=blahblah
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+
+<hr />
+<h3 id="edit-a-user">Edit a User</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>PUT</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/user/{identifier}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Edit a SeAT User in the database.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>identifier</strong> - The identifier for the user. Can be either the user_id or name.</td>
+</tr>
+<tr>
+<td></td>
+<td>All other fields are optional.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash"># changes a users password and make the user active
+http put http://localhost:8000/api/v1/user/api_user Accept:application/json \
+    X-Token:123456 password=blahblahr active=1
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+
+<hr />
+<h3 id="delete-a-user">Delete a User</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>DELETE</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/user/{identifier}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Delete a SeAT User from the database.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>identifier</strong> - The identifier for the user. Can be either the user_id or name.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http delete http://localhost:8000/api/v1/user/api_user Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../roles_permissions/" class="btn btn-neutral float-right" title="SeAT Roles, Permissions and Authorization">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../eve_api_keys/" class="btn btn-neutral" title="EVE Api Keys"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/eveseat/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../eve_api_keys/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../roles_permissions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

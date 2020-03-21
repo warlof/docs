@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>General Upgrades - SeAT Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "General Upgrades";
+    var mkdocs_page_input_path = "upgrade_guides/general_upgrades.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SeAT Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">General</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../reporting_bugs/">Reporting Bugs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../community_packages/">Community Packages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/getting_started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/quick_install/">Quick Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/generic_installation/">Generic Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos6/">CentOS 6.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos7/">CentOS 7.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/ubuntu16x/">Ubuntu 16.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/developer_installation/">Development Project</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Upgrade Guides</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">General Upgrades</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../seat1_to_2/">SeAT 1.x to SeAT 2.0</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Email</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/mailgun/">Mailgun Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/gmail/">Gmail Setup</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Admin Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/sso/">Configuring Eve Online SSO</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/scaling_seat/">Scaled SeAT Deployments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/rbac/">Role Based Access Control</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/tracking/">Understanding Tracking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/seat_supervisor/">SeAT & Supervisor Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/eveapi_admin_contact/">EVE Api Administrative Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">SeAT API</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/eve_api_keys/">EVE Api Keys</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/seat_users/">SeAT Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/roles_permissions/">SeAT Roles, Permissions and Authorization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/characters/">Characters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/corporations/">Corporations</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Changelogs</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/services/">Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/web/">Web</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package Configurations</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/service/">Service</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/web/">Web</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/other/">Other</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Eve XML API Updater</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../eve_xml_api_updater/job_queue_flow/">Job Queue Flow</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developing For SeAT</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/general/">General Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_breakdown/">Core Package Breakdown</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_development/">Package Development</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../todo/">TODO List</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SeAT Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Upgrade Guides &raquo;</li>
+        
+      
+    
+    <li>General Upgrades</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/eveseat/docs/edit/master/docs/upgrade_guides/general_upgrades.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="SeAT" src="http://i.imgur.com/aPPOxSK.png" /></p>
+<p>This guide attempts to document the SeAT upgrade procedure. As with anything, it is a <strong>very</strong> good idea to have backups ready before attempting any upgrades. In the case of SeAT, the most important component that needs to be backed up is the SeAT database. In short, something as simple as <code>mysqldump -uroot -p seat &gt; backup.sql</code> should be perfectly fine. Should something go wrong, then you can simply re-install SeAT, restore the database and you should be good to go.</p>
+<h3 id="upgrade-options">upgrade options</h3>
+<p>There are 2 ways to upgrade seat. The recommended way being using the <code>seat</code> tool and then the manual way. For most cases the <code>seat</code> tool should be fine as it tries to auto detect things for you, however, if you edited the defaults or installed on some custom operating system, then you may need to upgrade manually.</p>
+<h3 id="upgrading-using-the-seat-tool">upgrading using the seat tool</h3>
+<p>The <code>seat</code> tool is by far the best way for quick and painless upgrades. All you need to do is run the upgrade command and all will be done for you. Follow the next steps to get this done:</p>
+<ul>
+<li>First, if you havent downloaded the <code>seat</code> tool yet, do so now by following <a href="/installation_guides/getting_started/#seat-tool">this guide</a>.</li>
+<li>If you already have the <code>seat</code> tool downloaded, make sure the tool itself is at its latest version. Do this by running: <code>seat update:self</code>.</li>
+<li>If you have not yet backed up your database, do so now! This is the only part that <strong>can not</strong> be recovered in case something goes wrong!</li>
+<li>Ensure that the job queue is empty.</li>
+<li>Upgrade SeAT by running: <code>seat update:seat</code>.</li>
+</ul>
+<p>Done :D</p>
+<h3 id="manually-upgrading">manually upgrading</h3>
+<p>If you cant or don't want to use the SeAT tool, follow these steps to upgrade SeAT.</p>
+<ul>
+<li>Ensure that you are in the path where you installed. By default this should be <code>/var/www/seat</code>.</li>
+<li>Put your application into maintenance mode. This will ensure that no request from the outside will hit your applications logic, and also help you perform an upgrade uninterrupted. Do this with:</li>
+</ul>
+<pre><code>php artisan down
+</code></pre>
+
+<ul>
+<li>Its a good thing to update <code>composer</code> itself. This is not a hard requirement, but definitely recommended. Do this with:</li>
+</ul>
+<pre><code>composer self-update
+</code></pre>
+
+<ul>
+<li>The next thing to do is get the latest SeAT packages. The below example adds the <code>--no-dev</code> argument as these packages are generally not needed in production. Upgrade the packages with:</li>
+</ul>
+<pre><code>composer update --no-dev
+</code></pre>
+
+<ul>
+<li>With the packages upgraded, we can now publish any new migrations/assets/configs. This can be done with:</li>
+</ul>
+<pre><code>php artisan vendor:publish --force
+</code></pre>
+
+<ul>
+<li>Once the needed files are published, run any new/outstanding migrations with:</li>
+</ul>
+<pre><code>php artisan migrate
+</code></pre>
+
+<ul>
+<li>With the migrations done, run the seeders to update any static data:</li>
+</ul>
+<pre><code>php artisan db:seed --class=Seat\\Notifications\\database\\seeds\\ScheduleSeeder
+php artisan db:seed --class=Seat\\Services\\database\\seeds\\NotificationTypesSeeder
+php artisan db:seed --class=Seat\\Services\\database\\seeds\\ScheduleSeeder
+</code></pre>
+
+<ul>
+<li>Restart the supervisor workers to ensure they also pickup the latest code:</li>
+</ul>
+<pre><code>supervisorctl restart
+</code></pre>
+
+<ul>
+<li>Finally, we can simply bring our application back out of maintenance mode with:</li>
+</ul>
+<pre><code class="bash">php artisan up
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../seat1_to_2/" class="btn btn-neutral float-right" title="SeAT 1.x to SeAT 2.0">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../installation_guides/developer_installation/" class="btn btn-neutral" title="Development Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/eveseat/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../installation_guides/developer_installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../seat1_to_2/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

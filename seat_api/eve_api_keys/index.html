@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>EVE Api Keys - SeAT Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "EVE Api Keys";
+    var mkdocs_page_input_path = "seat_api/eve_api_keys.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SeAT Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">General</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../reporting_bugs/">Reporting Bugs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../community_packages/">Community Packages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/getting_started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/quick_install/">Quick Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/generic_installation/">Generic Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos6/">CentOS 6.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos7/">CentOS 7.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/ubuntu16x/">Ubuntu 16.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/developer_installation/">Development Project</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Upgrade Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/general_upgrades/">General Upgrades</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/seat1_to_2/">SeAT 1.x to SeAT 2.0</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Email</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/mailgun/">Mailgun Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/gmail/">Gmail Setup</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Admin Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/sso/">Configuring Eve Online SSO</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/scaling_seat/">Scaled SeAT Deployments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/rbac/">Role Based Access Control</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/tracking/">Understanding Tracking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/seat_supervisor/">SeAT & Supervisor Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/eveapi_admin_contact/">EVE Api Administrative Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">SeAT API</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">EVE Api Keys</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../seat_users/">SeAT Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../roles_permissions/">SeAT Roles, Permissions and Authorization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../characters/">Characters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../corporations/">Corporations</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Changelogs</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/services/">Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/web/">Web</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package Configurations</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/service/">Service</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/web/">Web</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/other/">Other</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Eve XML API Updater</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../eve_xml_api_updater/job_queue_flow/">Job Queue Flow</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developing For SeAT</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/general/">General Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_breakdown/">Core Package Breakdown</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_development/">Package Development</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../todo/">TODO List</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SeAT Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>SeAT API &raquo;</li>
+        
+      
+    
+    <li>EVE Api Keys</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/eveseat/docs/edit/master/docs/seat_api/eve_api_keys.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="SeAT" src="http://i.imgur.com/aPPOxSK.png" /></p>
+<h1 id="eve-api-keys">EVE API Keys</h1>
+<p>All endpoints in this document are for version1 (<code>/api/v1</code>) of the SeAT API.<br />
+All methods below have the requests and responses sampled using <a href="https://github.com/jkbrzt/httpie">httpie</a>.</p>
+<h1 id="available-methods">Available Methods</h1>
+<ul>
+<li><a href="#list-all-eve-api-keys">List All</a></li>
+<li><a href="#get-a-single-eve-api-key">List Single</a></li>
+<li><a href="#add-an-eve-api-key">Add an EVE API Key</a></li>
+<li><a href="#edit-an-eve-api-key">Edit an EVE API Key</a></li>
+<li><a href="#delete-an-eve-api-key">Delete an EVE API Key</a></li>
+<li><a href="#transfer-an-eve-api-key">Transfer an EVE API Key</a></li>
+</ul>
+<hr />
+<h3 id="list-all-eve-api-keys">List all EVE API Keys</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>GET</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/key</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>List all recorded EVE API Keys from the database.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http get http://localhost:8000/api/v1/key Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">{
+    &quot;created_at&quot;: &quot;2015-11-21 14:12:40&quot;,
+    &quot;disabled_calls&quot;: null,
+    &quot;enabled&quot;: 1,
+    &quot;key_id&quot;: 123445,
+    &quot;last_error&quot;: &quot;221:Illegal page request! Please verify the access granted by the key you are using!&quot;,
+    &quot;updated_at&quot;: &quot;2015-11-21 14:14:11&quot;,
+    &quot;user_id&quot;: 1,
+    &quot;v_code&quot;: &quot;IDT1wqjWtl9QGFGHPb5Zj0kle7EnQxWDiscH64aN44qhE07oOBTfCCLFmc3uj2Hf&quot;
+}
+</code></pre>
+
+<hr />
+<h3 id="get-a-single-eve-api-key">Get a single EVE API Key</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>GET</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/key/{key_id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Get details for a single EVE API Key.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>key_id</strong> - The keyID to retrieve</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http get http://localhost:8000/api/v1/key/123445 Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">{
+    &quot;characters&quot;: [
+        {
+            &quot;characterID&quot;: 123456,
+            &quot;characterName&quot;: &quot;ABC&quot;,
+            &quot;corporationID&quot;: 123456,
+            &quot;corporationName&quot;: &quot;Garoun Investment Bank&quot;,
+            &quot;created_at&quot;: &quot;2015-12-02 10:48:31&quot;,
+            &quot;id&quot;: 452,
+            &quot;keyID&quot;: 123456,
+            &quot;updated_at&quot;: &quot;2015-12-02 10:48:31&quot;
+        }
+    ],
+    &quot;created_at&quot;: &quot;2015-12-29 13:37:47&quot;,
+    &quot;disabled_calls&quot;: null,
+    &quot;enabled&quot;: 1,
+    &quot;info&quot;: {
+        &quot;accessMask&quot;: 1073741823,
+        &quot;created_at&quot;: &quot;2015-12-02 10:48:31&quot;,
+        &quot;expires&quot;: null,
+        &quot;keyID&quot;: 123456,
+        &quot;type&quot;: &quot;Account&quot;,
+        &quot;updated_at&quot;: &quot;2015-12-02 10:48:31&quot;
+    },
+    &quot;key_id&quot;: 123456,
+    &quot;last_error&quot;: null,
+    &quot;updated_at&quot;: &quot;2016-01-06 04:53:05&quot;,
+    &quot;user_id&quot;: 10,
+    &quot;v_code&quot;: &quot;pTySpi19ChY18jKbQdSmDoA9zStDkbv5MYJDHm0aKtypa2IwjIDOXVNp9tfSFPfu&quot;
+}
+</code></pre>
+
+<hr />
+<h3 id="add-an-eve-api-key">Add an EVE API Key</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>POST</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/key</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Add an EVE API key to the database.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>key_id</strong> - The keyID to add</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>v_code</strong> - The vCode to add</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>user_id</strong> - (optional) - The SeAT owner of the key.</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http post http://localhost:8000/api/v1/key Accept:application/json X-Token:123456 \
+    key_id=123 \
+    v_code=JYKyPvIv75PN58UWcRcPHrtYKb4ySThFBk3n2qN4eaYGgCr1mrJbOwvQfHqNnf5k
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+
+<hr />
+<h3 id="edit-an-eve-api-key">Edit an EVE API Key</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>PUT</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/key/{key_id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Edit an EVE API key in the database.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>key_id</strong> - The keyID to update</td>
+</tr>
+<tr>
+<td></td>
+<td>All other values are optional</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash"># sets an api key to enabled for the eveapi updater
+http put http://localhost:8000/api/v1/key/1234 Accept:application/json X-Token:123456 enabled=1
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+
+<hr />
+<h3 id="delete-an-eve-api-key">Delete an EVE API Key</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>DELETE</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/key/{key_id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Delete an EVE API key from the database.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>key_id</strong> - The keyID to delete</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http delete http://localhost:8000/api/v1/key/1234 Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+
+<hr />
+<h3 id="transfer-an-eve-api-key">Transfer an EVE API Key</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP Verb</td>
+<td><strong>GET</strong></td>
+</tr>
+<tr>
+<td>Endpoint</td>
+<td><code>/api/v1/key/transfer/{key_id}/{user_id}</code></td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Transfer ownership of an EVE API Key.</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td><strong>key_id</strong> - The keyID to transfer</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>user_id</strong> - he SeAT User id to get key ownership</td>
+</tr>
+</tbody>
+</table>
+<p>Sample Request:</p>
+<pre><code class="bash">http get http://localhost:8000/api/v1/key/transfer/123456/10 Accept:application/json X-Token:123456
+</code></pre>
+
+<p>Sample Response:</p>
+<pre><code class="json">[
+    &quot;ok&quot;
+]
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../seat_users/" class="btn btn-neutral float-right" title="SeAT Users">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../overview/" class="btn btn-neutral" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/eveseat/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../overview/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../seat_users/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

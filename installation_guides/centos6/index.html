@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>CentOS 6.x - SeAT Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "CentOS 6.x";
+    var mkdocs_page_input_path = "installation_guides/centos6.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SeAT Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">General</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../reporting_bugs/">Reporting Bugs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../community_packages/">Community Packages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation Guides</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../getting_started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_install/">Quick Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../generic_installation/">Generic Installation</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">CentOS 6.x</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../centos7/">CentOS 7.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ubuntu16x/">Ubuntu 16.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../developer_installation/">Development Project</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Upgrade Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/general_upgrades/">General Upgrades</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/seat1_to_2/">SeAT 1.x to SeAT 2.0</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Email</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/mailgun/">Mailgun Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/gmail/">Gmail Setup</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Admin Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/sso/">Configuring Eve Online SSO</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/scaling_seat/">Scaled SeAT Deployments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/rbac/">Role Based Access Control</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/tracking/">Understanding Tracking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/seat_supervisor/">SeAT & Supervisor Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/eveapi_admin_contact/">EVE Api Administrative Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">SeAT API</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/eve_api_keys/">EVE Api Keys</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/seat_users/">SeAT Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/roles_permissions/">SeAT Roles, Permissions and Authorization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/characters/">Characters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/corporations/">Corporations</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Changelogs</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/services/">Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../changelogs/web/">Web</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package Configurations</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/service/">Service</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/web/">Web</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/other/">Other</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Eve XML API Updater</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../eve_xml_api_updater/job_queue_flow/">Job Queue Flow</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developing For SeAT</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/general/">General Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_breakdown/">Core Package Breakdown</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_development/">Package Development</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../todo/">TODO List</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SeAT Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Installation Guides &raquo;</li>
+        
+      
+    
+    <li>CentOS 6.x</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/eveseat/docs/edit/master/docs/installation_guides/centos6.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="SeAT" src="http://i.imgur.com/aPPOxSK.png" /></p>
+<p>This guide attempts to explain how to manually install SeAT onto a <strong>CentOS 6.x</strong> Server. A small amount of Linux experience is preferred when it comes to this guide, all though it is not entirely mandatory. This guide assumes you want all of the available SeAT components installed (which is the default).</p>
+<h3 id="getting-started">getting started</h3>
+<p>We are going to assume you have root access to a fresh CentOS 6.x Server. Typically access is gained via SSH. All of the below commands are to be entered in the SSH terminal session for the installation &amp; configuration of SeAT. If the server you want to install SeAT on is being used for other things too (such as hosting MySQL databases and or websites), then please keep that in mind while following this guide.</p>
+<p>Packages are installed using the <code>yum</code> package manager as the <code>root</code> user.</p>
+<h3 id="table-of-contents">table of contents</h3>
+<ol>
+<li><a href="#repositories">Repositories</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#php--apache">PHP &amp; Apache</a></li>
+<li><a href="#redis">Redis</a></li>
+<li><a href="#composer-and-git">Composer and Git</a></li>
+<li><a href="#seat-download">SeAT - Download</a></li>
+<li><a href="#seat-permissions">SeAT - Permissions</a></li>
+<li><a href="#selinux">SELinux</a></li>
+<li><a href="#seat-setup">SeAT - Setup</a></li>
+<li><a href="#supervisor">Supervisor</a></li>
+<li><a href="#crontab">Crontab</a></li>
+<li><a href="#webserver---apache">Webserver - Apache</a>
+   i. <a href="#virtual-host-setup">Virtual Host Setup</a></li>
+</ol>
+<h3 id="repositories">repositories</h3>
+<p>Due to the nature of CentOS 6.x packaging and the limitations in getting 'bleeding edge' software with it, we need to add some extra software repositories in order to get SeAT running. These repositories are known as the <a href="https://fedoraproject.org/wiki/EPEL">Fedora EPEL</a>, <a href="http://rpms.famillecollet.com/">Remi</a> and <a href="http://ghettoforge.org/">Ghettoforge</a> repositories. Adding these repositories will allow us to get access to PHP 7 and Supervisor 3 which is a requirement for SeAT.</p>
+<p>To install / configure the required repositories, run the following commands:</p>
+<h4 id="epel">epel</h4>
+<pre><code># Download and install EPEL
+EPEL=epel-release-latest-6.noarch.rpm &amp;&amp; curl -O https://dl.fedoraproject.org/pub/epel/$EPEL &amp;&amp; yum localinstall -y $EPEL &amp;&amp; rm -f $EPEL
+
+# Import EPEL signing keys
+rpm --import http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6
+</code></pre>
+
+<h4 id="remi">remi</h4>
+<pre><code># Download and install Remi
+REMI=remi-release-6.rpm &amp;&amp; curl -O http://rpms.remirepo.net/enterprise/$REMI &amp;&amp; yum localinstall -y $REMI &amp;&amp; rm -f $REMI
+
+# Import Remi signing keys
+rpm --import http://rpms.remirepo.net/RPM-GPG-KEY-remi
+</code></pre>
+
+<h3 id="ghettoforge">ghettoforge</h3>
+<pre><code># Download and install GhettoForge
+GF=gf-release-6-10.gf.el6.noarch.rpm &amp;&amp; curl -O http://mirror.symnds.com/distributions/gf/el/6/gf/x86_64/$GF &amp;&amp; yum localinstall -y $GF &amp;&amp; rm -f $GF
+
+# Import the GhettoForge signing keys
+rpm --import http://mirror.symnds.com/distributions/gf/RPM-GPG-KEY-gf.el6
+</code></pre>
+
+<p>Next, we will quickly install <code>yum-utils</code> and enable the <code>remi-php70</code> and <code>gf-plus</code> repositories in order to gain access to PHP 7.0 and Supervisor 3</p>
+<pre><code>yum install yum-utils -y
+</code></pre>
+
+<pre><code>yum-config-manager --enable remi,remi-php70,gf-plus
+</code></pre>
+
+<h3 id="database">database</h3>
+<p>SeAT relies <strong>heavily</strong> on a database to function. Everything it learns is stored here, along with things such as user accounts for your users etc. It comes without saying that database security is a very important aspect too. So, ensure that you choose very strong passwords for your installation where required.</p>
+<p>Lets install the database server first:</p>
+<pre><code>yum install mysql mysql-server -y
+</code></pre>
+
+<p>With the database server installed, lets start it and configure it to automatically start up the next time out server boots up:</p>
+<pre><code>/etc/init.d/mysqld start
+</code></pre>
+
+<pre><code>chkconfig mysqld on
+</code></pre>
+
+<p>Next, we are going to secure the database server by removing anonymous access and setting a <code>root</code> password.</p>
+<hr />
+<p><strong>NOTE</strong> The database <code>root</code> password should not be confused with the operating systems <code>root</code> passwords. They are both completely different. They should also not be the same password.</p>
+<hr />
+<p>To secure the database, run:</p>
+<pre><code>mysql_secure_installation
+</code></pre>
+
+<p>This will ask you a series of questions, below is how these should be answered:</p>
+<pre><code>[...]
+
+Enter current password for root (enter for none):  BY DEFAULT IT IS NONE, PRESS ENTER
+OK, successfully used password, moving on...
+
+[...]
+
+Set root password? [Y/n] y
+New password:             SET A STRONG PASSWORD HERE
+Re-enter new password:    SET A STRONG PASSWORD HERE
+Password updated successfully!
+Reloading privilege tables..
+ ... Success!
+
+[...]
+
+Remove anonymous users? [Y/n] y
+ ... Success!
+
+[...]
+
+Disallow root login remotely? [Y/n] y
+ ... Success!
+
+[...]
+
+Remove test database and access to it? [Y/n] y
+
+[...]
+
+Reload privilege tables now? [Y/n] y
+ ... Success!
+
+[...]
+</code></pre>
+
+<p>That concludes the installation of the database server and securing it. Next, we need to create an actual database for SeAT to use on the server. For that we need to use the MySQL command line client and enter a few commands to create the database and the user that will be accessing it. Let get to it.</p>
+<p>Fire up the MySQL client by running:</p>
+<pre><code>mysql -uroot -p
+</code></pre>
+
+<p>This will prompt you for a password. Use the password you configured for the <code>root</code> account when we ran <code>mysql_secure_installation</code>. This will most probably be the last time you need to use this password :) If the password was correct, you should see a prompt similar to the one below:</p>
+<pre><code>[...]
+mysql&gt;
+</code></pre>
+
+<p>Lets run the command to create the SeAT database:</p>
+<pre><code>create database seat;
+</code></pre>
+
+<p>The output should be similar to the below:</p>
+<pre><code>mysql&gt; create database seat;
+Query OK, 1 row affected (0.00 sec)
+</code></pre>
+
+<p>Next, we create the user that SeAT itself will use to connect and use the <code>seat</code> database:</p>
+<pre><code>GRANT ALL ON seat.* to seat@localhost IDENTIFIED BY 's_p3rs3c3r3tp455w0rd';
+</code></pre>
+
+<p>Of course, you need to replace <code>s_p3rs3c3r3tp455w0rd</code> with your own. Successfully running this should present you with output similar to the below:</p>
+<pre><code>mysql&gt; GRANT ALL ON seat.* to seat@localhost IDENTIFIED BY 's_p3rs3c3r3tp455w0rd';
+Query OK, 0 rows affected (0.00 sec)
+</code></pre>
+
+<p>In the example above, we have effectively declared that SeAT will be using the database as <code>seat:s_p3rs3c3r3tp455w0rd@localhost/seat</code>.</p>
+<hr />
+<p><strong>NOTE</strong> Remember the password for the <code>seat</code> database user as we will need it later to configure SeAT.</p>
+<hr />
+<h3 id="php-apache">php &amp; apache</h3>
+<p>SeAT is written in PHP, and therefore we need to install the PHP interpreter. We also need to install a web server that will allow us to server the web front end that comes with SeAT.</p>
+<p>So, install the required packages with:</p>
+<pre><code>yum install -y httpd php php-mysql php-cli php-mcrypt php-process php-mbstring php-intl php-dom php-gd
+</code></pre>
+
+<p>You may be asked if you want to accept some GPG keys for package verification here. Just say [Y]. Successful installation should end with something like the below:</p>
+<pre><code>Installed:
+  httpd.x86_64 0:2.2.15-47.el6.centos          php.x86_64 0:5.5.30-1.el6.remi             php-cli.x86_64 0:5.5.30-1.el6.remi          php-intl.x86_64 0:5.5.30-1.el6.remi
+  php-mbstring.x86_64 0:5.5.30-1.el6.remi      php-mcrypt.x86_64 0:5.5.30-1.el6.remi      php-mysqlnd.x86_64 0:5.5.30-1.el6.remi      php-process.x86_64 0:5.5.30-1.el6.remi
+
+Dependency Installed:
+  apr.x86_64 0:1.3.9-5.el6_2                    apr-util.x86_64 0:1.3.9-3.el6_0.1       apr-util-ldap.x86_64 0:1.3.9-3.el6_0.1   httpd-tools.x86_64 0:2.2.15-47.el6.centos
+  libicu-last.x86_64 0:50.1.2-11.el6.remi       libmcrypt.x86_64 0:2.5.8-9.el6          libtool-ltdl.x86_64 0:2.2.6-15.5.el6     libzip-last.x86_64 0:1.0.1-1.el6.remi
+  mailcap.noarch 0:2.1.31-2.el6                 php-common.x86_64 0:5.5.30-1.el6.remi   php-pdo.x86_64 0:5.5.30-1.el6.remi       php-pecl-jsonc.x86_64 0:1.3.9-1.el6.remi.5.5
+  php-pecl-zip.x86_64 0:1.13.1-1.el6.remi.5.5
+</code></pre>
+
+<p>Now, we can start apache and configure it automatically start the next time the server boots up:</p>
+<pre><code>/etc/init.d/httpd start
+</code></pre>
+
+<pre><code>chkconfig httpd on
+</code></pre>
+
+<h3 id="redis">redis</h3>
+<p>SeAT makes use of <a href="http://redis.io/">Redis</a> as a cache and message broker for the Queue backend. Installing it is really easy. Do it with:</p>
+<pre><code>yum install -y redis
+</code></pre>
+
+<p>Next, start it and configure it to autostart next time the server boots up:</p>
+<pre><code>/etc/init.d/redis start
+</code></pre>
+
+<pre><code>chkconfig redis on
+</code></pre>
+
+<h3 id="composer-and-git">composer and git</h3>
+<p>SeAT makes use of the de-facto PHP dependency manager called <a href="https://getcomposer.org/">Composer</a>. Composer is required to both install and update SeAT at a later stage. It is for this reason that it is recommended that you install composer globally on your server so that you can access it by simply typing <code>composer</code>. Lets set that up by downloading Composer and saving it to <code>/usr/local/bin</code>:</p>
+<pre><code>curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer &amp;&amp; hash -r
+</code></pre>
+
+<p>Successful installation should output something like:</p>
+<pre><code>[root@seat ~]# curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer &amp;&amp; hash -r
+#!/usr/bin/env php
+All settings correct for using Composer
+Downloading...
+
+Composer successfully installed to: /usr/local/bin/composer
+Use it: php /usr/local/bin/composer
+</code></pre>
+
+<p>As all of the source code is hosted on Github which is a Git based source control system, we need to install <code>git</code> itself. Do this with:</p>
+<pre><code>yum install git -y
+</code></pre>
+
+<h3 id="seat-download">seat download</h3>
+<p>Finally, we get to install SeAT itself. The first thing we need to do is to decide where to save SeAT itself. This directory should have enough space for the cached XML files to live on, as well as a few log files should you need to debug problems. The recommended location is <code>/var/www/seat/</code>. To save SeAT in this directory, first change to it:</p>
+<pre><code>cd /var/www
+</code></pre>
+
+<p>Next, we will download SeAT using <code>composer</code> and save it to the <code>seat</code> directory.
+<strong>NOTE</strong> This can take some time, Composer does a ton of magic here :+1: (like recursively resolving all dependencies :O)</p>
+<pre><code>composer create-project eveseat/seat seat --no-dev
+</code></pre>
+
+<p>Successful installation should end with something like:</p>
+<pre><code>Writing lock file
+Generating autoload files
+&gt; Illuminate\Foundation\ComposerScripts::postUpdate
+&gt; php artisan optimize
+Generating optimized class loader
+Compiling common classes
+&gt; php artisan key:generate
+Application key [base64:WFfzkuIpUGpkDNu0SRtwhPphpM66UvzuZpEML/6dEVQ=] set successfully.
+</code></pre>
+
+<h3 id="seat-permissions">seat permissions</h3>
+<p>SeAT writes logfiles/cachefiles and other temporary data to the <code>seat/storage/</code> directory. That together with the fact that the web content will be hosted by apache means that we need to configure the files permissions to allow SeAT do do its thing.</p>
+<p>First, lets ensure that <code>apache</code> owns everything in /var/www/seat which is the folder we just downloaded SeAT to:</p>
+<pre><code>chown -R apache:apache /var/www/seat
+</code></pre>
+
+<p>Next, we will allow Apache to write to the <code>seat/storage/</code> directory so that it may manipulate the files in there as needed:</p>
+<pre><code>chmod -R guo+w /var/www/seat/storage/
+</code></pre>
+
+<p>SeAT is now downloaded and almost ready for use!</p>
+<h3 id="selinux">selinux</h3>
+<p>Many people hate SELinux, primarily due to a misunderstanding of what it does and how it works. SeAT can run perfectly fine with SELinux enabled, and I actually encourage you to leave it enabled. There is however one small settings change required to make everything work as expected.</p>
+<p>First, we have to allow apache to make network connections. This is so that we may connect to the EVEAPI, as well as the MySQL database and Redis. We also have to allow Apache to write to disk. So, configure this with:</p>
+<pre><code>setsebool -P httpd_can_network_connect 1
+setsebool -P httpd_unified 1
+</code></pre>
+
+<p>Next, we have to ensure that the files and folders in <code>/var/www/seat</code> is correctly labelled in order to prevent SELinux from blocking perfectly normal behaviour. Check this with:</p>
+<pre><code>restorecon -Rv /var/www/seat
+</code></pre>
+
+<p>Thats it. Pretty painless eh? :)</p>
+<h3 id="seat-setup">seat setup</h3>
+<p>Next, we need to configure SeAT to know where the database server lives. Do this by editing <code>/var/www/seat/.env</code> and setting the appropriate values:</p>
+<pre><code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=seat
+DB_USERNAME=seat
+DB_PASSWORD=s_p3rs3c3r3tp455w0rd
+DB_DEBUG=false
+</code></pre>
+
+<p>Moving on, we should publish the internal databse migrations, css &amp; javasript, and other goodies with:</p>
+<pre><code>php artisan vendor:publish --force
+</code></pre>
+
+<p>Next, run the database migrations to get the SeAT database ready for use:</p>
+<pre><code>php artisan migrate
+</code></pre>
+
+<p>Next, we need to run the seeders to populate som default data for SeAT to use:</p>
+<pre><code>php artisan db:seed --class=Seat\\Notifications\\database\\seeds\\ScheduleSeeder
+php artisan db:seed --class=Seat\\Services\\database\\seeds\\NotificationTypesSeeder
+php artisan db:seed --class=Seat\\Services\\database\\seeds\\ScheduleSeeder
+</code></pre>
+
+<p>Next, the latest static data export must be downloaded and imported with:</p>
+<pre><code>php artisan eve:update-sde -n
+</code></pre>
+
+<p>And finally, the SeAT admin user needs to have a password set. There is no default SeAT admin password.</p>
+<pre><code>php artisan seat:admin:reset
+</code></pre>
+
+<p>One last thing, an email address is needed for the admin user too.</p>
+<pre><code>php artisan seat:admin:email
+</code></pre>
+
+<h3 id="supervisor">supervisor</h3>
+<p>SeAT makes use of workers to actually process the update jobs that get scheduled. Think if the architecture as someone coming and dumping mail at the postoffice, and its up to say 4 workers to dig through the mail and sort it. Those 4 workers need a manager to ensure that they keep working. <code>supervisord</code> is a excellent candidate for the manager job.</p>
+<p>Lets install supervisor, start it and configure it to start automatically the next time the server boots:</p>
+<pre><code>yum install supervisor -y
+</code></pre>
+
+<pre><code>/etc/init.d/supervisord start
+</code></pre>
+
+<pre><code>chkconfig supervisord on
+</code></pre>
+
+<p>We now have to configure the actual workers that supervisord will manage. We do this by adding a new configuration file to <code>/etc/supervisord.d/</code> called <code>seat.ini</code> Note that the number of workers that we want to start is set by the <code>numprocs</code> settings:</p>
+<pre><code>[program:seat]
+command=/usr/bin/php /var/www/seat/artisan queue:work --queue=high,medium,low,default --tries 1 --timeout=86100
+process_name = %(program_name)s-80%(process_num)02d
+stdout_logfile = /var/log/seat-80%(process_num)02d.log
+stdout_logfile_maxbytes=100MB
+stdout_logfile_backups=10
+numprocs=4
+directory=/var/www/seat
+stopwaitsecs=600
+user=apache
+</code></pre>
+
+<p>Save your file and reload <code>supervisord</code> so that it is aware of the changes that we have made:</p>
+<pre><code>/etc/init.d/supervisord restart
+</code></pre>
+
+<p>Lastly, check that everything is OK and the workers have started up:</p>
+<pre><code>[root@seat seat]# supervisorctl status
+seat:seat-8000                   RUNNING    pid 5083, uptime 0:00:28
+seat:seat-8001                   RUNNING    pid 5082, uptime 0:00:28
+seat:seat-8002                   RUNNING    pid 5085, uptime 0:00:28
+seat:seat-8003                   RUNNING    pid 5084, uptime 0:00:28
+</code></pre>
+
+<p>If you do not have output such as in the above block, check the log files for any possible errors.</p>
+<h3 id="crontab">crontab</h3>
+<p>So far, we have SeAT workers running meaning that it is ready to process jobs that enter the Queue. We now need a way to add jobs to that Queue for processing by the workers.
+SeAT has a build in schedule for when what should run at which interval. With the cronjob, we are simply telling SeAT to check every minute "is there anything we should be doing?". We will add the cronjob as the <code>apache</code> user as this is the user that has had all its <a href="#seat-permissions">permissions</a> configured earlier.</p>
+<p>Open up the crontab for <code>apache</code> with:</p>
+<pre><code>crontab -u apache -e
+</code></pre>
+
+<p>Next, paste the following line at the bottom of the file (remember to check the path if you chose one other that the one in this guide):</p>
+<pre><code>* * * * * /usr/bin/php /var/www/seat/artisan schedule:run 1&gt;&gt; /dev/null 2&gt;&amp;1
+</code></pre>
+
+<h3 id="webserver-apache">webserver - apache</h3>
+<p>In order to get the SeAT fronted running, we need to configure Apache to serve our SeAT installs <code>public/</code> folder. This is the only folder that should be internet facing. That small <code>index.php</code> is the gateway into the application.
+The Apache configuration itself will depend on how your server is set up. Generally, virtual hosting is the way to go, and this is what I will be showing here.</p>
+<p>If you are not going to use virtual hosting, the easiest to get going will probably to symlink <code>/var/www/seat/public/</code> to <code>/var/www/html/seat</code> and configuring apache to <code>AllowOverride All</code> in the <code>&lt;Directory "/var/www/html"&gt;</code> section. This should have SeAT available at http://your-host-name-or-ip/seat after you restart apache.</p>
+<h4 id="virtual-host-setup">virtual host setup</h4>
+<p>Getting the virtual host setup is as simple as creating a new configuration file (I usually call it the <code>sites-domain.conf</code>), and modifying it to match your setup. Everywhere you see <code>seat.local</code> as the hostname in the below examples it needs to be substituted to your actual domain.</p>
+<p>Lets prepare some directories. We create the directory <code>/var/www/html/seat.local</code> with:</p>
+<pre><code>mkdir /var/www/html/seat.local
+</code></pre>
+
+<p>Next we symlink the SeAT public directory there with:</p>
+<pre><code>ln -s /var/www/seat/public /var/www/html/seat.local/seat
+</code></pre>
+
+<p>Next, we have to configure Apache itself to know about the directories and stuff SeAT needs. We need to create that <code>sites-domain.conf</code> file I mentioned. This file should live in <code>/etc/httpd/conf.d</code>, so lets change directories there:</p>
+<pre><code>cd /etc/httpd/conf.d
+</code></pre>
+
+<p>Now, create the conf file. In my case, the domain is <code>seat.local</code>, so I will call it <code>seat.local.conf</code>. Add the following contents to that file:</p>
+<pre><code>&lt;VirtualHost *:80&gt;
+    ServerAdmin webmaster@your.domain
+    DocumentRoot &quot;/var/www/html/seat.local&quot;
+    ServerName seat.local
+    ServerAlias www.seat.local
+    ErrorLog &quot;logs/seat.local-error_log&quot;
+    CustomLog &quot;logs/seat.local-access_log&quot; common
+    &lt;Directory &quot;/var/www/html/seat.local&quot;&gt;
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;
+</code></pre>
+
+<p>With our config file created, we need to restart apache to read the new file:</p>
+<pre><code>apachectl restart
+</code></pre>
+
+<p>That should be it from a configuration perspective. We can confirm that everything is configured correctly by running:</p>
+<pre><code>[root@seat conf.d]# apachectl -t -D DUMP_VHOSTS
+httpd: Could not reliably determine the server's fully qualified domain name, using seat.localdomain for ServerName
+VirtualHost configuration:
+wildcard NameVirtualHosts and _default_ servers:
+*:80                   seat.local (/etc/httpd/conf.d/seat.local.conf:1)
+Syntax OK
+</code></pre>
+
+<p>Thats it! SeAT should now be available at http://your-domain-or-ip/seat</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../centos7/" class="btn btn-neutral float-right" title="CentOS 7.x">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../generic_installation/" class="btn btn-neutral" title="Generic Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/eveseat/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../generic_installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../centos7/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

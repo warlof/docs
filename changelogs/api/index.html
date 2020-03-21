@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Api - SeAT Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Api";
+    var mkdocs_page_input_path = "changelogs/api.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SeAT Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">General</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../contact/">Contact</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../reporting_bugs/">Reporting Bugs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../community_packages/">Community Packages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Installation Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/getting_started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/quick_install/">Quick Install</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/generic_installation/">Generic Installation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos6/">CentOS 6.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/centos7/">CentOS 7.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/ubuntu16x/">Ubuntu 16.x</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../installation_guides/developer_installation/">Development Project</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Upgrade Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/general_upgrades/">General Upgrades</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../upgrade_guides/seat1_to_2/">SeAT 1.x to SeAT 2.0</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Email</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/mailgun/">Mailgun Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../email/gmail/">Gmail Setup</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Admin Guides</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/sso/">Configuring Eve Online SSO</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/scaling_seat/">Scaled SeAT Deployments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/rbac/">Role Based Access Control</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/tracking/">Understanding Tracking</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/seat_supervisor/">SeAT & Supervisor Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../admin_guides/eveapi_admin_contact/">EVE Api Administrative Contact</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">SeAT API</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/eve_api_keys/">EVE Api Keys</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/seat_users/">SeAT Users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/roles_permissions/">SeAT Roles, Permissions and Authorization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/characters/">Characters</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../seat_api/corporations/">Corporations</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Changelogs</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Api</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1013">1.0.13</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1012">1.0.12</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1011">1.0.11</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1010">1.0.10</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#109">1.0.9</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#108">1.0.8</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#107">1.0.7</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#106">1.0.6</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#105">1.0.5</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#104">1.0.4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#103">1.0.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#101">1.0.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#100">1.0.0</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../services/">Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../web/">Web</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Package Configurations</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/api/">Api</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/console/">Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/eveapi/">Eveapi</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/notifications/">Notifications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/service/">Service</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/web/">Web</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../configuration/other/">Other</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Eve XML API Updater</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../eve_xml_api_updater/job_queue_flow/">Job Queue Flow</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developing For SeAT</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/general/">General Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_breakdown/">Core Package Breakdown</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../development/package_development/">Package Development</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../todo/">TODO List</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SeAT Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Changelogs &raquo;</li>
+        
+      
+    
+    <li>Api</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/eveseat/docs/edit/master/docs/changelogs/api.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="SeAT" src="http://i.imgur.com/aPPOxSK.png" /></p>
+<h1 id="api-change-logs">api change logs</h1>
+<p>Generated with: <code>git log --oneline --decorate</code></p>
+<h3 id="1013">1.0.13</h3>
+<pre><code>b55b1aa (tag: 1.0.13) Version Bump
+8b80e11 Paginate the token logs
+</code></pre>
+
+<h3 id="1012">1.0.12</h3>
+<pre><code>fbf3e88 (tag: 1.0.12) Version Bump
+e8f1882 Fix eveseat/seat#115 by adding new endpoints for role management
+729971f Convert from a resource to controller route for roles
+d2ff1df Merge pull request #1 from nizzan/patch-1
+dc80447 Typo on API Token generation
+</code></pre>
+
+<h3 id="1011">1.0.11</h3>
+<pre><code>d35e7ef (tag: 1.0.11) Version Bump
+60475a4 Add /api/v1/corporation/assets-contents/{corp_id} endpoint
+530703c Add missing PPHDoc comment for argument
+</code></pre>
+
+<h3 id="1010">1.0.10</h3>
+<pre><code>3faff1e (tag: 1.0.10) Version Bump
+99871c9 Rename repository method that was incorrectly called
+131a3b8 Add /api/v1/corporation/all endpoint
+be8e6aa Include key info and characters.
+</code></pre>
+
+<h3 id="109">1.0.9</h3>
+<pre><code>22f8b34 (tag: 1.0.9) Version Bump
+f6bfc7e Update copyright
+7f24bf8 Code style fixes
+</code></pre>
+
+<h3 id="108">1.0.8</h3>
+<pre><code>2409d0c (tag: 1.0.8) Version Bump
+ad8351a Add Corp Pocos Endpoint
+</code></pre>
+
+<h3 id="107">1.0.7</h3>
+<pre><code>6ca59b0 (tag: 1.0.7) Version Bump
+603cb76 Add ability to get a specific starbases info
+</code></pre>
+
+<h3 id="106">1.0.6</h3>
+<pre><code>a949267 (tag: 1.0.6) Version Bump
+8f5c35f Allow for API Keys to be transferred to a different User
+c712823 Add starbase and assets-by-location endpoints
+</code></pre>
+
+<h3 id="105">1.0.5</h3>
+<pre><code>220b7bb (tag: 1.0.5) Version Bump
+86c4602 Specify versions with ~
+</code></pre>
+
+<h3 id="104">1.0.4</h3>
+<pre><code>3b80952 (tag: 1.0.4) Version Bump
+55269b9 Add char &amp; corp Bookmarks endpoints
+b65799f Add Character Channels endpoint
+</code></pre>
+
+<h3 id="103">1.0.3</h3>
+<pre><code>dee0f28 (tag: 1.0.3) Version Bump
+76647e9 Add localization support
+de62767 (tag: 1.0.2) Update README.md
+</code></pre>
+
+<h3 id="101">1.0.1</h3>
+<pre><code>cc4ea85 (tag: 1.0.1) Version Bump
+16c3896 Dont use a sub-menu
+88348cb Cleanup Middleware and add Request Path logging
+</code></pre>
+
+<h3 id="100">1.0.0</h3>
+<pre><code>03064d4 (tag: 1.0.0) Add admin views, complete middleware and add menu.
+c11ca2e Add Corporation API Endpoints
+122f2da Add Character API Endpoints
+dda7cbb Add endpoint to validate credentials
+014502b Add roles and permissions query endpoint
+4e88616 Add endpoints to get Role information
+4516aaa Add CRUD for User management
+2d129ea Update links to eveseat/api
+2c2cef3 Fix typo
+5620aa2 Update README
+6905c26 Compelte the EVE API Key API
+32d17cf First preperations for the SeAT API
+57f8c6d first commit
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../console/" class="btn btn-neutral float-right" title="Console">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../seat_api/corporations/" class="btn btn-neutral" title="Corporations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/eveseat/docs/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../seat_api/corporations/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../console/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
