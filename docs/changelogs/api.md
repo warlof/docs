@@ -176,3 +176,137 @@ f345da5  2017-04-17 Leon Jacobs Small cleanup
 91c33bf  2017-08-12 Loïc LEUILLIOT Update role (#8)
 38d0fc8  2017-08-12 Loïc LEUILLIOT fix api log issue (#10)
 ```
+### 2.0.10
+```
+a36841b  2017-10-25 Leon Jacobs (tag: 2.0.10) Version Bump.
+7293928  2017-10-25 Loïc LEUILLIOT security hotfix related to API log which add missing method column (#12)
+```
+### 3.0.0-beta1
+```
+2d32c6e  2018-04-29 Leon Jacobs (tag: 3.0.0-beta1) Package upgarde and v3.0.0-beta1.
+3d941cb  2018-04-29 Leon Jacobs Apply fixes from StyleCI (#15)
+bbe233c  2018-04-29 Leon Jacobs Indentation fixes.
+a773f77  2018-04-17 Leon Jacobs Apply fixes from StyleCI (#14)
+d98f460  2017-09-18 Leon Jacobs Update middleware registers for Laravel 5.5.
+```
+### 3.0.0-beta2
+```
+6dbd039  2018-04-29 Leon Jacobs (tag: 3.0.0-beta2) v3.0.0-beta2
+```
+### 3.0.0-beta3
+```
+1fc7fc3  2018-05-02 Leon Jacobs (tag: 3.0.0-beta3) v3.0.0-beta3
+4fda254  2018-05-02 Leon Jacobs Remove old API controllers.
+6f7952c  2018-05-02 Leon Jacobs Complete v2 character level API endpoints.
+eac5238  2018-05-01 Leon Jacobs Migrate and document more endpoints.
+321666b  2018-05-01 Leon Jacobs Start the v2, swaggified API.
+30117e0  2018-05-01 Leon Jacobs Remove unused trait.
+```
+### 3.0.0-beta4
+```
+73c4945  2018-05-05 Leon Jacobs (tag: 3.0.0-beta4) v3.0.0-beta4
+bd36017  2018-05-05 Leon Jacobs Compelte API migration to v2 & Swagger.
+482d09a  2018-05-04 Leon Jacobs Start adding user management v2 endpoints.
+ebaeaed  2018-05-03 Leon Jacobs Add v2 Corporation API endpoints and remove v1 endpoints.
+```
+### 3.0.0-beta5
+```
+689a886  2018-05-08 Leon Jacobs (tag: 3.0.0-beta5) v3.0.0-beta5
+35012f3  2018-05-08 Leon Jacobs Fix method name.
+e8c7137  2018-05-08 Loïc LEUILLIOT Fix grouprelationship (#17)
+57b2b86  2018-05-05 Leon Jacobs Add link to API documentation.
+9d24246  2018-05-05 Leon Jacobs Apply fixes from StyleCI (#16)
+```
+### 3.0.0
+```
+a592a59  2018-06-16 Leon Jacobs (tag: 3.0.0) v3.0.0 🎉
+31f88e0  2018-06-16 Leon Jacobs Style fix.
+81bf6d3  2018-06-16 Leon Jacobs Add ability to populate and retreive refresh tokens.
+0f75f3f  2018-06-16 Leon Jacobs Fix class order.
+99e5376  2018-06-16 Leon Jacobs Move validation classes namespace.
+cbabab1  2018-06-16 Leon Jacobs Remove old validation rules.
+be53e61  2018-06-16 Leon Jacobs Expose user token via API
+```
+### 3.0.1
+```
+9c531be  2018-07-29 Leon Jacobs (tag: 3.0.1) v3.0.1
+6ba9e60  2018-07-29 Loïc LEUILLIOT fix issue which was preventing to use swagger UI to test endpoints (#22)
+f4f6657  2018-07-29 Loïc LEUILLIOT improve api logging by appending request method. Use swagger color chart (#23)
+6b3ecdd  2018-07-29 Loïc LEUILLIOT Improve api docs (#21)
+e82a756  2018-07-29 Leon Jacobs Formatting fixes.
+f44c675  2018-07-29 Loïc LEUILLIOT add group control logic in order to deny addition to admin group (#20)
+292acd5  2018-07-29 Loïc LEUILLIOT Generate API based on multiple paths (allow api documentation for plugins) (#19)
+```
+### 3.0.2
+```
+cbfcf00  2018-08-20 Leon Jacobs (tag: 3.0.2) v3.0.2
+1961df9  2018-08-17 Loïc Leuilliot feat(character): Provide skillpoints and unallocated skillpoints into character sheet endpoint (#25)
+fcafab2  2018-08-17 Loïc Leuilliot feat(users): Add pagination to users list (#24)
+```
+### 3.0.3
+```
+ee60536  2018-08-20 Leon Jacobs (tag: 3.0.3) v3.0.3
+3230d41  2018-08-20 Leon Jacobs Temporarily pin zircote/swagger-php.
+```
+### 3.0.4
+```
+9351a4f  2018-09-09 Leon Jacobs (tag: 3.0.4) v3.0.4
+3ec50da  2018-09-09 Leon Jacobs Drop the Swagger version number.
+4bf5ab7  2018-09-09 Leon Jacobs Pin swagger-php more gnerically.
+```
+### 3.0.5
+```
+fbb608a  2018-12-08 Loïc LEUILLIOT (tag: 3.0.5) build(core): v3.0.5
+06fd5b3  2018-12-06 Herpaderp Aldent [feat](core): Use new migration mechanic
+55b372d  2018-10-09 Herpaderp Aldent [feat](api) Add main_character_id to group-list
+```
+### 3.0.6
+```
+626b74c  2019-01-13 Loïc LEUILLIOT (tag: 3.0.6) build(core): v3.0.6
+9ecdad9  2019-01-07 Loïc Leuilliot feat(roles): Allow roles name to be changed (#28)
+2a38099  2019-01-07 Loïc Leuilliot feat(versions): Implement new version management for API package (#29)
+```
+### 3.0.7
+```
+acd162a  2019-06-03 Loïc LEUILLIOT (tag: 3.0.7) build(core): v3.0.7
+885ab4d  2019-06-03 Loïc Leuilliot fix(api): remove the type attribute on body POST and switched it in schema (#33)
+9b93eaf  2019-02-18 Leon Jacobs Apply fixes from StyleCI (#32)
+```
+### 3.0.8
+```
+e88df37  2019-08-03 Loïc LEUILLIOT (tag: 3.0.8) build(core): v3.0.8
+71d86ce  2019-08-03 Seb Ferraro feat(api): add main_character_id to User (#35)
+4b653bc  2019-06-07 Loïc Leuilliot feat(api): enforce JSON format for API requests (#34)
+```
+### 4.0.0-rc1
+```
+ec82196  2019-10-22 Loïc Leuilliot (tag: 4.0.0-rc1) refactor(core): move AbstractSeatPlugin from services to seat package (#37)
+a89a079  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade tokens logs layout
+61e42cc  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade tokens list layout
+6939cc2  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade to font-awesome 5
+686c8d3  2019-10-10 Loïc LEUILLIOT fix(deps): update resources directory structure according L5.7
+115168b  2019-10-10 Loïc LEUILLIOT fix(deps): replace str_ and arr_ helpers by their Classes
+670e756  2019-10-10 Loïc LEUILLIOT fix(deps): dev must be use as a suffix instead prefix
+6858b8f  2019-10-10 Loïc LEUILLIOT chore(deps): downgrade stability to dev version
+c790198  2019-10-10 Loïc LEUILLIOT chore(deps): update dependencies to Laravel 6.x
+```
+### 4.0.0-rc2
+```
+32bf7af  2019-11-16 Loïc LEUILLIOT (tag: 4.0.0-rc2) fix(deps): update php minimum version to 7.3
+b9a3bbf  2019-11-16 Loïc LEUILLIOT ci(styleci): remove length_ordered_imports from disabled rules
+f8e9e1f  2019-11-16 Loïc LEUILLIOT refactor(acl): drop Group class and use an unique user bucket
+```
+### 4.0.0-rc3
+```
+516634a  2020-03-23 Loïc Leuilliot (tag: 4.0.0-rc3) refactor: use array of path to register api doc
+5de3c69  2020-03-23 Loïc LEUILLIOT refactor(api): use api doc provider method
+6523aab  2020-03-23 Loïc LEUILLIOT style(api): apply some StyleCI change requests
+faac995  2020-03-23 Loïc LEUILLIOT feat(api): implement squads routes
+7a68024  2020-03-23 Loïc LEUILLIOT refactor(api): upgrade users category
+8972efb  2020-03-23 Loïc LEUILLIOT refactor(api): upgrade roles category
+fed22d6  2020-03-22 Loïc LEUILLIOT refactor(api): switch logs to data-table factory
+5758e77  2020-03-22 Loïc LEUILLIOT style: remove stale code
+af292f5  2020-03-22 Loïc LEUILLIOT fix(api): ensure method is properly logged
+aa3adc7  2020-03-22 Loïc LEUILLIOT feat(api): upgrade doc to OAS3
+915cf8a  2020-03-17 Loïc Leuilliot ci(styleci): update config for preset changes
+```
