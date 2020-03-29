@@ -141,7 +141,123 @@ ce58c03  2017-05-07 Loïc LEUILLIOT Starbase Siphon alert hotfix (#6)
 ```
 ### 2.0.11
 ```
-e760f9d  2017-08-12 Leon Jacobs (HEAD -> 2.x, tag: 2.0.11, origin/master, origin/HEAD, origin/2.x, master) Version bump
+e760f9d  2017-08-12 Leon Jacobs (tag: 2.0.11) Version bump
 49d515e  2017-08-12 Leon Jacobs Update wording.
 cbfac3e  2017-08-12 Leon Jacobs Remove debug line.
+```
+### 3.0.0-beta1
+```
+b003788  2018-04-29 Leon Jacobs (tag: 3.0.0-beta1) Upgrade packages and version 3.0.0-beta1
+75b69af  2018-04-29 Leon Jacobs Indentation and sorting fixes.
+ea8775a  2018-04-22 Herpaderp Aldent Fix affiliations-panel (#9)
+181e7ee  2018-04-17 Leon Jacobs Apply fixes from StyleCI (#8)
+```
+### 3.0.0-beta1
+```
+4c8186c  2018-04-29 Leon Jacobs (tag: 3.0.0-beta2) v3.0.0-beta2
+```
+### 3.0.0-beta1
+```
+6abd598  2018-05-20 Leon Jacobs (tag: 3.0.0-beta3) v3.0.0-beta3
+b198e42  2018-05-20 Leon Jacobs Apply fixes from StyleCI (#11)
+a2847c6  2018-05-20 Leon Jacobs Revive notifications.
+```
+### 3.0.0
+```
+756fdd8  2018-06-16 Leon Jacobs (tag: 3.0.0) v3.0.0 🎉
+```
+### 3.0.1
+```
+e460ffb  2018-07-29 Leon Jacobs (tag: 3.0.1) v3.0.1
+8d03240  2018-07-29 Loïc LEUILLIOT remove eve from available notification type (#13)
+6a0f85a  2018-07-29 Loïc LEUILLIOT fix new token mail notification route (#12)
+```
+### 3.0.2
+```
+d9d7cba  2018-12-08 Loïc LEUILLIOT (tag: 3.0.2) build(core): v3.0.2
+5ab4330  2018-12-06 Herpaderp Aldent [feat](core): Use new migration mechanic
+453d3d9  2018-11-18 Herpaderp Aldent [feat](dependencies): Update DataTables Dependencies for new DataTables Version (#16)
+9488d92  2018-10-28 Loïc Leuilliot (herpaderpaldent/master) fix(token state): Remove deprecated apikey routes references (#15)
+```
+### 3.0.3
+```
+4f94377  2019-01-13 Loïc LEUILLIOT (tag: 3.0.3) build(core): v3.0.3
+d265924  2019-01-07 Loïc Leuilliot feat(versions): Implement new version management for Notifications package (#18)
+```
+### 3.0.4
+```
+81525b8  2019-05-28 Loïc LEUILLIOT (tag: 3.0.4) build(core): v3.0.4
+75b4d3d  2019-05-28 Loïc Leuilliot fix(notifications): address mail link construction issue (#25)
+8c5f154  2019-04-22 Loïc Leuilliot fix(notifications): address zKillboard link construction issue (#24)
+9d771dc  2019-04-22 Loïc Leuilliot fix(notifications): enforce corporation member tracking sorting (#23)
+b088502  2019-04-22 Loïc Leuilliot fix(notifications): enforce corporation killmails sorting (#22)
+39cf831  2019-02-18 Leon Jacobs Apply fixes from StyleCI (#21)
+```
+### 3.0.5
+```
+83f68a0  2019-06-13 Loïc LEUILLIOT (tag: 3.0.5) build(core): v3.0.5
+3ef7fcf  2019-06-13 Loïc Leuilliot feat(notifications): add corporation character left notification support (#33)
+af28ad9  2019-06-13 Loïc Leuilliot feat(notifications): add structure service offline notification support (#32)
+ec39bc7  2019-06-13 Loïc Leuilliot feat(notifications): add moon mining extraction notification support (#31)
+c0e28d4  2019-06-13 Loïc Leuilliot feat(notifications): add structure fuel notification support (#30)
+cea5ad4  2019-06-13 Loïc Leuilliot feat(notifications): add corporation bill notification support (#29)
+b249176  2019-06-13 Loïc Leuilliot feat(notifications): add sovereignty structure reinforced support (#28)
+8867cf8  2019-06-13 Loïc Leuilliot feat(notifications): add sovereignty structure destroyed support (#27)
+a25728c  2019-06-13 Loïc Leuilliot feat(notifications): add structure under attack support (#26)
+16fc658  2019-06-01 Loïc Leuilliot fix(integrations): ensure ID to name resolver is properly call (#34)
+```
+### 3.0.6
+```
+2f4484d  2019-08-12 Loïc LEUILLIOT (tag: 3.0.6, seat/master, seat/3.0.x, master, 3.0.x) build(core): v3.0.6
+bb05056  2019-08-11 Loïc Leuilliot fix(notifications): ignore alliance from dataset if allianceID is null (#37)
+967614d  2019-06-30 Loïc Leuilliot fix(killmails): ensure killed entity is properly displayed (#36)
+fc06c30  2019-06-30 Loïc Leuilliot feat(killmails): limit returned killmail to last 7 days (#35)
+```
+### 4.0.0-rc1
+```
+adaf173  2019-10-22 Loïc Leuilliot (tag: 4.0.0-rc1) refactor(core): move AbstractSeatPlugin from services to seat package (#39)
+18f8eab  2019-10-16 Loïc LEUILLIOT fix(deps): upgrade notifications group card
+5be053a  2019-10-16 Loïc LEUILLIOT fix(deps): upgrade notifications groups list
+94c303e  2019-10-16 Loïc LEUILLIOT fix(deps): upgrade personal notifications
+4ea8a93  2019-10-16 Loïc LEUILLIOT fix(deps): upgrade integrations slack form
+c82f8db  2019-10-16 Loïc LEUILLIOT fix(deps): upgrade integrations mail form
+dbc5b98  2019-10-16 Loïc LEUILLIOT fix(deps): upgrade integrations layout
+eae69fa  2019-10-11 Loïc LEUILLIOT fix(deps): update font-awesome icons to v5
+bcbe4b3  2019-10-10 Loïc LEUILLIOT fix(deps): update resources directory structure according L5.7
+5487823  2019-10-10 Loïc LEUILLIOT fix(deps): add slack notification channel
+445a0c8  2019-10-10 Loïc LEUILLIOT fix(deps): replace str_ and arr_ helpers by their Classes
+4a639f3  2019-10-10 Loïc LEUILLIOT fix(deps): dev must be use as a suffix instead prefix
+73372cd  2019-10-10 Loïc LEUILLIOT chore(deps): downgrade stability to dev version
+84aec36  2019-10-10 Loïc LEUILLIOT chore(deps): update dependencies to Laravel 6.x
+```
+### 4.0.0-rc2
+```
+c2c3674  2019-12-01 Loïc LEUILLIOT (tag: 4.0.0-rc2) refactor(acl): move permissions to sub-directory
+fafbc6e  2019-11-16 Loïc LEUILLIOT fix(deps): update php minimum version to 7.3
+```
+### 4.0.0-rc3
+```
+d77a43c  2020-02-09 Loïc LEUILLIOT (tag: 4.0.0-rc3) style: clean code
+26d7f4f  2020-02-09 Loïc LEUILLIOT refactor: simplify moon notifications
+06bb292  2020-02-09 Loïc LEUILLIOT refactor: remove deprecated alert command
+4fb179a  2020-02-09 Loïc LEUILLIOT refactor: remove not implemented notifications
+91b2b5a  2020-02-09 Loïc LEUILLIOT style(ci): apply some StyleCI change requests
+17e99d1  2020-02-09 Loïc LEUILLIOT refactor: switch to datatable structure and improve alerts selection UI
+aca3082  2020-02-09 Loïc LEUILLIOT refactor: remove the unused type field
+1c9855c  2020-02-02 Loïc LEUILLIOT refactor(ui): replace old name by label
+44a53fc  2020-02-02 Loïc LEUILLIOT refactor: complete handlers updates
+4085257  2020-01-31 Loïc LEUILLIOT refactor: introduce some flavour names
+4d00a74  2020-01-31 Loïc LEUILLIOT refactor: ignore notifications older than 60min
+35bca77  2020-01-31 Loïc LEUILLIOT fix: use proper path to discover notification handlers
+386697e  2020-01-31 Loïc LEUILLIOT refactor: add more structure notifications
+498c34b  2020-01-30 Loïc LEUILLIOT refactor: add support for MoonMiningExtractionStarted
+2aff975  2020-01-27 Loïc LEUILLIOT refactor: implement new notifications handlers
+a874367  2020-01-26 Loïc LEUILLIOT refactor: switch character notification handler to config
+70bb427  2020-01-26 Loïc LEUILLIOT refactor(killmails): use killmail detail observer
+1bd7190  2020-01-26 Loïc LEUILLIOT style(ci): apply StyleCI changes requests
+a59ca07  2020-01-26 Loïc LEUILLIOT refactor(notifications): exploit observer to notify
+69671dc  2020-01-26 Loïc LEUILLIOT fix(deps): use Arr class instead deprecated helper
+991b57e  2020-01-26 Loïc LEUILLIOT fix(ui): use web views to render entities properly
+b48cb40  2020-01-26 Loïc LEUILLIOT ci(styleci): remove alpha_ordered_imports
+633fe19  2020-01-26 Loïc LEUILLIOT ci(styleci): remove length_ordered_imports
 ```
