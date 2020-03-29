@@ -175,7 +175,164 @@ aa138a7  2017-01-02 Leon Jacobs Add StyleCI Configuration
 ```
 ### 2.0.4
 ```
-8d09f93  2017-01-26 Leon Jacobs (HEAD -> 2.x, tag: 2.0.4, origin/master, origin/HEAD, origin/2.x, master) Version Bump
+8d09f93  2017-01-26 Leon Jacobs (tag: 2.0.4) Version Bump
 d4d1160  2017-01-25 mrurb   Fixed UpdateSde not using port (#3)
 a9a25d9  2017-01-20 Leon Jacobs Add codeclimate configuration
+```
+### 3.0.0-beta1
+```
+d9395d8  2018-04-29 Leon Jacobs (tag: 3.0.0-beta1) Upgrade packages and version 3.0.0-beta1.
+ed64b5d  2018-04-29 Leon Jacobs Apply fixes from StyleCI (#19)
+1a35941  2018-04-29 Leon Jacobs Indentation fixes.
+38b4eba  2018-04-29 Leon Jacobs Fix namespace name to be PSR-4 complaint.
+a0ecad0  2018-04-29 Leon Jacobs Fix annotator warnings.
+568ce66  2018-04-29 Loïc LEUILLIOT add market prices jobs to public update command (eveseat-mining-ledger) (#17)
+1a97575  2018-04-28 Loïc LEUILLIOT pruning chat channel system according to CCP state (#18)
+0864380  2018-04-20 Loïc LEUILLIOT Seat3 alliance jobs (#16)
+df72726  2018-04-18 Loïc LEUILLIOT queue name resolver job after affiliation one (#15)
+4cca813  2018-04-17 Leon Jacobs Remove unused class.
+ec5f9b3  2018-04-17 Leon Jacobs Update cache clearing command to clear Eseye caches.
+b23bf8e  2018-04-17 Leon Jacobs Apply fixes from StyleCI (#14)
+55240a9  2018-04-15 Leon Jacobs Remove checkForOptionalParameter() as coalesce is sufficient.
+e0a4b93  2018-04-15 Herpaderp Aldent Accept character_id as parameter for esi:update:characters (#12)
+40f1df9  2018-04-02 Leon Jacobs Restore the queue status command.
+4042351  2018-04-02 Leon Jacobs Add eve server status command and cleanup old commands.
+b9fa044  2018-04-02 Leon Jacobs Update diagnose command with Eseye Cache dir and ESI ping.
+131dbe2  2018-04-01 Loïc LEUILLIOT fix removed class call and update with the kept class (#11)
+448f9db  2018-02-17 Leon Jacobs Remove unnecessary constructor.
+3542053  2018-02-17 Loïc LEUILLIOT Add new updaters. (#10)
+fd71f56  2018-02-03 Leon Jacobs Specify an ID for the admin login generator.
+79d381b  2018-01-26 Leon Jacobs Add corporation jobs dispatcher command.
+1e6323b  2018-01-26 Leon Jacobs Fix EsiJobMakeCommand namespace
+a7fb297  2018-01-26 Loïc LEUILLIOT Add a marvealous class builder for job (#7)
+85bbebb  2018-01-14 Leon Jacobs Remove more older queue code and update queue status command.
+eac414f  2018-01-14 Leon Jacobs Add ESI updater commands.
+d243c7d  2018-01-14 Leon Jacobs Remove XML API updater commands
+bfc84ed  2017-12-21 Leon Jacobs Add seat:admin:login command to generate admin login URLs.
+```
+### 3.0.0-beta2
+```
+633d0c9  2018-05-02 Leon Jacobs (tag: 3.0.0-beta2) v3.0.0-beta2
+e2415bc  2018-05-01 Leon Jacobs Allow for a character_id to be set for corporation updates.
+```
+### 3.0.0-beta3
+```
+c3d4024  2018-05-07 Leon Jacobs (tag: 3.0.0-beta3) v3.0.0-beta3
+8169d84  2018-05-07 Leon Jacobs Fix analytics.
+d111531  2018-05-06 Leon Jacobs Update admin login generator command.
+cc80587  2018-05-06 Leon Jacobs Update admin login generator.
+d1e2a08  2018-05-04 Loïc LEUILLIOT Add sovereignty (#20)
+```
+### 3.0.0-beta4
+```
+c0b953d  2018-05-10 Leon Jacobs (tag: 3.0.0-beta4) v3.0.0-beta4
+680a1b2  2018-05-10 Loïc LEUILLIOT Uniformising commands (#21)
+```
+### 3.0.0-beta5
+```
+510bb03  2018-05-16 Leon Jacobs (tag: 3.0.0-beta5) v3.0.0-beta5
+d1ced67  2018-05-15 Leon Jacobs Apply fixes from StyleCI (#22)
+7210750  2018-05-15 Leon Jacobs Rename method.
+8601865  2018-05-15 Leon Jacobs Refactor to a command bus class.
+```
+### 3.0.0-beta6
+```
+3aec4b6  2018-05-18 Leon Jacobs (tag: 3.0.0-beta6) v3.0.0-beta6
+fc7f8f3  2018-05-17 Loïc LEUILLIOT alliance info is now dispatched at end of alliance with dedicated job (#23)
+```
+### 3.0.0-beta7
+```
+3ad7ab2  2018-05-20 Leon Jacobs (tag: 3.0.0-beta7) v3.0.0-beta7
+75e0e70  2018-05-20 Loïc LEUILLIOT fix admin login command related to web#15 modifications (#24)
+```
+### 3.0.0-beta8
+```
+dd94882  2018-05-24 Leon Jacobs (tag: 3.0.0-beta8) v3.0.0-beta8
+9c56b7c  2018-05-24 Loïc LEUILLIOT fix diagnose command on laravel.log (#26)
+f55513e  2018-05-23 Loïc LEUILLIOT add missing Pocos jobs into new corporation job dispatcher (#25)
+```
+### 3.0.0-beta9
+```
+10a1f81  2018-05-27 Leon Jacobs (tag: 3.0.0-beta9) v3.0.0-beta9
+4521706  2018-05-27 Leon Jacobs Add maintenance job dispatcher.
+fc1c274  2018-05-27 Leon Jacobs Apply fixes from StyleCI (#28)
+96b9899  2018-05-27 Leon Jacobs Add esi status updater command.
+```
+### 3.0.0-beta10
+```
+15c1f87  2018-05-27 Leon Jacobs (tag: 3.0.0-beta10) v3.0.0-beta10
+2fd4efa  2018-05-27 Leon Jacobs Add maintenence command file.
+```
+### 3.0.0-beta11
+```
+0f57e68  2018-05-31 Leon Jacobs (tag: 3.0.0-beta11) v3.0.0-beta11
+901e5b2  2018-05-31 Leon Jacobs Style fixes.
+efd4124  2018-05-31 Joe Jenniges Diagnose command, allow checking of redis via socket connection (#27)
+c0ab432  2018-05-27 Leon Jacobs Apply fixes from StyleCI (#29)
+```
+### 3.0.0
+```
+9ec1618  2018-06-16 Leon Jacobs (tag: 3.0.0) v3.0.0 🎉
+```
+### 3.0.1
+```
+38ff110  2018-06-30 Leon Jacobs (tag: 3.0.1) v3.0.1
+d0b2fc2  2018-06-30 Leon Jacobs Fix style.
+2a6c726  2018-06-30 Leon Jacobs Remove deprecated outposts updater.
+```
+### 3.0.2
+```
+61a62ec  2018-08-20 Leon Jacobs (tag: 3.0.2) v3.0.2
+c8bfc11  2018-08-17 Loïc Leuilliot fix(contacts): Add missing corporation contact labels job to queue candidate (#30)
+```
+### 3.0.3
+```
+6e217d3  2019-01-13 Loïc LEUILLIOT (tag: 3.0.3) build(core): v3.0.3
+b97cbfe  2019-01-07 Loïc Leuilliot feat(versions): Implement new version management for Console package (#32)
+```
+### 3.0.4
+```
+38131af  2019-03-23 Loïc LEUILLIOT (tag: 3.0.4) build(core): v3.0.4
+9661259  2019-02-22 Herpaderp Aldent Introduce public corporation history updater (#34)
+e16de26  2019-02-19 Herpaderp Aldent Update `character_info` table for characters without `refresh_token` (#33)
+5ed01a9  2019-02-18 Leon Jacobs Apply fixes from StyleCI (#36)
+```
+### 3.0.5
+```
+16a89d0  2019-05-20 Loïc LEUILLIOT (tag: 3.0.5) build(core): v3.0.5
+e862254  2019-05-19 Loïc Leuilliot fix(jobs): use proper job into assets pipe in order to collect assets Locations (#37)
+```
+### 4.0.0-rc1
+```
+cea5c42  2019-10-31 Loïc LEUILLIOT (tag: 4.0.0-rc1) refactor(mails): reduce mail module complexity
+fccf870  2019-10-24 Loïc LEUILLIOT fix(acl): add global scope on superuser permission
+711b97a  2019-10-22 Loïc Leuilliot refactor(core): move AbstractSeatPlugin from services to seat package (#39)
+48567ae  2019-10-15 Loïc LEUILLIOT fix(insurances): add missing jobs in public command
+8ecaf51  2019-10-10 Loïc LEUILLIOT fix(deps): replace str_ and arr_ helpers by their Classes
+46a944c  2019-10-10 Loïc LEUILLIOT fix(deps): dev must be use as a suffix instead prefix
+df35614  2019-10-10 Loïc LEUILLIOT chore(deps): downgrade stability to dev version
+b778aea  2019-10-10 Loïc LEUILLIOT chore(deps): update dependencies to Laravel 6.x
+```
+### 4.0.0-rc2
+```
+85177c3  2019-11-16 Loïc LEUILLIOT (tag: 4.0.0-rc2) fix(deps): update php minimum version to 7.3
+26c5076  2019-11-16 Loïc LEUILLIOT ci(styleci): remove length_ordered_imports from disabled check
+39e2776  2019-11-16 Loïc LEUILLIOT refactor(acl): drop Group class and use an unique user bucket
+```
+### 4.0.0-rc3
+```
+603da3f  2020-02-09 Loïc LEUILLIOT (tag: 4.0.0-rc3) refactor: move schedule seeder from services repo
+0f97875  2020-02-02 Loïc LEUILLIOT style(ci): apply StyleCI changes requests
+14cf332  2020-02-02 Loïc LEUILLIOT refactor(commands): use dedicated notifications command
+a25acc4  2020-01-12 Loïc LEUILLIOT refactor: use new eve:update:status class namespace
+bec51b0  2020-01-12 Loïc LEUILLIOT refactor(jobs): split universe structure job
+bcf634a  2020-01-12 Loïc LEUILLIOT fix(contract): use proper relation between token and affiliation
+60966c0  2020-01-12 Loïc LEUILLIOT refactor: improve commands consistency
+6dfa398  2020-01-12 Loïc LEUILLIOT style: fix typo in documentation block
+2969159  2020-01-12 Loïc LEUILLIOT refactor(jobs): dispatch analytics jobs to default queue
+1580158  2020-01-12 Loïc LEUILLIOT style: simplifying dispatch typo
+b9f5778  2020-01-12 Loïc LEUILLIOT fix(contracts): add missing contract_id into contract update command
+7b816ce  2020-01-11 Loïc LEUILLIOT style: apply styleci change requests
+53d0167  2020-01-11 Loïc LEUILLIOT feat: add new alliances, contracts and KM commands
+80b76dc  2020-01-11 Loïc LEUILLIOT refactor: rewrite commands according to eveapi changes
 ```
