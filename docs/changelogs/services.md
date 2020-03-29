@@ -354,9 +354,290 @@ eb02e76  2017-07-02 Loïc LEUILLIOT avoid null exception on assetlist_locations 
 ```
 ### 2.0.11
 ```
-4658230  2017-08-12 Leon Jacobs (tag: 2.0.11, origin/master, origin/HEAD, master) Version Bump
+4658230  2017-08-12 Leon Jacobs (tag: 2.0.11) Version Bump
 d1bc5b3  2017-08-12 Leon Jacobs Remove an unused variable and style fixes.
 654e4da  2017-08-12 Loïc LEUILLIOT add ACL filters on dashboard stats (#25)
 a65f4a4  2017-08-12 Leon Jacobs Style fixes
 f4e1c22  2017-08-12 Loïc LEUILLIOT optimise top mail query by dropping join table and exploit getAffiliationMap in order to retrieve the user character IDs (#24)
+```
+### 2.0.12
+```
+01a90cc  2017-10-25 Leon Jacobs (tag: 2.0.12) Version Bump.
+294f2cb  2017-10-25 Leon Jacobs Update account status correctly.
+```
+### 2.0.13
+```
+86c8bcc  2018-03-17 Loïc LEUILLIOT (tag: 2.0.13) hotfix - add missing ESS amount to the corporation bounty ledger (#38)
+```
+### 3.0.0-beta1
+```
+128de35  2018-04-29 Leon Jacobs (tag: 3.0.0-beta1) Upgrade packages and version 3.0.0-beta1
+d5abfed  2018-04-29 Leon Jacobs Apply fixes from StyleCI (#48)
+a24eeb1  2018-04-29 Leon Jacobs Indentation fixes.
+ce16ce3  2018-04-29 Leon Jacobs Fix annotator warnings.
+0583f55  2018-04-29 Leon Jacobs Formatting and style fixes.
+73c92bc  2018-04-29 Loïc LEUILLIOT moving queries to service package (#47)
+8002684  2018-04-29 Leon Jacobs Fix docstring.
+538c27e  2018-04-28 Leon Jacobs Update corporation asset repository.
+9ec579d  2018-04-28 Leon Jacobs Use associatedCharacterIds() helper.
+47ec800  2018-04-28 Leon Jacobs Include refresh tokens.
+a39ce84  2018-04-28 Loïc LEUILLIOT pruning chat channel system according to CCP state (#46)
+3dcf979  2018-04-28 Loïc LEUILLIOT upgrade corporation contact in order to implement labels (#45)
+e7fbe1f  2018-04-18 Loïc LEUILLIOT update intel for ESI models (#44)
+f8b1ea5  2018-04-17 Leon Jacobs Apply fixes from StyleCI (#42)
+b44c87f  2018-04-17 Herpaderp Aldent Add PI as default SSO scope (#41)
+c191653  2018-04-15 Leon Jacobs Update code formatting.
+31a5376  2018-04-15 Loïc LEUILLIOT Issue254 (#40)
+2c805ce  2018-04-02 Leon Jacobs Update scheduler with ESI jobs.
+282d343  2018-04-02 Leon Jacobs Remove people repository.
+60b05cd  2018-04-02 Leon Jacobs Include Horizon metrics jobs.
+657ab92  2018-03-31 Leon Jacobs Update Security trait for ESI models.
+33b8e39  2018-03-31 Leon Jacobs Update services for mail and corp contacts.
+2fce3fb  2018-03-18 Leon Jacobs Remove unused defaults.
+0ea54f4  2018-03-18 Leon Jacobs Add sso_scopes global configuration.
+6c6de4f  2018-03-18 Leon Jacobs Json encode/decode settings by default.
+cfd2ebe  2018-03-18 Leon Jacobs Remove keys eager loading.
+e483d9a  2018-03-18 Leon Jacobs Remove nested Trait usage from Corporation repository.
+b1092ec  2018-03-18 Leon Jacobs Minor formatting fixes.
+adee5b0  2018-03-18 Loïc LEUILLIOT Corporation 3.x (#39)
+a5df115  2018-03-02 Loïc LEUILLIOT Corporation 3.x (#36)
+0eb76a2  2018-02-17 Leon Jacobs Fix character list query to allow super admins to see all.
+410ea9b  2018-02-17 Leon Jacobs Remove unnecessary return.
+17eb41c  2018-02-17 Leon Jacobs Fix query debugger trying to __toString() invalid values.
+d7ccf47  2018-02-17 Leon Jacobs Update getAllCharactersWithAffiliations to no longer want keys.
+7e253a6  2018-02-17 Leon Jacobs Minor style fixes.
+7142106  2018-02-17 Loïc LEUILLIOT Update of character service according to new ESI models (#35)
+555c6f8  2018-02-03 Leon Jacobs Update methods for profile view.
+b51b709  2018-01-14 Leon Jacobs Remove old repositories.
+6681ca3  2018-01-14 Leon Jacobs [WIP] Update repositores for ESI migration.
+```
+### 3.0.0-beta2
+```
+9bf27d0  2018-04-29 Leon Jacobs (tag: 3.0.0-beta2) v3.0.0-beta2
+```
+### 3.0.0-beta3
+```
+57067dd  2018-04-29 Leon Jacobs (tag: 3.0.0-beta3) v3.0.0-beta3
+323a07c  2018-04-29 Leon Jacobs Add missing returns.
+```
+### 3.0.0-beta4
+```
+7c065ad  2018-05-02 Leon Jacobs (tag: 3.0.0-beta4) v3.0.0-beta4
+643288d  2018-05-02 Leon Jacobs Rename numberToRomanRepresentation to number_roman and style fixes.
+42b9605  2018-05-02 Herpaderp Aldent Enabler: Extend PI View with Extractors (#49)
+c3b4010  2018-04-29 Leon Jacobs Fix return type for getCharacterJournalStandingsWithProfile.
+a910847  2018-04-29 Leon Jacobs Remove method return type.
+```
+### 3.0.0-beta5
+```
+280a14a  2018-05-07 Leon Jacobs (tag: 3.0.0-beta5) v3.0.0-beta5
+883fedc  2018-05-07 Leon Jacobs Give Analytics job just one try.
+bb74a44  2018-05-06 Leon Jacobs Add groups method.
+d188fdd  2018-05-06 Leon Jacobs Fix methods after user <-> group association changes.
+```
+### 3.0.0-beta6
+```
+7b01ae6  2018-05-08 Leon Jacobs (tag: 3.0.0-beta6) v3.0.0-beta6
+7bb0f78  2018-05-08 Loïc LEUILLIOT fix route and user/group relationships on user layouts (#51)
+701267f  2018-05-08 Loïc LEUILLIOT faction are provided by ccp on their cdn on alliance route - except drifter :/ (#50)
+```
+### 3.0.0-beta7
+```
+0d3b09c  2018-05-16 Leon Jacobs (tag: 3.0.0-beta7) v3.0.0-beta7
+e9b7c4c  2018-05-15 Leon Jacobs Add the default for number of workers.
+a7e3c26  2018-05-15 Leon Jacobs Only show unique emails in the timeline.
+```
+### 3.0.0-beta8
+```
+dcd4b69  2018-05-19 Leon Jacobs (tag: 3.0.0-beta8) v3.0.0-beta8
+99a5162  2018-05-18 Leon Jacobs Fix settings cache prefixes to be tied to group ids.
+e62d320  2018-05-18 Leon Jacobs Apply fixes from StyleCI (#53)
+f0d195d  2018-05-18 Leon Jacobs Show stats for all users in group.
+d4bc7a9  2018-05-18 Leon Jacobs Apply settings to a group rather than a specific user.
+```
+### 3.0.0-beta9
+```
+4482cf3  2018-05-20 Leon Jacobs (tag: 3.0.0-beta9) v3.0.0-beta9
+671844f  2018-05-20 Leon Jacobs Update repository.
+d9be804  2018-05-20 Leon Jacobs Style fix.
+63dc301  2018-05-20 Leon Jacobs Add structures repository.
+7e4a27b  2018-05-20 Leon Jacobs Add `alerts:run` to the schedule.
+```
+### 3.0.0-beta10
+```
+2b7d6b2  2018-05-23 Leon Jacobs (tag: 3.0.0-beta10) v3.0.0-beta10
+0aeb7f3  2018-05-23 Leon Jacobs Fix setting set/get affected group id calculation.
+9d506e2  2018-05-23 Loïc LEUILLIOT fix minor ACL issue related to corporation listing (#54)
+```
+### 3.0.0-beta11
+```
+2624b5b  2018-05-24 Leon Jacobs (tag: 3.0.0-beta11) v3.0.0-beta11
+911ac7a  2018-05-24 Leon Jacobs Fix settings relationship.
+```
+### 3.0.0-beta12
+```
+95df998  2018-05-27 Leon Jacobs (tag: 3.0.0-beta12) v3.0.0-beta12
+dc175a1  2018-05-27 Leon Jacobs Add missing .
+fb4f0e1  2018-05-27 Leon Jacobs Add maintenance job and schedule.
+f25b81b  2018-05-27 Leon Jacobs Add cleanup_data option.
+9ba63a3  2018-05-27 Leon Jacobs Add esi status job schedule and repository.
+```
+### 3.0.0-beta13
+```
+dab8f58  2018-05-30 Leon Jacobs (tag: 3.0.0-beta13) v3.0.0-beta13
+494fb0c  2018-05-29 Leon Jacobs Remove extra newline.
+db33d22  2018-05-29 Leon Jacobs Add character fittings repository.
+bebea11  2018-05-29 Leon Jacobs Drop the default # of workers to spawn.
+```
+### 3.0.0-beta14
+```
+4a5e2b6  2018-06-13 Leon Jacobs (tag: 3.0.0-beta14) v3.0.0-beta14
+cc5c160  2018-06-13 Leon Jacobs Cleanup empty groups.
+2ea8bcb  2018-06-09 Leon Jacobs Add a daily queue restart job to help with some leaks.
+b4bd180  2018-06-09 Loïc LEUILLIOT fix search issue due to user/group refactoring (#56)
+2633f6d  2018-06-09 Loïc LEUILLIOT Fix update sde schedule command (#55)
+```
+### 3.0.0
+```
+33d0d7d  2018-06-16 Leon Jacobs (tag: 3.0.0) v3.0.0 🎉
+f506590  2018-06-16 Leon Jacobs Remove unused class.
+1af5a97  2018-06-16 Leon Jacobs Update repository to paginate standings.
+```
+### 3.0.1
+```
+2b00724  2018-06-30 Leon Jacobs (tag: 3.0.1) v3.0.1
+d980b88  2018-06-30 Leon Jacobs Remove outposts scope.
+ced5016  2018-06-30 Leon Jacobs Add missing comment.
+2da79d6  2018-06-30 Herpaderp Aldent CharacterMiningTotal ISK (#58)
+4de3c9a  2018-06-30 Loïc LEUILLIOT fix PI extractors query (#57)
+```
+### 3.0.2
+```
+aa57926  2018-08-20 Leon Jacobs (tag: 3.0.2) v3.0.2
+4d1fc62  2018-08-17 Loïc Leuilliot fix(search): Add missing character affiliation filters on mail search (#61)
+deb1c96  2018-08-17 Loïc Leuilliot fix(industry jobs): Fix location field (#60)
+fd85db8  2018-08-17 Loïc Leuilliot fix(corporation assets): Fix asset top level listing (#59)
+```
+### 3.0.3
+```
+6155fd9  2018-10-04 Leon Jacobs (tag: 3.0.3) v3.0.3
+6868841  2018-09-16 Herpaderp Aldent feat(prices): Lock mining values
+```
+### 3.0.4
+```
+3335171  2018-12-08 Loïc LEUILLIOT (tag: 3.0.4) build(core): v3.0.4
+cad123e  2018-12-08 Loïc LEUILLIOT fix(corporation): Update corporation killmails according to partials update
+2a71dc3  2018-12-08 Loïc LEUILLIOT fix(corporation): Update corporation journal according to partials update
+6fef491  2018-12-08 Herpaderp Aldent [feat](market): Update market tab and refactor partials (#74)
+ffba218  2018-12-08 Herpaderp Aldent [feat](mails): Add sender to relation eager load
+4bb2032  2018-12-08 Herpaderp Aldent [feat](transactions): Move character transactions to async loading
+979d245  2018-12-06 Herpaderp Aldent [feat](core): Use new migration mechanic
+6b8417f  2018-12-06 Herpaderp Aldent [feat](killmails): Use ORM relationship in order to avoid raw JOIN
+9f78d66  2018-12-06 Herpaderp Aldent [feat](wallet): Use ORM relationship to link parties
+e913402  2018-12-06 Herpaderp Aldent [feat](contracts): Move to asynchronous loading
+26817c9  2018-12-06 Herpaderp Aldent [feat](contacts): Move to asynchronous loading
+ad8cc1e  2018-12-06 Herpaderp Aldent [feat](assets): Move to asynchronous loading
+22d7612  2018-12-06 Herpaderp Aldent [feat](users): Move to asynchronous loading
+817483c  2018-10-28 Loïc Leuilliot fix(mining ledger): Fix loading time issue due to prices eager-load (#65)
+77b52bb  2018-10-09 Herpaderp Aldent [fix](prices) Fix historical price table field size
+```
+### 3.0.5
+```
+3646324  2019-01-13 Loïc LEUILLIOT (tag: 3.0.5) build(core): v3.0.5
+0fc1e61  2019-01-12 Herpaderp Aldent some minor refactoring and testing of https://github.com/eveseat/seat/issues/453 (#84)
+435d3bb  2019-01-12 Loïc Leuilliot feat(extractions): Provide data related to corporation extraction (#85)
+f57f641  2019-01-07 Herpaderp Aldent feat(character): Move intel to asynchronous requests and improve UI
+e05b114  2019-01-07 Loïc Leuilliot feat(versions): Switch package versions display to generic list
+226b1c5  2019-01-06 Herpaderp Aldent Refactor view: (#83)
+b00244b  2019-01-06 Herpaderp Aldent Refactor corporation journal to work as in game. (#82)
+216e8af  2019-01-06 Herpaderp Aldent Some refactoring in the service and view to be consistant with character. (#81)
+697b5a3  2019-01-06 Herpaderp Aldent Corporation tracking (#78)
+1ff335a  2018-12-15 Loïc Leuilliot fix(dashboard): Avoid eager load usage on mining stats leading to timeout (#68)
+```
+### 3.0.6
+```
+8956254  2019-03-23 Loïc LEUILLIOT (tag: 3.0.6) build(core): v3.0.6
+f259657  2019-03-23 Herpaderp Aldent feat(datatables): Add a generic filter for universe names (#86)
+96f04d1  2019-03-10 Herpaderp Aldent feat(mining): Switch table to server-side rendering (#89)
+09c462c  2019-03-10 Peter Petermann fix(search): Correct asset search query to use proper array (#90)
+64d579e  2019-02-18 Leon Jacobs Apply fixes from StyleCI (#88)
+```
+### 3.0.7
+```
+7207b51  2019-05-15 Loïc LEUILLIOT (tag: 3.0.7) build(core): v3.0.7
+2654b97  2019-05-15 Loïc Leuilliot fix(industry): improve performance related to industry jobs rendering (#93)
+5ceaae5  2019-05-11 Loïc Leuilliot fix(standings): allow standings filter to be nullable (#92)
+```
+### 3.0.8
+```
+c017887  2019-05-20 Loïc LEUILLIOT (tag: 3.0.8) build(core): v3.0.8
+28db4de  2019-05-20 Loïc Leuilliot fix(plugin): return the proper github page (#94)
+```
+### 3.0.9
+```
+f4aff88  2019-08-13 Loïc LEUILLIOT (tag: 3.0.9) build(core): v3.0.9
+b63e362  2019-08-09 Loïc Leuilliot refactor(titles): use relationship instead atomic table (#96)
+29d76cc  2019-06-14 Loïc Leuilliot feat(core): freeze helper plugin methods (#95)
+```
+### 3.0.10
+```
+2419632  2019-10-04 Loïc LEUILLIOT (tag: 3.0.10) build(core): v3.0.10
+f3b5e3f  2019-10-04 Loïc Leuilliot fix(titles): reduce abnormal loop on corp titles page (#99)
+b075df2  2019-08-24 Loïc Leuilliot fix(image): address a logic issue related to invType maximum size (#97)
+```
+### 3.0.11
+```
+27b3323  2019-10-28 Loïc LEUILLIOT (tag: 3.0.11, seat/3.0.x, 3.0.x) build(core): v3.0.11
+57bf9ad  2019-10-28 Loïc LEUILLIOT fix(image): lock retina size to 64px for invType
+```
+### 4.0.0-rc1
+```
+0f1ddab  2019-10-31 Loïc LEUILLIOT (tag: 4.0.0-rc1) refactor(mails): reduce duplicated entries on mails module
+ed2c7cc  2019-10-30 Loïc LEUILLIOT fix(intel): ensure fields returned by top queries are properly grouped
+5cc8dd7  2019-10-29 Loïc LEUILLIOT fix(image): use proper DNS to call eve image server
+86c81fb  2019-10-28 Loïc LEUILLIOT fix(image): lock retina size to 64px for invType
+99615aa  2019-10-28 Loïc LEUILLIOT style: apply styleCI change requests
+a2b1533  2019-10-28 Loïc LEUILLIOT refactor(search): simplifying search queries using eloquent
+cc51f11  2019-10-28 Loïc LEUILLIOT refactor(acl): use scope to determine authorized char and corp
+1eed312  2019-10-24 Loïc LEUILLIOT fix(acl): remove vanilla affiliation system
+0cf63c1  2019-10-22 Loïc LEUILLIOT fix(ledger): use proper party to render corp wallet ledger
+9fb5ac0  2019-10-22 Loïc Leuilliot feat(corporation): add new categories to wallet ledger (#102)
+2b74476  2019-10-22 Loïc Leuilliot refactor(core): move AbstractSeatPlugin from services to seat package (#101)
+29e4566  2019-10-17 Loïc Leuilliot Merge pull request #100 from warlof/4.0.x
+4ff7354  2019-10-17 Loïc LEUILLIOT fix(ledger): fix group by query in order to return PI taxes
+c2004dd  2019-10-16 Loïc LEUILLIOT fix(ledger): fix group by query in order to return bounties
+cbed82b  2019-10-15 Loïc LEUILLIOT feat(relationship): improve performances regarding roles rendering
+bd2e5c6  2019-10-10 Loïc LEUILLIOT fix(mails): fix group by query in order to return mail timeline
+1e7291a  2019-10-10 Loïc LEUILLIOT fix(deps): dev must be use as a suffix instead prefix
+29d95a7  2019-10-10 Loïc LEUILLIOT chore(deps): downgrade stability to dev version
+b4f74b9  2019-10-10 Loïc LEUILLIOT chore(deps): update dependencies to Laravel 6.x
+c83ecca  2019-10-06 Loïc Leuilliot (seat/master, master) refactor(datatable): increase Yajra/Datatables usage (#98)
+```
+### 4.0.0-rc2
+```
+aeb88e0  2019-11-16 Loïc LEUILLIOT (tag: 4.0.0-rc2) fix(deps): update php minimum version to 7.3
+e27af33  2019-11-16 Loïc LEUILLIOT refactor(acl): drop Group class and use an unique user bucket
+a7e1e02  2019-11-11 Loïc LEUILLIOT style: apply styleci changes request
+1332a0b  2019-11-11 Loïc LEUILLIOT ci(styleci): remove rules from preset
+fab14a8  2019-11-11 Loïc LEUILLIOT feat(parsers): add generic parsers to handle EVE reports
+ed4ee0d  2019-11-11 Loïc LEUILLIOT feat(ui): use new EVE image server signatures
+```
+### 4.0.0-rc3
+```
+2524256  2020-02-09 Loïc LEUILLIOT (tag: 4.0.0-rc3) refactor: move schedule seeder to console
+2e79c68  2020-02-06 Loïc LEUILLIOT fix(reports): allow dash character in regex group
+cfc8caf  2020-01-12 Loïc LEUILLIOT refactor: update commands seeder
+5605bd4  2020-01-12 Loïc LEUILLIOT fix(intel): fix mail stats query according to merge
+467e6ee  2020-01-10 Loïc LEUILLIOT refactor(killmails): remove character_killmail
+389cd4e  2020-01-04 Loïc LEUILLIOT feat(auth): switch SSO to v2 endpoints
+```
+### 4.0.0-rc4
+```
+d95d46f  2020-03-17 Loïc Leuilliot (tag: 4.0.0-rc4) ci(styleci): update config for preset changes
+c24a5c8  2020-03-15 Loïc LEUILLIOT ci(styleci): update configuration according to laravel preset
+dc73dd6  2020-03-15 Ben Thompson refactor(intel): refactor the queries for intel to remove duplicates and add missing variable from (#119)
+8c29afd  2020-02-26 Ben Thompson fix(membertracking): Update Corporation Members repository to use updated model relations
+d1ce6a2  2020-02-16 Ben Thompson fix(search): workaround for eloquent column name collision issue
+00eaddc  2020-02-16 Ben Thompson fix(search): Update corporation and alliance relation through affiliation model
+0751b0d  2020-02-14 Justin Mercer fix(repositories): Change corporation relationship to affiliation.corporation
 ```
