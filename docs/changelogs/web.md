@@ -662,3 +662,909 @@ ac49aa9  2017-08-12 Loïc LEUILLIOT fix merge issue due to conflicting dom prope
 4ab49a2  2017-09-17 Loïc LEUILLIOT fix hasrole method by calling magic property instead method. (#90)
 6183416  2017-09-16 Loïc LEUILLIOT add documentation link to supervisor integration (#89)
 ```
+### 2.0.19
+```
+7ea9e99  2017-10-25 Leon Jacobs (tag: 2.0.19) Version Bump.
+58a04ad  2017-10-25 Leon Jacobs Apply fixes from StyleCI (#94)
+1abb402  2017-10-25 Leon Jacobs Fix 'disabled account' behaviour.
+9aaa93d  2017-10-25 Leon Jacobs Revert "security hotfix which is providing a control on disabled account (#92)" (#93)
+7c72e63  2017-10-25 Loïc LEUILLIOT security hotfix which is providing a control on disabled account (#92)
+8a1e143  2017-10-25 Leon Jacobs Formatting fixes.
+262cf96  2017-10-25 Loïc LEUILLIOT security hotfix : add missing ACL from people and group feature (#91)
+```
+### 3.0.0-beta1
+```
+cfb1fda  2018-04-29 Leon Jacobs (tag: 3.0.0-beta1) Package upgrade, autodiscovery and v3.0.0-beta1 tag.
+507485a  2018-04-29 Leon Jacobs Remove legacy accessmask setting
+7eb435e  2018-04-29 Leon Jacobs Apply fixes from StyleCI (#140)
+2d411a9  2018-04-29 Leon Jacobs Indentation fixes.
+53d56c9  2018-04-29 Leon Jacobs Minor JavaScript, spelling and other annotation fixes.
+26fad1b  2018-04-29 Loïc LEUILLIOT state field has been dropped from endpoint (#139)
+05070a2  2018-04-29 Leon Jacobs Formatting and style fixes.
+6c5afaf  2018-04-29 Loïc LEUILLIOT integration eveseat-mining-ledger (#137)
+a6bc5b0  2018-04-29 Leon Jacobs Fix corp wallet journal tooltips and job counter ajax.
+7584cdb  2018-04-29 Leon Jacobs Fix type_id reference for nested assets content images.
+b5bdd3b  2018-04-29 Leon Jacobs Resolve asset hangar division names.
+aa9b15f  2018-04-28 Leon Jacobs Update Corporation assets view.
+a832b61  2018-04-28 Leon Jacobs Fix dashboard to once again show server status.
+ee64a59  2018-04-28 Leon Jacobs Provide visual aids for accounts with invalid tokens.
+5db105d  2018-04-28 Leon Jacobs Fix tooltips for killmails.
+b872439  2018-04-28 Leon Jacobs Fix tooltips.
+5db2b9d  2018-04-28 Leon Jacobs Add link to EVEO third party apps list.
+800a376  2018-04-28 Leon Jacobs Prevent accidental removal of roles from yourself.
+8ce2ffb  2018-04-28 Loïc LEUILLIOT pruning chat channel system according to CCP state (#138)
+a645387  2018-04-28 Loïc LEUILLIOT upgrade corporation contact in order to implement labels (#136)
+26cf741  2018-04-25 Loïc LEUILLIOT only grant access to a corporation with wildcard permission if corporation match ! (#135)
+9c8da61  2018-04-24 Leon Jacobs Mark new accounts as active by default.
+175954d  2018-04-24 Leon Jacobs Only process corporation roles if they exist.
+8201497  2018-04-22 Leon Jacobs Grant the `corporation.summary` role with all ingame roles.
+ef07072  2018-04-22 Leon Jacobs Grant SeAT roles based on in-game roles.
+84bdd59  2018-04-22 Leon Jacobs Improve validation.
+9062385  2018-04-22 Leon Jacobs Restore ability to toggle account status.
+5e621f2  2018-04-22 Leon Jacobs Fix online players graph.
+8bdc529  2018-04-22 Leon Jacobs Fix impersonation session data handling.
+6623b0a  2018-04-22 Leon Jacobs Apply vendor published overrides for proxies.
+cf506c1  2018-04-18 Leon Jacobs Update standings builder with Laravel 5.5 validation rule changes.
+fb09828  2018-04-18 Loïc LEUILLIOT update setting validation and drop xAPI related fields (#133)
+a3c40de  2018-04-18 Loïc LEUILLIOT update intel layouts for ESI (#132)
+fd3a3e2  2018-04-17 Leon Jacobs Apply fixes from StyleCI (#130)
+5e22915  2018-04-17 Leon Jacobs Fix profile controller view in case no scopes are available.
+7a3b0cb  2018-04-17 Loïc LEUILLIOT fix burger menu issue related to adminLTE upgrade (#129)
+664b441  2018-04-17 Loïc LEUILLIOT upgrade standing builder to ESI (#124)
+3434323  2018-04-17 Loïc LEUILLIOT improve vanilla ACL in order to allow corporation affiliation on char (#122)
+0d08acc  2018-04-16 Loïc LEUILLIOT allow route bridging between linked characters (#123)
+00374a6  2018-04-15 Leon Jacobs Remove the user quick add feature.
+e29f8f0  2018-04-15 Leon Jacobs Refactor Register event to instead dispatch update on every login.
+9cf7d84  2018-04-15 Herpaderp Aldent  Pull data for newly created users (#128)
+7abbe2b  2018-04-15 Herpaderp Aldent Align assets representation to ingame experience (#127)
+a8938a9  2018-04-15 Loïc LEUILLIOT fix employment history sort (#126)
+0bd0eeb  2018-04-15 Loïc LEUILLIOT Issue254 (#125)
+6a16212  2018-04-08 Loïc LEUILLIOT fix a typo issue which avoid summary to load on character views (#121)
+b314d17  2018-04-08 Loïc LEUILLIOT cascading email update over all linked account (#120)
+5960947  2018-04-08 Loïc LEUILLIOT Prune worker constraint and update adminLTE (#119)
+8c49d03  2018-04-02 Leon Jacobs Remove people groups. This will be replaced later.
+df48765  2018-04-01 Leon Jacobs Use current user context when getting other users in the group.
+a607545  2018-04-01 Loïc LEUILLIOT don't use lazy load which is not loading images (#118)
+634c831  2018-03-31 Leon Jacobs Fix up Corporation security views with new ESI models.
+2893e42  2018-03-31 Leon Jacobs Mograte market view to ESI model data.
+e44aae3  2018-03-31 Leon Jacobs Update corporation contacts with ESI data.
+d113819  2018-03-31 Leon Jacobs Update validation to pass for a space character since TrimStrings.
+36cd185  2018-03-31 Leon Jacobs Add associatedCharacterIds helper.
+5c391c3  2018-03-31 Leon Jacobs Update mail timeline with new ESI fields.
+1156e79  2018-03-31 Leon Jacobs Remove email warning.
+4e1d77c  2018-03-31 Leon Jacobs Fix up Access Control CRUD to match 3.x models.
+420ed20  2018-03-31 Leon Jacobs Fix up div allignment for inverse checkbox.
+6866c58  2018-03-31 Leon Jacobs Allow inverse to not be required.
+df72a5a  2018-03-18 Leon Jacobs Add link to third party app management page.
+ba4cda7  2018-03-18 Leon Jacobs Add ability for a user to see granted scopes.
+fb82eae  2018-03-18 Leon Jacobs Remove unused settings.
+0fc3554  2018-03-18 Leon Jacobs Make Sso scopes configurable to admins.
+9a27d76  2018-03-18 Loïc LEUILLIOT Corporation 3.x (#117)
+802adf0  2018-03-02 Loïc LEUILLIOT Corporation 3.x (#115)
+ed5608e  2018-02-18 Leon Jacobs Remove supervisor dependency as we are now using Horizon.
+bb7e416  2018-02-18 Loïc LEUILLIOT upgrade character contracts to ESI models (#114)
+96621b3  2018-02-17 Leon Jacobs Fix typo.
+7f4223f  2018-02-17 Leon Jacobs Resolve names for wallet journals and transactions.
+7898a95  2018-02-17 Leon Jacobs Prevent random crap in the UI from changing to #System.
+1f40593  2018-02-17 Leon Jacobs Update access checker to get characters from character_groups.
+34fd4dc  2018-02-17 Leon Jacobs Flatten array of ids to resolve.
+4bc5670  2018-02-17 Leon Jacobs Remove the count() and process ids that remain.
+538b99d  2018-02-17 Leon Jacobs Refactor and modernize the name resolution helper.
+78cd00c  2018-02-17 Leon Jacobs Fix character list view and minor refactorings.
+f7c5998  2018-02-17 Leon Jacobs Fix group -> user relationship.
+52f980a  2018-02-17 Loïc LEUILLIOT Migrate Character view to match new ESI models. (#113)
+0094101  2018-02-04 Leon Jacobs Formatting and security fixes.
+cda9b54  2018-02-04 Loïc LEUILLIOT Provide a nice character switcher for user (#97)
+0f6a54d  2018-02-03 Leon Jacobs Simplify group syncing when linking characters.
+5e7f3fd  2018-02-03 Leon Jacobs Add a property alias for character_id on a User.
+b20f1d8  2018-02-03 Leon Jacobs Handle character logins that have a changed character_owner_hash.
+1173954  2018-02-03 Leon Jacobs Remove MFA requirement from SeAT. SSO provides this for EVE.
+4d9d008  2018-02-03 Leon Jacobs Add ability to see and link new characters.
+5487630  2018-02-03 Leon Jacobs Fix profile view and remove password reset feature.
+d7549fe  2018-02-03 Leon Jacobs Fix group inheritence for existing sessions.
+6e89bc2  2018-02-03 Leon Jacobs Do *not* make id fillable.
+26b78fe  2018-02-03 Leon Jacobs [wip] SSO login flow updates for character linking.
+0d88bc0  2018-01-23 Leon Jacobs Include recent error count in queue summaries.
+4576bbd  2018-01-14 Leon Jacobs Replace queue dashboard with Horizon.
+2c75661  2018-01-14 Leon Jacobs Remove references and logic to XML API keys.
+174f70f  2017-12-28 Leon Jacobs Record access tokens and expiry on SSO login.
+1519a4a  2017-12-23 Leon Jacobs [WIP] Update SSO login to populate refresh tokens and scopes.
+ca565d5  2017-12-21 Leon Jacobs [WIP] Minor login page tweaks for SSO button.
+d47aa0b  2017-12-21 Leon Jacobs [WIP] Migrate web package to be SSO logins only.
+23231a0  2017-09-18 Leon Jacobs Update middleware registers for Laravel 5.5.
+b460d6c  2017-09-17 Leon Jacobs Backport path from eveseat/web#90
+```
+### 3.0.0-beta2
+```
+5dc4a28  2018-04-29 Leon Jacobs (tag: 3.0.0-beta2) v3.0.0-beta2
+```
+### 3.0.0-beta3
+```
+4087e7e  2018-04-29 Leon Jacobs (tag: 3.0.0-beta3) 3.0.0-beta3
+4ba46d2  2018-04-29 Leon Jacobs Add missing SecLog import.
+```
+### 3.0.0-beta4
+```
+9527b02  2018-05-02 Leon Jacobs (tag: 3.0.0-beta4) v3.0.0-beta4
+7f2bb25  2018-05-02 Loïc LEUILLIOT fix character route including initial route parameters (#142)
+efdb989  2018-05-02 Leon Jacobs Formatting fixes.
+9972fd0  2018-05-02 Herpaderp Aldent Extend PI View with Extractors (#141)
+8a2767d  2018-05-01 Leon Jacobs Fix tax rate and membercount display.
+653e05d  2018-05-01 Leon Jacobs Update corporation information on login too.
+cad5173  2018-05-01 Leon Jacobs Remove API and Import routes.
+c4681fb  2018-04-29 Leon Jacobs Make section linking to third party app access more visible.
+```
+### 3.0.0-beta5
+```
+270bcf3  2018-05-07 Loïc LEUILLIOT (tag: 3.0.0-beta5) Loadbalancing help (#149)
+94f43d7  2018-05-07 Leon Jacobs v3.0.0-beta5
+57e65d3  2018-05-07 Leon Jacobs Minor styling fixes.
+d0fe1f1  2018-05-07 Loïc LEUILLIOT Aclchecker fix (#148)
+f7b3e33  2018-05-07 Leon Jacobs Removei temporary trusted proxy override.
+7302a19  2018-05-07 Leon Jacobs Fix wallet filtering.
+2cec3e4  2018-05-07 Leon Jacobs Fix character_id reference.
+8dc06cc  2018-05-07 Loïc LEUILLIOT Corp taxes (#146)
+26e61f6  2018-05-06 Leon Jacobs Apply fixes from StyleCI (#145)
+9570831  2018-05-06 Leon Jacobs Update ACL manager to be groups aware.
+73df305  2018-05-06 Leon Jacobs Update fillable array for groups.
+8d7cfa6  2018-05-06 Leon Jacobs Remove unused imports.
+52bd000  2018-05-06 Leon Jacobs Refactor User <-> Group relationships.
+c1c86fa  2018-05-06 Leon Jacobs Check that a user is logged in first.
+e18a487  2018-05-06 Leon Jacobs Warn if SSO has not been configured yet.
+5791051  2018-05-06 Leon Jacobs Remove unused registration logic.
+cc39700  2018-05-05 Leon Jacobs Improve user cleanup on delete.
+7b44abf  2018-05-03 Loïc LEUILLIOT address eveseat/seat#277 (#144)
+```
+### 3.0.0-beta6
+```
+1948ff1  2018-05-07 Leon Jacobs (tag: 3.0.0-beta6) v3.0.0-beta6
+```
+### 3.0.0-beta7
+```
+a1ac94d  2018-05-08 Leon Jacobs (tag: 3.0.0-beta7) v3.0.0-beta7
+28b0bab  2018-05-08 Loïc LEUILLIOT fix summary group display and rollback to repository instead model (#152)
+523632c  2018-05-08 Loïc LEUILLIOT fix route and user/group relationships on user layouts (#151)
+c67e679  2018-05-08 Loïc LEUILLIOT Fix layouts (#150)
+```
+### 3.0.0-beta8
+```
+4e1f48b  2018-05-10 Leon Jacobs (tag: 3.0.0-beta8) v3.0.0-beta8
+d3ebc52  2018-05-10 Loïc LEUILLIOT more fix on user layout related to group relationship (#157)
+70310b2  2018-05-10 Loïc LEUILLIOT fix skill queue refresh according to finished date instead of queue position (#156)
+a1d3e2f  2018-05-10 Loïc LEUILLIOT fix group attached tokens (#154)
+333c195  2018-05-10 Loïc LEUILLIOT do not display skills charts for admin user (#153)
+```
+### 3.0.0-beta9
+```
+d84d83b  2018-05-11 Leon Jacobs (tag: 3.0.0-beta9) v3.0.0-beta9
+996a83e  2018-05-11 Loïc LEUILLIOT Fix corpacl issue (#158)
+d1abdc5  2018-05-11 Loïc LEUILLIOT fix doc link to the new amazing documentation ♥ (#155)
+```
+### 3.0.0-beta10
+```
+45e77ce  2018-05-16 Leon Jacobs (tag: 3.0.0-beta10) v3.0.0-beta10
+f7b88fe  2018-05-16 Leon Jacobs [WIP] Allow jobs to be manually and contextually dispatched.
+bb05dd6  2018-05-15 Leon Jacobs Dispatch update jobs with high priority on login.
+491cdcb  2018-05-15 Leon Jacobs Add ability to configure worker count with the web UI.
+cdc5b71  2018-05-15 Ben     Fix for offline POS (#161)
+9189b1a  2018-05-15 Leon Jacobs Remove some defunct services.
+8a34135  2018-05-15 Leon Jacobs Fix starbase views when tower has no fuel.
+08b7251  2018-05-15 Leon Jacobs Handle message bodies that may not yet have downloaded.
+20d2893  2018-05-15 Leon Jacobs Fix stortium checks if no strontium is present.
+0dfe14d  2018-05-15 Leon Jacobs Fix type lookups in case its unknown from the SDE.
+402f007  2018-05-15 Argon Inkura fix: Roleconfiguration template tried to access removed property (#159)
+118b44c  2018-05-14 Leon Jacobs Fix indentation.
+b3ced55  2018-05-14 Loïc LEUILLIOT filtering displayed skills and wallet information according to permission on character sheet layout (#160)
+```
+### 3.0.0-beta11
+```
+5be4077  2018-05-16 Leon Jacobs (tag: 3.0.0-beta11) v3.0.0-beta11
+f55e850  2018-05-16 Leon Jacobs Handle a case where worker counts cant be set without the DB.
+```
+### 3.0.0-beta12
+```
+fb93023  2018-05-18 Leon Jacobs (tag: 3.0.0-beta12) v3.0.0-beta12
+6e4887b  2018-05-17 Jake Z  Update links for eveboard to eveskillboard (#165)
+cdfbccf  2018-05-17 Ben     Update log.blade.php (#164)
+4cbd395  2018-05-17 Argon Inkura fix: The characters ship will now get displayed properly. (#163)
+f68bb58  2018-05-17 Argon Inkura eveseat/seat#310: Fixes broken login via admin link (#162)
+```
+### 3.0.0-beta13
+```
+b97ddbf  2018-05-19 Leon Jacobs (tag: 3.0.0-beta13) v3.0.0-beta13
+3d7f305  2018-05-19 Leon Jacobs Make user listing table responsive.
+015fcc6  2018-05-18 Leon Jacobs Reshuffle the dashboard widgets.
+910e4d9  2018-05-18 Leon Jacobs Link the email attribute to the User model.
+106cd46  2018-05-18 Leon Jacobs Replace character switcher with modal to handle large groups.
+f0899dc  2018-05-18 Leon Jacobs Apply fixes from StyleCI (#167)
+880eaa7  2018-05-18 Leon Jacobs Move main char and email to a setting for a group.
+07a18b4  2018-05-18 Alex Skobelev updated missing fields in web app manifest (#166)
+```
+### 3.0.0-beta14
+```
+b925e7f  2018-05-20 Leon Jacobs (tag: 3.0.0-beta14) v3.0.0-beta14
+3c43088  2018-05-20 Loïc LEUILLIOT remove ability to bind admin user to EVE (#170)
+abbc9e9  2018-05-20 Loïc LEUILLIOT provide extra helper attribute to Group (#169)
+632493b  2018-05-19 Loïc LEUILLIOT fix sorting on user table for refresh token and last login columns (#168)
+```
+### 3.0.0-beta15
+```
+ba1abce  2018-05-20 Leon Jacobs (tag: 3.0.0-beta15) v3.0.0-beta15
+6c0e93f  2018-05-20 Leon Jacobs Allow for user group reassignment.
+843a941  2018-05-20 Leon Jacobs Add character attributes.
+6f6d340  2018-05-20 Leon Jacobs Add corporation structures view.
+3392e1a  2018-05-20 Leon Jacobs Specify the horizon job timeout.
+```
+### 3.0.0-beta16
+```
+cc500cc  2018-05-21 Leon Jacobs (tag: 3.0.0-beta16) v3.0.0-beta16
+a76eca1  2018-05-21 Herpaderp Aldent Return MainCharacter of Group (#171)
+```
+### 3.0.0-beta17
+```
+5ae4303  2018-05-24 Leon Jacobs (tag: 3.0.0-beta17) v3.0.0-beta17
+e371c6d  2018-05-24 Leon Jacobs Fix settings relationship.
+```
+### 3.0.0-beta18
+```
+eab5e0d  2018-05-27 Leon Jacobs (tag: 3.0.0-beta18) v3.0.0-beta18
+70d8269  2018-05-27 Leon Jacobs Apply fixes from StyleCI (#175)
+61e9e4e  2018-05-27 Leon Jacobs Add ability to delete characters & corporations via the Web UI.
+2623e24  2018-05-27 Leon Jacobs Update wording.
+34c3ab0  2018-05-27 Leon Jacobs Add stale data cleanup setting for maintenance job.
+593e74e  2018-05-27 Leon Jacobs Apply fixes from StyleCI (#174)
+767cb57  2018-05-27 Leon Jacobs Expose ESI status to the WEB UI.
+b45daae  2018-05-26 Loïc LEUILLIOT append counter on tracking footer (#173)
+```
+### 3.0.0-beta19
+```
+a06d226  2018-05-28 Leon Jacobs (tag: 3.0.0-beta19) v3.0.0-beta19
+795a49a  2018-05-28 Leon Jacobs Handle an empty ESI statys gracefully.
+```
+### 3.0.0-beta20
+```
+f6cd5aa  2018-05-30 Leon Jacobs (tag: 3.0.0-beta20) v3.0.0-beta20
+4091f3f  2018-05-29 Leon Jacobs Add view to see character fittings.
+816dfa9  2018-05-29 Leon Jacobs Cleanup orphan groups when deleting / re-assigning users.
+```
+### 3.0.0-beta21
+```
+0957696  2018-06-13 Leon Jacobs (tag: 3.0.0-beta21) v3.0.0-beta21
+b4a90be  2018-06-13 Leon Jacobs Remove debug code.
+736e9bd  2018-06-13 Leon Jacobs Update user list to show groups.
+810cabc  2018-06-09 Leon Jacobs Update token deletes as it now has soft deletes.
+85bfd44  2018-06-09 JiaYing Chen Update chinese language file (#180)
+25aff8d  2018-06-09 Loïc LEUILLIOT fix column name according to ESI design (#179)
+```
+### 3.0.0-beta22
+```
+de1c76f  2018-06-14 Leon Jacobs (tag: 3.0.0-beta22) v3.0.0-beta22
+2f95358  2018-06-14 Leon Jacobs Include user count.
+2dfe458  2018-06-14 Leon Jacobs Refactor user / group listing, again.
+0171c24  2018-06-14 Leon Jacobs Remove unused variable and add refactor warning.
+30f722b  2018-06-14 Loïc LEUILLIOT Fix user layout (#181)
+```
+### 3.0.0
+```
+13f20a7  2018-06-16 Leon Jacobs (tag: 3.0.0) v3.0.0 🎉
+6e1b466  2018-06-16 Leon Jacobs Show email address in user list.
+13d8183  2018-06-16 Loïc LEUILLIOT fix skill training human conversion (#183)
+27d29a4  2018-06-16 Leon Jacobs Fix character standings view.
+11e5ff2  2018-06-16 Leon Jacobs Paginate standings view.
+cdbf668  2018-06-16 Leon Jacobs Remove mcrypt dependency for PHP 7.2 support.
+736375d  2018-06-16 Leon Jacobs Add more character manual update dispatchers.
+23ec965  2018-06-16 Leon Jacobs Remove old supervisor integration config.
+7a64386  2018-06-16 Leon Jacobs Rename key to token.
+bb5dacc  2018-06-16 Loïc LEUILLIOT fix starbase layout (progress and offline timer) (#182)
+```
+### 3.0.1
+```
+713f8e3  2018-06-17 Leon Jacobs (tag: 3.0.1) v3.0.1
+ec4f257  2018-06-17 Loïc LEUILLIOT Fix starbase stats (#184)
+```
+### 3.0.2
+```
+448d81b  2018-06-24 Leon Jacobs (tag: 3.0.2) v3.0.2
+3e7c945  2018-06-24 Loïc LEUILLIOT reinsert button for edit/delete/impersonate function (#186)
+0d6132e  2018-06-24 Loïc LEUILLIOT improve id to name resolver in order to support resolving in link (#185)
+```
+### 3.0.3
+```
+ce01e3d  2018-06-30 Leon Jacobs (tag: 3.0.3) v3.0.3
+0185d53  2018-06-30 Leon Jacobs Temporarily remove the location_id column.
+dbdb06b  2018-06-30 Leon Jacobs Include the reason if available in wallet journal.
+ac70a1e  2018-06-30 Leon Jacobs Workaround for corporation name resolution bugs.
+f639634  2018-06-30 Leon Jacobs Remove empty groups when linking existing characters.
+2d997d6  2018-06-30 Herpaderp Aldent Move action buttons to the right (#187)
+b602265  2018-06-30 Leon Jacobs Fix number formatting with spaces.
+e97f66a  2018-06-30 Herpaderp Aldent Add overview box with total mined isk (#189)
+eff0739  2018-06-30 Herpaderp Aldent respect number format from user settings (#191)
+2f033cc  2018-06-30 mmolitor87 Update ScheduleController.php (#190)
+```
+### 3.0.4
+```
+1aa780a  2018-07-12 Leon Jacobs (tag: 3.0.4) v3.0.4
+5b819ed  2018-07-13 Loïc LEUILLIOT [Critical Hotfix] login flow issues (#195)
+```
+### 3.0.5
+```
+859c36f  2018-07-29 Leon Jacobs (tag: 3.0.5) v3.0.5
+f1c01ba  2018-07-29 Loïc LEUILLIOT fix(corporation structures): Fix table sort on offline column (#198)
+33cd56a  2018-07-29 Loïc LEUILLIOT Generate complete documentation for user category (HTTP/200) (#196)
+9c8793c  2018-07-29 Loïc LEUILLIOT fix extractor progress-bar in character PI layout (#192)
+```
+### 3.0.6
+```
+a9a26d8  2018-08-20 Leon Jacobs (tag: 3.0.6) v3.0.6
+6e7f008  2018-08-20 Loïc Leuilliot fix(industry jobs): Fix datatable search (#204)
+af93484  2018-08-17 Leon Jacobs Refactor a switch for a simple ternary operator.
+f9a8625  2018-08-17 Herpaderp Aldent Add tab for users with `character.list` permission (#207)
+1702f5c  2018-08-17 Herpaderp Aldent Add token status linked characters (#205)
+6b9c67e  2018-08-17 Loïc Leuilliot fix(industry jobs): Fix location field (#203)
+2899e90  2018-08-17 Loïc Leuilliot feat(industry jobs): Add end column to industry jobs table (#202)
+82954c2  2018-08-17 Loïc Leuilliot fix(corporation tracking): fix last location column (#201)
+8dd5d2a  2018-08-17 Loïc Leuilliot fix(jump clones): Display name of player structure (#200)
+399b8c8  2018-08-17 Loïc Leuilliot feat(contacts): Bump corporation and character contact endpoint to v2 (#199)
+```
+### 3.0.7
+```
+8f49b5d  2018-09-09 Leon Jacobs (tag: 3.0.7) v3.0.7
+3916281  2018-09-09 Loïc Leuilliot fix(corporation): Fix number sort on bounty ledger (#211)
+52a7d2d  2018-09-09 Loïc Leuilliot fix(character): Address an issue related to filter on industry page (#210)
+```
+### 3.0.8
+```
+66ba408  2018-09-09 Leon Jacobs (tag: 3.0.8) v3.0.8
+0a9ef8c  2018-09-09 Herpaderp Aldent fix(characters list): Make all character related to authenticated user visible
+```
+### 3.0.9
+```
+44d4ff5  2018-10-04 Leon Jacobs (tag: 3.0.9) v3.0.9
+b5b0279  2018-09-21 ASTairov fix(language): Add missing translation constants
+5e35fe7  2018-09-17 ASTairov feat(language): Add russian support
+91f2cdb  2018-09-16 Alex Skobelev feat(ui): Add ability to load content into right control sidebar
+848c442  2018-09-16 Herpaderp Aldent feat(prices): Lock mining values
+535575c  2018-09-09 Herpaderp Aldent Fix no_corporation_titles translation (#215)
+```
+### 3.0.10
+```
+e396edd  2018-12-08 Loïc LEUILLIOT (tag: 3.0.10) build(core): v3.0.10
+4a31104  2018-12-08 Loïc LEUILLIOT fix(corporation): Update corporation killmails according to partials update
+3d6dcfe  2018-12-08 Loïc LEUILLIOT fix(corporation): Update corporation journal according to partials update
+768540f  2018-12-08 Loïc LEUILLIOT fix(corporation): Update corporation market according to partials updates
+c7b1687  2018-12-08 Loïc LEUILLIOT fix(character): Fix attributes null exceptions
+0487d5c  2018-12-08 Loïc LEUILLIOT fix(character): Fix a null exception which may occures when the character information wasn't already pulled
+60348e8  2018-12-08 Loïc LEUILLIOT fix(transactions): Fix Sold transaction styling
+4002c08  2018-12-08 Herpaderp Aldent [feat](mails): Mailtimeline Improvement: only link existing characters and corporations (#243)
+7864e9c  2018-12-08 Herpaderp Aldent [feat](market): Update market tab and refactor partials (#240)
+4a92912  2018-12-08 Herpaderp Aldent [feat](characters): Make the list sorteable by name and turn into async
+0cecc79  2018-12-08 Herpaderp Aldent [feat](transactions): Move to asynchronous loading
+7ff4220  2018-12-08 Herpaderp Aldent [feat](mails): Move to asynchronous loading
+83e0e99  2018-12-08 Herpaderp Aldent [feat](wallets): Move to asynchronous loading
+aea1dce  2018-12-07 Herpaderp Aldent [feat](killmails): Move to asynchronous loading
+a1274fa  2018-12-06 Loïc LEUILLIOT style(users): Code format
+c47244f  2018-12-06 Herpaderp Aldent [feat](users): Move to asynchronous loading
+a42805f  2018-12-06 Loïc LEUILLIOT style(core): Code format
+aa1f785  2018-12-06 Herpaderp Aldent [feat](core): Resolve ids universe names (#236)
+eba65dd  2018-12-06 Herpaderp Aldent [feat](core): Use new migration mechanic
+1f59798  2018-12-06 Loïc LEUILLIOT style(contract): Code format
+accd83e  2018-12-06 Herpaderp Aldent [feat](contracts): Move to asynchronous loading
+890b7a6  2018-12-06 Loïc Leuilliot feat(core): Provide events when a role is attached or detached from a group (#228)
+b84f4b9  2018-12-06 Loïc LEUILLIOT style(assets): Code format
+86b8dd9  2018-12-06 Herpaderp Aldent [feat](assets): Move to asynchronous loading
+379bd57  2018-12-06 Herpaderp Aldent [feat](contacts): Move to asynchronous loading
+1d67235  2018-11-18 Herpaderp Aldent [feat](dependencies): Update DataTables Dependencies for new DataTables Version (#221)
+01631c5  2018-11-17 ASTairov [fix](assets): Add missing EVE Logo
+945dc95  2018-11-17 Herpaderp Aldent [feat](profile): Provide a link to characters
+5bcb533  2018-11-18 Ben Thompson [fix](mining-ledger): fix ErrorException for undefined variable character_id
+554fe56  2018-11-03 Loïc Leuilliot (ASTairov/master) fix(settings): Fix GA tracking explanation dead link (#226)
+794edd4  2018-10-28 Loïc Leuilliot fix(mining ledger): Fix loading time issue due to prices eager-load (#225)
+fb36916  2018-10-28 Loïc LEUILLIOT style(resolver): rename methods from resolveEntityIDsFromSeat to resolverInternalEntityIDs
+ba8a4ff  2018-10-28 Herpaderp Aldent feat(resolver): Improve resolver using local database information
+4115a79  2018-10-09 Herpaderp Aldent [fix](characters) Avoid the group table from characters list to throw an exception on Admin user
+80729f2  2018-10-09 Herpaderp Aldent [feat](api) Add main_character_id to group-list
+250db17  2018-10-09 Herpaderp Aldent [feat](corporation) Include main character into Corporation Mining Ledger
+3166690  2018-10-06 Herpaderp Aldent [feat](corporation) Include main character into MemberTracking
+```
+### 3.0.11
+```
+679d370  2018-12-10 Loïc LEUILLIOT (tag: 3.0.11) build(core): v3.0.11
+c841fbf  2018-12-10 Herpaderp Aldent [fix](killmails): Change `is_nan` to `is_null` (#244)
+```
+### 3.0.12
+```
+9572e51  2018-12-22 Loïc LEUILLIOT (tag: 3.0.12) build(core): v3.0.12
+46bf66b  2018-12-22 Herpaderp Aldent [fix](contract): fix contract details for linked characters (#255)
+24214a9  2018-12-22 Loïc Leuilliot fix(users): Reduce user coupling and avoid null exception (#251)
+c7cbc12  2018-12-22 Herpaderp Aldent [fix](ACL): inverse character permission on yourself denys access to own data (#253)
+3d862ff  2018-12-16 Herpaderp Aldent [fix](users) Delay search to query less (#248)
+a6c9e0b  2018-12-16 Herpaderp Aldent [fix](core): Number precision fix (#247)
+```
+### 3.0.13
+```
+d0164a6  2018-12-30 Loïc LEUILLIOT (tag: 3.0.13) build(core): v3.0.13
+b93fb70  2018-12-30 Herpaderp Aldent Fix corporation contracts and add loading spinner (#263)
+```
+### 3.0.14
+```
+adef9f2  2019-01-13 Loïc LEUILLIOT (tag: 3.0.14) build(core): v3.0.14
+8613202  2019-01-13 Herpaderp Aldent Issue 453 searchblade improvements (#270)
+e54d8c2  2019-01-13 Loïc LEUILLIOT fix(extractions): Add breadcrumb into the layout
+b69a99b  2019-01-13 Herpaderp Aldent Add ability to filter users for valid or invalid refresh_tokens. (#271)
+f76440a  2019-01-12 Loïc Leuilliot feat(extractions): Design an UI to retrieve pending and active moon-mining extractions (#262)
+4cdd48e  2019-01-07 Herpaderp Aldent feat(character): Move intel to asynchronous requests and improve UI
+55c004d  2019-01-07 Loïc Leuilliot feat(header): Add a caret near profile user drop-down (#259)
+05215fb  2019-01-07 Loïc Leuilliot feat(character): Add the character name into page title
+aa70113  2019-01-07 Loïc Leuilliot * feat(versions): Switch package versions display to generic list
+39ceb29  2019-01-06 Herpaderp Aldent Refactor view: (#268)
+b3617bb  2019-01-06 Herpaderp Aldent Refactor corporation journal to work as in game. (#267)
+2010dca  2019-01-06 Loïc LEUILLIOT Merge branch '3.0.x'
+87164cf  2019-01-06 Herpaderp Aldent Some refactoring in the service and view to be consistant with character. (#266)
+6329a86  2019-01-06 Herpaderp Aldent [fix](resolver): Contract filter method. Used previously the wrong attribute. (#269)
+c986a69  2019-01-06 Loïc Leuilliot feat(mining): Reduce numbers precisions (#260)
+80c0544  2019-01-06 Herpaderp Aldent Corporation tracking (#250)
+e805d03  2019-01-06 Loïc Leuilliot Queue balancing (#246)
+```
+### 3.0.15
+```
+84f860b  2019-02-24 Loïc LEUILLIOT (tag: 3.0.15) build(core): v3.0.15
+111ebae  2019-02-24 Loïc Leuilliot fix(corporation): Fix Planetary Interaction Ledger (#287)
+c4d2065  2019-02-15 Herpaderp Aldent Fix character contracts (#279)
+0b6a7b0  2019-02-15 Herpaderp Aldent Used wrong attribute for filterColumn (#277)
+d6ba26d  2019-02-15 Herpaderp Aldent Fix issue 512 related to corp tracking (#276)
+5ea5da0  2019-02-15 Herpaderp Aldent Fix corp killmails table header missarrangement (#275)
+ecfd279  2019-01-20 Loïc Leuilliot fix(contracts): Remove non-existing variable from contract index (#272)
+```
+### 3.0.16
+```
+630c3b6  2019-03-23 Loïc LEUILLIOT (tag: 3.0.16) build(core): v3.0.16
+04d1664  2019-03-23 Loïc LEUILLIOT style(wallet): Apply styleCI complaints
+0693b04  2019-03-23 Loïc LEUILLIOT fix(mining): Add missing quantity when computing total price
+4501f26  2019-03-23 Herpaderp Aldent feat(mining): Switch mining ledger to async loading (#289)
+aa69768  2019-03-23 Herpaderp Aldent refactor(contracts): Updated contract filters (#278)
+22f6826  2019-03-23 Loïc LEUILLIOT fix(sheet): Fix character location null exception
+e943e62  2019-03-12 Matthew Yu trans(chinese): Improve translation (#292)
+94de5e0  2019-03-09 Herpaderp Aldent feat(tracking): Allow location to be searchable into corporation tracking (#291)
+8f47de1  2019-03-09 Herpaderp Aldent feat(sheet): Add Solar System to the character sheet (#290)
+78ca6a4  2019-03-09 Loïc LEUILLIOT Merge branch '3.0.x'
+fc9034f  2019-02-24 Loïc LEUILLIOT build(core): v3.0.15
+1c89e56  2019-02-24 Loïc Leuilliot fix(corporation): Fix Planetary Interaction Ledger (#287)
+1b24d45  2019-02-15 Herpaderp Aldent fix(contracts): Fix character filter column (#279)
+7b7ae51  2019-02-15 Herpaderp Aldent fix(search): Use proper attribute for filterColumn (#277)
+01b668f  2019-02-15 Herpaderp Aldent fix(tracking): Exclude non-members characters (#276)
+cc73336  2019-02-15 Herpaderp Aldent fix(killmails): Fix corp killmails table header miss-arrangement (#275)
+ee87361  2019-01-20 Loïc Leuilliot fix(contracts): Remove non-existing variable from contract index (#272)
+7d3ec2f  2019-02-19 Herpaderp Aldent feat(settings): Add loading spinner to changelog (#274)
+6f09605  2019-02-19 Herpaderp Aldent feat(users): Add warning about outdated information (#273)
+0a4b687  2019-02-19 Loïc Leuilliot feat(universe): Bump universe resolver to v3 which include factions (#280)
+830e97b  2019-02-18 Leon Jacobs style(core): Update licence headers (#285)
+4e92fb2  2019-02-15 Loïc Leuilliot 3.0.x (#284)
+f036723  2019-02-15 Loïc Leuilliot 3.0.x (#283)
+077df2a  2019-01-13 Loïc LEUILLIOT build(core): v3.0.14
+8936de2  2019-01-13 Herpaderp Aldent feat(search): Improve search-blades (#270)
+1043b4e  2019-01-13 Loïc LEUILLIOT fix(extractions): Add breadcrumb into the layout
+1176047  2019-01-13 Herpaderp Aldent feat(users): Add ability to filter users for valid or invalid tokens. (#271)
+7c0f855  2019-01-12 Loïc Leuilliot feat(extractions): Design an UI to retrieve pending and active moon-mining extractions (#262)
+6ae50e0  2019-01-07 Herpaderp Aldent feat(character): Move intel to asynchronous requests and improve UI
+92fd6fe  2019-01-07 Loïc Leuilliot feat(header): Add a caret near profile user drop-down (#259)
+381318a  2019-01-07 Loïc Leuilliot feat(character): Add the character name into page title
+257d81c  2019-01-07 Loïc Leuilliot feat(versions): Switch package versions display to generic list
+14774bf  2019-01-06 Herpaderp Aldent fix(market): Allow table to be searchable (#268)
+e18c88d  2019-01-06 Herpaderp Aldent refactor(wallets): Alter corporation blade to work as in game (#267)
+534aa91  2019-01-06 Loïc LEUILLIOT Merge branch '3.0.x'
+251ce81  2019-01-06 Herpaderp Aldent fix(resolver): Contract filter method used previously the wrong attribute (#269)
+07cea51  2019-01-06 Herpaderp Aldent refactor(killmails): Improve consistency between corp. and char. (#266)
+f2412ae  2019-01-06 Loïc Leuilliot feat(mining): Reduce numbers precisions (#260)
+3246545  2019-01-06 Herpaderp Aldent feat(tracking): Move corporation tracking table rendering to server
+d05d0cc  2019-01-06 Loïc Leuilliot feat(jobs): Introduce queue balancing (#246)
+d4ca256  2018-12-30 Loïc LEUILLIOT build(core): v3.0.13
+16727b8  2018-12-30 Herpaderp Aldent fix(contracts): Fix corporation contracts and add loading spinner (#263)
+43ac47d  2018-12-22 Loïc LEUILLIOT build(core): v3.0.12
+7a60d33  2018-12-22 Herpaderp Aldent fix(contract): fix contract details for linked characters (#255)
+2f92d9f  2018-12-22 Loïc Leuilliot fix(users): Reduce user coupling and avoid null exception (#251)
+b5a7638  2018-12-22 Herpaderp Aldent fix(ACL): avoid to loose access on your owned data due to inverse (#253)
+ed9c7f2  2018-12-16 Herpaderp Aldent fix(users): Delay search to query less (#248)
+```
+### 3.0.17
+```
+e2fed96  2019-03-28 Loïc Leuilliot (tag: 3.0.17) build(core): v3.0.17
+9f5c123  2019-03-28 Loïc Leuilliot fix(mining): remove unset variable from main view (#293)
+```
+### 3.0.18
+```
+3973009  2019-05-05 Loïc LEUILLIOT (tag: 3.0.18) build(core): v3.0.18
+697bf16  2019-05-05 Loïc Leuilliot fix(character): avoid some null exception related to ship and location (#301)
+2cee954  2019-05-04 Loïc Leuilliot fix(user): ensure the email address is properly updated (#300)
+14262a3  2019-04-01 Loïc Leuilliot fix(ACL): Avoid null exception on Horizon access check (#295)
+```
+### 3.0.19
+```
+3be5e4d  2019-05-12 Loïc LEUILLIOT (tag: 3.0.19) build(core): v3.0.19
+33a90df  2019-05-11 Loïc Leuilliot fix(standings): address an issue related to character contact pull (#303)
+ecd7f1a  2019-05-11 Jabasukuriputo Wang feat(lookup): use fastlookup as search engine for roles and standings builder
+```
+### 3.0.20
+```
+1f01a19  2019-05-20 Loïc LEUILLIOT (tag: 3.0.20) build(core): v3.0.20
+e21361a  2019-05-19 Loïc Leuilliot fix(config): put environment variables into config file (#304)
+```
+### 3.0.21
+```
+ebb8a63  2019-06-10 Loïc LEUILLIOT (tag: 3.0.21) build(core): v3.0.21
+c2a567d  2019-06-10 Loïc Leuilliot feat(license): add CCP copyright in dedicated license page (#308)
+ba7a945  2019-06-04 Justin Mercer fix(datatables): avoid errors on null values (#305)
+9493903  2019-05-28 Jabasukuriputo Wang fix(tracking): ensure name and last location are properly filtered
+```
+### 3.0.22
+```
+94950b2  2019-08-03 Loïc LEUILLIOT (tag: 3.0.22) build(core): v3.0.22
+a0a6dd4  2019-08-03 Seb Ferraro feat(api): add main_character_id to User (#309)
+0500d11  2019-08-03 Loïc Leuilliot fix(extractions): ensure integrity of moon content (#310)
+```
+### 3.0.23
+```
+79ad973  2019-08-13 Loïc LEUILLIOT (tag: 3.0.23) build(core): v3.0.23
+ca2de88  2019-08-09 Loïc Leuilliot refactor(titles): use relationship instead atomic table (#311)
+```
+### 3.0.24
+```
+670c5be  2019-08-25 Loïc LEUILLIOT (tag: 3.0.24) build(core): v3.0.24
+a7b50b8  2019-08-24 Loïc Leuilliot fix(auth): ensure requested scopes are properly provided (#312)
+```
+### 3.0.25
+```
+900de53  2019-10-04 Loïc LEUILLIOT (tag: 3.0.25) build(core): v3.0.25
+b75574c  2019-10-04 Loïc Leuilliot fix(titles): reduce abnormal loop on corp titles page (#314)
+```
+### 3.0.26
+```
+c1e6b84  2019-11-11 Loïc LEUILLIOT (tag: 3.0.26) build(core): v3.0.26
+95afd33  2019-11-11 Loïc LEUILLIOT ci(styleci): remove length_ordered_imports
+2ab125d  2019-11-11 Loïc LEUILLIOT fix(versions): exclude unstable versions from checker
+```
+### 3.0.27
+```
+abb320d  2019-11-20 Loïc LEUILLIOT (tag: 3.0.27) build(core): v3.0.27
+e6510ec  2019-11-20 Loïc LEUILLIOT fix(acl): remove corp journal and corp transactions from Jun. Accountant
+1ff8f99  2019-11-19 Loïc LEUILLIOT fix(orders): address a typo on the corporation market table
+8ad8b0c  2019-11-11 Loïc LEUILLIOT ci(styleci): remove rules from preset
+```
+### 3.0.28
+```
+0e02fa3  2020-02-07 Loïc LEUILLIOT (tag: 3.0.28) build(core): v3.0.28
+e1d95db  2020-02-07 Loïc LEUILLIOT fix(cve): this address an issue on affiliations permissions merge
+```
+### 4.0.0-rc1
+```
+de8f37f  2019-10-31 Loïc LEUILLIOT (tag: 4.0.0-rc1) refactor(mails): reduce duplicated entries on mails module
+8595fd9  2019-10-30 Loïc LEUILLIOT style(styleci): apply requested changes
+f1ab313  2019-10-30 Loïc LEUILLIOT fix(layouts): apply BS4 to intel summary
+b6f5a43  2019-10-30 Loïc LEUILLIOT feat(acl): queue_manager is now required to see queue status
+014af25  2019-10-29 Loïc LEUILLIOT fix(layouts): apply BS4 to intel standings compare
+aa58b6a  2019-10-29 Loïc LEUILLIOT fix(layouts): apply BS4 to intel menu
+85539a9  2019-10-29 Loïc LEUILLIOT feat: ensure number are properly rendered with separator
+3c8f852  2019-10-29 Loïc LEUILLIOT feat(structures): add more information on structure modal
+34b88f3  2019-10-29 Loïc LEUILLIOT refactor(notes): fix character note layout and improve blades structure
+455b538  2019-10-29 Loïc LEUILLIOT fix(ui): ensure card header is properly rendered with title and buttons
+fe54b23  2019-10-28 Loïc LEUILLIOT feat(search): update search views to BS4
+b55e2c1  2019-10-28 Loïc LEUILLIOT fix(acl): avoid null exception if character not found
+24f59e3  2019-10-28 Loïc LEUILLIOT test(acl): add missing global scope to superuser permission
+ebd5d53  2019-10-27 Loïc LEUILLIOT refactor(tables): use generic filters system
+dfcd64a  2019-10-27 Loïc LEUILLIOT feat(contracts): add filters for type and status
+83be1b0  2019-10-27 Loïc LEUILLIOT refactor(tables): remove un-required LoC in favor of relationship
+f39bf82  2019-10-27 Loïc LEUILLIOT fix(prices): ensure we're using average_price everywhere
+039d0cd  2019-10-26 Loïc LEUILLIOT refactor: remove unrequired call and reduce variables name
+3891cc0  2019-10-26 Loïc LEUILLIOT fix(layouts): apply BS4 changes to mini-app and ensure css is imported
+58e6d87  2019-10-24 Loïc LEUILLIOT test(acl): update testGetPermissionsFromCorporationRoles permissions
+fc36f00  2019-10-24 Loïc LEUILLIOT test(acl): update orchestra structure dependency
+a1ebb27  2019-10-24 Loïc LEUILLIOT ci(travis): add prompt answer to php-redis extension
+0fae4a8  2019-10-24 Loïc LEUILLIOT refactor(styleci): apply requested changes
+1dd4c2a  2019-10-24 Loïc LEUILLIOT fix(acl): list permission attached to an user using new filters
+23c5367  2019-10-24 Loïc LEUILLIOT fix(users): return character based on user if none exists
+b5bb004  2019-10-24 Loïc LEUILLIOT fix(acl): redirect once role has been dropped from user
+ded7dfc  2019-10-24 Loïc LEUILLIOT fix(acl): remove affiliations from relationships replaced by filters
+0d27bd3  2019-10-24 Loïc LEUILLIOT fix(acl): ensure corp filter targeting char perm is properly applied
+26b8f40  2019-10-24 Loïc LEUILLIOT fix(acl): add global scope on superuser permission
+17f1dee  2019-10-24 Loïc LEUILLIOT refactor(standings): use generic blade for all standing render
+2cd04a3  2019-10-24 Loïc LEUILLIOT fix(users): ensure list is properly render even if no main has been set
+1c5aee4  2019-10-24 Loïc LEUILLIOT feat(acl): restrict standing builder access
+842cd67  2019-10-23 Loïc LEUILLIOT refactor(fittings): replace tables by dl lists to display meta info
+6a7e374  2019-10-23 Loïc LEUILLIOT feat(structures): add fittings modals and export button
+42a2003  2019-10-23 Loïc LEUILLIOT fix(fittings): fix columns width to render tables uniformly
+6b9210e  2019-10-23 Loïc LEUILLIOT fix(fittings): use button instead of a tag
+084b3a7  2019-10-22 Loïc LEUILLIOT fix(ledger): use proper party to render corp wallet ledger
+8eb7c40  2019-10-22 Loïc LEUILLIOT fix(ui): disable token warning for admin user
+2b83b1a  2019-10-22 Loïc LEUILLIOT feat(ui): remove profile block for admin user
+da114a9  2019-10-22 Loïc LEUILLIOT fix(acl): add missing blueprints permissions
+74c3281  2019-10-21 Loïc LEUILLIOT feat(corporation): add new categories to wallet ledger
+3372506  2019-10-21 Loïc LEUILLIOT fix(fittings): ensure html encapsulated inside Ship desc. is rendered
+e3c7906  2019-10-21 Loïc LEUILLIOT refactor(entities): use Universe Entity model to render char/corp/ally
+6cbc36d  2019-10-22 Loïc Leuilliot feat(list): sort characters and corporation in ascending order (#325)
+f73b213  2019-10-22 Loïc Leuilliot feat(character): add number of toons on character summary (#324)
+c5d47bc  2019-10-22 Loïc Leuilliot feat(skills): add a button to export skills with Pyfa format (#323)
+9a84622  2019-10-22 Loïc Leuilliot feat(market): add filters options on characters & corporation market (#322)
+c12a650  2019-10-22 Loïc Leuilliot feat(industry): improve filterability of industry tables (#321)
+85878c2  2019-10-22 Loïc Leuilliot feat(blueprints): re-introduced blueprints view which has been removed (#320)
+636cc43  2019-10-22 Loïc Leuilliot feat(acl): implement new UI
+d152cca  2019-10-17 Loïc Leuilliot Merge pull request #317 from warlof/4.0.x
+f9d0963  2019-10-17 Loïc Leuilliot Merge branch '4.0.x' into 4.0.x
+cfb2775  2019-10-17 Loïc LEUILLIOT style(styleci): apply request changes
+1eac33c  2019-10-17 Loïc LEUILLIOT refactor(ui): remove un-required float on card tools
+7fad413  2019-10-17 Loïc LEUILLIOT feat(ui): improve forms design
+9436c15  2019-10-17 Loïc LEUILLIOT refactor(ui): remove unused views
+7f04aa3  2019-10-17 Loïc LEUILLIOT feat(deps): upgrade profile card
+5963ef3  2019-10-17 Loïc LEUILLIOT feat(deps): upgrade standing builder card
+c00ca77  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade standing builder layout
+d6498c6  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade about layout
+9e754d2  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade security logs layout
+07563b9  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade settings card layout
+22ef460  2019-10-16 Loïc LEUILLIOT feat(deps): replace help-block which has been removed
+f9bcd03  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade sso card
+aa4f366  2019-10-16 Loïc LEUILLIOT refactor(ui): update some tags according to AdminLTE3
+9e6dc84  2019-10-16 Loïc LEUILLIOT fix(ui): ensure card is covering select2 completely
+9de2254  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade select2
+8547605  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade schedule list
+e9032de  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade users card
+596d97f  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade users list
+7fcf2d1  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade access card
+7b1a589  2019-10-16 Loïc LEUILLIOT fix(deps): replace btn-xs by btn-sm since xs is non longer available
+d96b7c0  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade access list
+8aad656  2019-10-16 Loïc LEUILLIOT feat(deps): switch the icons stylesheet to config
+fc73fd3  2019-10-16 Loïc LEUILLIOT fix(deps): use new offset helper
+860daf8  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade mail timeline
+543c4d8  2019-10-16 Loïc LEUILLIOT feat(deps): replace pull helper by new float helper
+2813b3f  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations assets
+f513716  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations bookmarks
+0460c03  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations contacts
+8431178  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations contracts
+1e67886  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations extractions
+bb30d72  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations industry
+c46a106  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations killmails
+5197f47  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations planetary interaction ledger
+3d42e9d  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations bounty prizes ledger
+0008033  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations ledger sub-menu
+24cec16  2019-10-16 Loïc LEUILLIOT fix(ui): replace raw style by padding helper on corp wallet sub-menu
+b8f78d4  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations wallet ledger summary
+20439d9  2019-10-16 Loïc LEUILLIOT feat(deps): upgrade corporations market
+218474d  2019-10-16 Loïc LEUILLIOT feat(ui): add mining details modal on both corporation and character
+8122158  2019-10-15 Loïc LEUILLIOT fix(deps): use proper map mark icon for font-awesome 5
+4cd2c37  2019-10-15 Loïc LEUILLIOT fix(deps): restore timeline on character mining ledger
+f64a871  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations mining-ledger
+89eb4e9  2019-10-15 Loïc LEUILLIOT fix(deps): replace data-widget call for tooltip by data-toggle
+f870fa6  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations customs-offices
+17d8b6b  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations logs
+2035b2f  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations titles
+51fa6f4  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations security menu
+fd8df74  2019-10-15 Loïc LEUILLIOT refactor(entity): entity model can be used with char & corp rendering
+a79ca7e  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations roles
+e27beca  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations standings
+d613738  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations starbases
+65841aa  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations structures
+f29941a  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations wallet sub-menu
+861a0dc  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations journals
+9984d9c  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations transactions
+5f70cd9  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations tracking
+c6ed474  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations menu
+b7a046d  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations sidebar
+ee22da6  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations summary
+fbed121  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade corporations list
+9339978  2019-10-15 Loïc LEUILLIOT style(styleci): apply requested changes
+c0bd889  2019-10-15 Loïc LEUILLIOT style(styleci): apply requested changes
+e8b7be3  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character assets
+00fbcf0  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character bookmarks
+ed27e44  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character calendar
+e48f20f  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character contacts
+c323c17  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character contracts
+a15f58a  2019-10-15 Loïc LEUILLIOT fix(contracts): show contract title instead test lorem ipsum string
+c285196  2019-10-15 Loïc LEUILLIOT fix(deps): remove deprecated class from headings and improve style
+4a737ea  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character fittings
+39132a5  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character industry
+1936edf  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character killmails
+fecc2cb  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character mails
+5d1eb68  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character market
+c391125  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character mining
+f069e14  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character notifications
+fe1b771  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character planetary interaction
+7474c32  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character research
+a5a1948  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character wallet navigation
+4666ff5  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character wallet transactions
+58799a6  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character wallet journal
+afd1997  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character standings
+3fe8013  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character skills
+b8feb07  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character sheet
+a211196  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character menu
+2cf0343  2019-10-15 Loïc LEUILLIOT feat(deps): upgrade character summary
+69506a4  2019-10-11 Loïc LEUILLIOT fix(deps): update data-tables dependency and pull it from packagist
+82850cb  2019-10-10 Loïc LEUILLIOT feat(deps): upgrade dashboard
+1a93bfc  2019-10-10 Loïc LEUILLIOT feat(deps): bump AdminLTE to v3 and FontAwesome to v5
+6f86473  2019-10-10 Loïc LEUILLIOT feat(config): switch worker config to configuration file
+2e9b7b3  2019-10-10 Loïc LEUILLIOT fix(deps): move Eve Online OAuth to its own socialite package
+74adf8e  2019-10-10 Loïc LEUILLIOT fix(deps): update resources directory structure according L5.7
+9974e17  2019-10-10 Loïc LEUILLIOT fix(deps): switch font-awesome import path from v4 to v5
+7a02cc4  2019-10-10 Loïc LEUILLIOT fix(deps): replace str_ and arr_ helpers by their Classes
+1114fde  2019-10-10 Loïc LEUILLIOT fix(deps): dev must be use as a suffix instead prefix
+494d8a0  2019-10-10 Loïc LEUILLIOT chore(deps): downgrade stability to dev version
+8a8ac1c  2019-10-10 Loïc LEUILLIOT chore(deps): update dependencies to Laravel 6.x
+dbd311a  2019-10-10 Loïc Leuilliot (wfjsw/master, seat/master, darkflamed/master, master) fix(ACL): use keys returned from ACL mapping in order to apply DT scope (#316)
+c67c36d  2019-10-10 Loïc Leuilliot fix(deps): add missing yajra datatable service dependency (#315)
+c986c5e  2019-10-10 Loïc LEUILLIOT fix(deps): dev must be use as a suffix instead prefix
+7846d12  2019-10-10 Loïc LEUILLIOT chore(deps): downgrade stability to dev version
+c20f440  2019-10-10 Loïc LEUILLIOT chore(deps): update dependencies to Laravel 6.x
+7ebc8b2  2019-10-06 Loïc Leuilliot refactor(datatable): increase Yajra/Datatable usage (#313)
+```
+### 4.0.0-rc2
+```
+7e2f070  2019-11-16 Loïc LEUILLIOT (tag: 4.0.0-rc2) ci(travis): require php 7.3 for build
+2c450e4  2019-11-16 Loïc LEUILLIOT fix(deps): ensure php_version view is properly rendered on check
+e6501dc  2019-11-16 Loïc LEUILLIOT fix(deps): update php minimum version to 7.3
+fd965fa  2019-11-16 Loïc LEUILLIOT test(acl): remove group from tests
+e6ba402  2019-11-16 Loïc LEUILLIOT fix(acl): remove groups call from remaining controllers
+fb285dc  2019-11-16 Loïc LEUILLIOT style: apply syleci change requests
+134edce  2019-11-16 Loïc LEUILLIOT refactor(acl): drop Group class and use an unique user bucket
+c4e062e  2019-11-11 Loïc LEUILLIOT style: apply styleci changes request
+a00b34d  2019-11-11 Loïc LEUILLIOT fix(ui): apply small change on UI layouts
+3d75fe7  2019-11-11 Loïc LEUILLIOT ci(styleci): remove rules from preset
+037a2c1  2019-11-11 Loïc LEUILLIOT ci(styleci): remove length_ordered_imports
+3989d5b  2019-11-11 Loïc LEUILLIOT fix(versions): exclude unstable versions from checker
+458b14d  2019-11-11 Loïc LEUILLIOT feat(moons): add moons reporter
+54e38c9  2019-11-11 Loïc LEUILLIOT feat(ui): use new EVE images server signatures
+4263cad  2019-11-11 Loïc LEUILLIOT fix(acl): avoid null exception on empty permission titles dataset
+```
+### 4.0.0-rc3
+```
+766653e  2019-12-22 Loïc LEUILLIOT (tag: 4.0.0-rc3) style: address some issues triggered by styleci
+69d018e  2019-12-22 Loïc LEUILLIOT feat(squads): add creation form
+3d9cabe  2019-12-22 Loïc LEUILLIOT fix(filters): avoid null exception due to empty filter source
+3ef0a6b  2019-12-22 Loïc LEUILLIOT style: fix indent issue on main layout
+54bd08a  2019-12-22 Loïc LEUILLIOT refactor(role): add more constraint on logo during role edition
+849b175  2019-12-22 Loïc LEUILLIOT feat(role): allow role logo to be removed
+e69fb6f  2019-12-22 Loïc LEUILLIOT refactor(role): replace logo button by a modern preview mechanics
+d199eca  2019-12-21 Loïc LEUILLIOT style: address some issues triggered by styleci
+32ca5a0  2019-12-21 Loïc LEUILLIOT feat(squads): allow user roles to be auto updated
+bb1a18e  2019-12-21 Loïc LEUILLIOT refactor: drop has filter check from filter trait
+f898253  2019-12-21 Loïc LEUILLIOT fix(acl): avoid null exception when corporation is missing
+a1f01ee  2019-12-21 Loïc LEUILLIOT feat(squads): add roles relation to squads
+d660c62  2019-12-21 Loïc LEUILLIOT feat(squads): make squads to be droppable
+837370c  2019-12-21 Loïc LEUILLIOT fix(squads): add squad type into columns sorting queries
+e6b0b8e  2019-12-21 Loïc LEUILLIOT fix(squads): add relations between squads tables
+d408555  2019-12-21 Loïc LEUILLIOT feat(squads): add squad type (auto, hidden, manual)
+494c9ad  2019-12-21 Loïc LEUILLIOT fix(squads): add margin after members/candidates/moderator
+23b3cd7  2019-12-21 Loïc LEUILLIOT feat(squads): complete filters component
+60e759d  2019-12-20 Loïc LEUILLIOT fix(squads): address issue on filter check when there were ruleset
+9e122fc  2019-12-18 Loïc LEUILLIOT feat(squads): implement magic filter query builder
+584de74  2019-12-17 Loïc LEUILLIOT feat(squads): start to implement magic filter component
+b1a1e8f  2019-12-15 Loïc LEUILLIOT feat(squads): implement a new intermediate layer between user and ACL called Squads
+1e9270d  2019-12-15 Loïc LEUILLIOT fix(ui): ensure plural parameter is properly handled on sidebar building
+3694efe  2019-12-12 Loïc LEUILLIOT fix: adapt role members lookup to use compact alt. characters
+6779161  2019-12-10 Loïc LEUILLIOT fix: ensure affiliation call is properly made
+677b3f1  2019-12-10 Loïc LEUILLIOT fix: use 4.0.x dev branch of eseye
+ad4c6a8  2019-12-10 Loïc LEUILLIOT fix: drop users and tokens related to admin only if account exists
+c1a0905  2019-11-28 Loïc LEUILLIOT feat(esi): use affiliation to retrieve character corporations & alliance
+c65c62c  2019-11-28 Loïc LEUILLIOT docs: fix documentation blocs
+11a7b5a  2019-11-19 Loïc LEUILLIOT fix(images): use reaction render instead default
+```
+### 4.0.0-rc4
+```
+b06ad4d  2020-01-02 Loïc LEUILLIOT (tag: 4.0.0-rc4) refactor(squads): use ajax to update members and roles table
+f2634d5  2020-01-01 Loïc LEUILLIOT style: apply styleci changes
+2dfd191  2020-01-01 Loïc LEUILLIOT feat(squads): add ways to manage members & roles
+a0c750f  2020-01-01 Loïc LEUILLIOT feat(squads): show squad application date/time
+d937b7b  2020-01-01 Loïc LEUILLIOT fix(squads): restrict delete function to superuser
+99a924f  2020-01-01 Loïc LEUILLIOT style: apply styleci changes
+67dbd7e  2020-01-01 Loïc LEUILLIOT fix(squads): add a check to determine if we have an authenticated user
+dca1674  2019-12-29 Loïc LEUILLIOT feat(squads): implement moderator functions (add/removal)
+301e00f  2019-12-29 Loïc LEUILLIOT refactor(squads): split squads applications methods from main squad methods
+26b11a2  2019-12-29 Loïc LEUILLIOT refactor(squads): add some effect on list
+0b41427  2019-12-29 Loïc LEUILLIOT refactor(squads): improve squad card layout
+4a71915  2019-12-23 wfjsw   fix(langs): fix langcode for Chinese (Simp.)
+d700b8c  2019-12-29 Loïc LEUILLIOT feat(squads): implement create and delete buttons
+98def84  2019-12-28 Loïc LEUILLIOT feat(squads): add filters to squad list
+6efef09  2019-12-28 Loïc LEUILLIOT refactor(squads): improve list layout with dynamic search
+46f30c3  2019-12-24 Loïc LEUILLIOT fix(squads): add missing unsigned flag on squad_id
+3147895  2019-12-23 Loïc LEUILLIOT test(acl): fix tests according to affiliation change
+0e087d4  2019-12-23 Loïc LEUILLIOT fix(acl): use affiliation to character entity during check
+594b70b  2019-12-23 Loïc LEUILLIOT fix(deps): bump to eseye 2.0
+```
+### 4.0.0-rc5
+```
+6ffd664  2020-01-14 Peter Pfeufer (tag: 4.0.0-rc5) [translation] wallet to german (part 2)
+2eb079d  2020-02-09 Loïc LEUILLIOT fix(acl): avoid key collision
+8674251  2020-02-09 Ben Thompson (fix) the throw Exception in this migration check refers to a undefined property as the name column is not selected.
+5e9794a  2020-02-09 Ben Thompson (fix) update Login event to accomodate changes in Console package.
+2d6a012  2020-02-02 Loïc LEUILLIOT refactor(auth): enqueue corporations jobs if unknown
+bb8b21f  2020-02-02 Loïc LEUILLIOT fix(scopes): add source user in routes since authenticated user may differ
+32ebe25  2020-02-02 Loïc LEUILLIOT fix: set user as auto-incremented
+f1de62e  2020-01-19 Loïc LEUILLIOT fix(squads): remove default value for filters json field
+41e51bd  2020-01-19 Loïc LEUILLIOT fix(mails): remove timestamps from search query and use default sender search
+66071e3  2020-01-11 Peter Pfeufer Update .gitignore
+8da1b2b  2020-01-11 Peter Pfeufer [fix] better wording and typo
+7c40569  2020-01-11 Peter Pfeufer [fix] better wording for global_standing_builder_label
+9a6961f  2020-01-11 Peter Pfeufer [fix] typo
+54142d9  2020-01-11 Peter Pfeufer [translation] wallet to german
+be96c20  2020-01-11 Peter Pfeufer [translation] squads to german
+e66c439  2020-01-11 Peter Pfeufer [translation] research to german
+26cce1a  2020-01-11 Peter Pfeufer [translation] permissions to german
+2d7320e  2020-01-11 Peter Pfeufer [fix] typo in english translations
+7aec6ca  2020-01-11 Peter Pfeufer [translation] notifications to german
+4b9d347  2020-01-11 Peter Pfeufer [translation] moons to german
+f59510f  2020-01-11 Peter Pfeufer [translation] mining to german
+93c9a7e  2020-01-11 Peter Pfeufer [fix] using the same that was used in the already translated file
+de52e2e  2020-01-11 Peter Pfeufer [translation] market to german
+148340f  2020-01-11 Peter Pfeufer [translation] mail to german
+a85dbbe  2020-01-11 Peter Pfeufer [translation] kills to german
+7ef0cf3  2020-01-11 Peter Pfeufer [translation] industry to german
+ba8fe10  2020-01-11 Peter Pfeufer [fix] typo
+b929cd7  2020-01-11 Peter Pfeufer [translation] fittings to german
+58e8d59  2020-01-11 Peter Pfeufer [translation] custom offices to german
+c170281  2020-01-11 Peter Pfeufer [translation] contracts to german
+0b1c44e  2020-01-11 Peter Pfeufer [translation] calendar to german
+ea835f5  2020-01-11 Peter Pfeufer [translation] bookmarks to german
+1bfcaf9  2020-01-11 Peter Pfeufer [update] .gitignore to accomodate neatbeans project settings
+2b90bd9  2020-01-12 Loïc LEUILLIOT fix(contracts): show acceptor only if exists
+c81695e  2020-01-12 Loïc LEUILLIOT feat(killmails): add factions to victim and killer columns
+487c2c7  2020-01-12 Loïc LEUILLIOT fix(intel): remove unused jobs dispatch from intel controller
+8224d98  2020-01-11 Loïc LEUILLIOT fix(ui): remove skins css import
+58bd278  2020-01-11 Loïc LEUILLIOT fix(squads): return proper view on index
+dbaaffd  2020-01-11 Loïc LEUILLIOT style: apply styleci change requests
+ba97b49  2020-01-11 Loïc LEUILLIOT fix: ensure users table start to increment at 2
+0f6aec0  2020-01-11 Loïc LEUILLIOT refactor: adapt package according to eveapi changes
+bcd2bd7  2020-01-05 Loïc LEUILLIOT style: add margin upper each skills group card
+ea28ce2  2020-01-08 autophob chore(acl): improve captions related to permissions (#349)
+af0d0af  2020-01-04 Loïc LEUILLIOT style: reordering dependencies in composer
+37c796c  2020-01-04 Loïc LEUILLIOT fix(squads): use proper index route when redirecting user
+e87f8f0  2020-01-04 Loïc LEUILLIOT fix: make active field fillable
+7cfcd38  2020-01-04 Loïc LEUILLIOT feat(auth): switch to oauth v2 endpoints
+3fa83a8  2020-01-04 Loïc LEUILLIOT refactor(auth): switch socialite extension to services package
+```
+### 4.0.0-rc6
+```
+0da9c90  2020-03-26 Loïc LEUILLIOT (tag: 4.0.0-rc6) fix(ui): ensure tab structure is properly built
+4d888d3  2020-03-26 Loïc LEUILLIOT fix(ui): improve changelog button render
+24cd199  2020-03-23 Loïc LEUILLIOT refactor(api): move user OAS to UserResource
+2d769f1  2020-03-23 Loïc LEUILLIOT fix(ui): address a small bug in role UI
+7b080dd  2020-03-22 Loïc LEUILLIOT feat(api): upgrade API doc to OAS3
+75c09a9  2020-03-22 Loïc LEUILLIOT fix: ensure scopes don't conflict with search
+bce139d  2020-03-22 Loïc LEUILLIOT refactor: remove auth mail controller reference
+b42b62a  2020-03-22 Loïc LEUILLIOT feat(squads): improve logging
+c866db3  2020-03-21 Loïc LEUILLIOT fix(squads): ensure squad moderator are able to manage members
+9699a03  2020-03-21 Loïc LEUILLIOT fix(squads): log bounced access
+ec92bdb  2020-03-21 Loïc LEUILLIOT fix(squads): hide kick button from non admin/moderators
+dc9247d  2020-03-21 Loïc Leuilliot feat(squads): add guardians front of routes (#396)
+974a894  2020-03-21 Loïc LEUILLIOT refactor(moons): avoid selection to determine which moon can be display
+634ced2  2020-03-21 John L. Carveth feat(moons): add granular permissions and render scanned moon only (#393)
+c94f832  2020-03-21 Loïc LEUILLIOT style: apply styleci changes requests
+729ed90  2020-03-21 Loïc LEUILLIOT style: fix a typo in class name
+b72e0db  2020-03-21 Loïc LEUILLIOT refactor(squads): replace moderated field in table with a relation attribute
+d7c3862  2020-03-21 Loïc LEUILLIOT feat(squads): allow candidate to cancel their application
+f656cec  2020-03-21 Loïc LEUILLIOT fix(squads): replace squad_id unique index with user and squad
+6f2d6ff  2020-03-21 Loïc LEUILLIOT refactor: move compact character view to global partials
+6128fc8  2020-03-19 Justin Mercer fix(configuration):  Fix User Management characters display and sort (#384)
+aab8b1d  2020-03-17 Loïc Leuilliot ci(styleci): update config for preset changes
+c797bd8  2020-03-17 Loïc Leuilliot ci(styleci): update config for preset changes
+8509e14  2020-03-17 Loïc Leuilliot ci(styleci): update config for preset changes
+3684eff  2020-03-16 Loïc Leuilliot ci(styleci): update config for preset changes
+f367541  2020-03-15 Ben Thompson refactor(intel): updated to reflect changes to Intel repository in services package (#392)
+cd67fda  2020-03-09 Jabasukuriputo Wang ui(sheet): make skill list compact and fit (#390)
+313b187  2020-03-06 C Edwards feat(squads): add validation to ensure message set (#389)
+08311c0  2020-03-06 C Edwards fix(squads): address typo on applications routes (#388)
+b6bf19e  2020-03-01 Loïc LEUILLIOT fix(acl): make role description optional and ensure multiple users can be added at time
+44c1b22  2020-03-01 Loïc LEUILLIOT refactor(acl): remove permissions and role permissions from v3
+9f6e832  2020-03-01 Loïc LEUILLIOT fix(ui): make sure mining modal is showing metadata table properly
+d929ac8  2020-03-01 Loïc LEUILLIOT fix: ensure upgrade compatibility between v3 and v4
+64aca03  2020-03-01 Loïc LEUILLIOT fix(squads): update members when filters or type is altered
+92a82da  2020-03-01 Loïc LEUILLIOT refactor: add system and standard scope to users model
+051bcc2  2020-02-29 Loïc LEUILLIOT feat(moons): add small stats in footer
+caed739  2020-02-29 Loïc LEUILLIOT fix(killmails): use proper field to filter corporation killmails
+966891c  2020-02-26 Ben Thompson fix(membertracking): Using updated model relations, refactored to fix sorting and add ship column
+7736940  2020-02-24 Loïc LEUILLIOT fix(squads): add missing update form
+4eb8ea6  2020-02-16 Loïc LEUILLIOT fix(squads): ensure filters are properly casts
+6cb27bd  2020-02-23 Justin Mercer fix(profile): Main Character select option from id to character_id
+8536957  2020-02-19 Ben Thompson fix(ledger): too few arguments passed to controller functions
+4d4dd02  2020-02-19 Ben Thompson fix(notifications): fix datatables error on character notifications from issue passing notification text from array to string
+a30b40d  2020-02-19 Ben Thompson  fix: AccessCheck affiliation lookup, missing cron validator when adding schedules. (#380)
+348ee5c  2020-02-16 Ben Thompson fix(search): Fixes to Datatables errors on Search pages
+da3afe2  2020-02-15 Justin Mercer fix(character): Change to character initialization instead of else
+3598455  2020-02-14 Justin Mercer fix(character): Allow character tabs to be viewed without needing a refresh token
+7fe3234  2020-02-14 Justin Mercer fix(corporation): Datatables corporation mining ledger needs to look at affiliations for corporation_id of character
+6799b19  2020-02-14 Justin Mercer fix(characters): Add affiliation to data name to match query so that we don't get a query error
+```
