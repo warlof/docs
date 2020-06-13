@@ -518,5 +518,5 @@ As mentioned at the start of the guide, it is necessary for you to configure ESI
 
         You made it! Use a browser and browse to the IP address / hostname of your server to access SeAT!
 
-[here]: ../../configuration/env_file_reference.md
-[ESI Setup Guide]: ../../configuration/esi_configuration.md
+[here]: ../configuration/env_file_reference.md
+[ESI Setup Guide]: ../configuration/esi_configuration.md
