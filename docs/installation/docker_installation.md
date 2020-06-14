@@ -125,7 +125,15 @@ With the configuration files ready, start up the stack with:
 docker-compose up -d
 ```
 
-Yep. Thats all you need to do :)
+Yep. That's all you need to do :)
+
+### Securing traffic
+
+It's a best practice to hide your container behind a proxy.
+It's also mandatory if you want to use https to secure your flow.
+At this stage, [Traefik] is the best and has been specifically built for container environments.
+
+**TODO: updating docker compose script to include traefik as default proxy and maybe work on a small wizard.**
 
 ### Monitoring the Stack
 
