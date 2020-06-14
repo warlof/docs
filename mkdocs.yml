@@ -31,6 +31,7 @@ nav:
       - Configuration Overload: configuration/configuration_overload.md
       - SDE Overload: configuration/sde_overload.md
     - Admin Guides:
+      - Admin Login: admin_guides/admin_login.md
       - Docker Admin: admin_guides/docker_admin.md
       - Role Based Access Control: admin_guides/role_based_access_control.md
       - Understanding Tracking: admin_guides/understanding_tracking.md
