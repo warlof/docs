@@ -89,7 +89,7 @@ chmod +x /usr/local/bin/docker-compose
 
 With `docker` and `docker-compose` ready, create yourself a directory in `/opt` with `mkdir -p /opt/seat-docker` and `cd` to it. Remember this directory as you will need to come back to it often.
 
-#### SeAT Docker-compose.yml and .env File
+#### SeAT docker-compose.yml and .env File
 
 Then, download the `docker-compose.yml` file with:
 
@@ -115,9 +115,19 @@ Now, we will generate a unique application key - this is used to encrypt stuff:
 sed -i -- 's/APP_KEY=insecure/APP_KEY='$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c32 ; echo '')'/g' .env
 ```
 
+Then, change `HOST`, `ACME_EMAIL` and `APP_URL` from the `.env` file with valid values (we will take care of SSL, so you can use https).
+
+!!! info
+
+    SeAT docker template is shipped with [Traefik] to hide your container behind a proxy and securing traffic up to it.
+    In case you want to manage traffic proxying and certification on your own, you can disable traefik container from the stack by adding `#` [front of lines] from the `docker-compose.yml` file.
+
 !!! warning
 
     The location of the `docker-compose.yml`, `.env` and `my.cnf` files are important. You need to `cd` back to the directory where these are stored in order to be able to execute commands for this stack at a later stage.
+    
+    Also, be sure you provide a valid e-mail address as it will be used to register your account against [Let's Encrypt].
+    For those unfamiliar with them, it's a certification platform which are delivering valid certificate for free.
 
 With the configuration files ready, start up the stack with:
 
@@ -127,15 +137,7 @@ docker-compose up -d
 
 Yep. That's all you need to do :)
 
-### Securing traffic
-
-It's a best practice to hide your container behind a proxy.
-It's also mandatory if you want to use https to secure your flow.
-At this stage, [Traefik] is the best and has been specifically built for container environments.
-
-**TODO: updating docker compose script to include traefik as default proxy and maybe work on a small wizard.**
-
-### Monitoring the Stack
+## Monitoring the Stack
 
 Knowing what is going on inside of your containers is crucial to understanding how everything is running as well as useful when debugging any problems that may occur. While the containers are starting up or have been running for a while, you can always `cd` to the directory where your `docker-compose.yml` file lives and run the `logs` command to see the output of all of the containers in the stack. For example:
 
@@ -146,7 +148,7 @@ docker-compose logs --tail 10 -f
 
 These commands will `cd` to the directory containing the stacks `docker-compose.yml` file and run the `logs` command, showing the last *10* log entries and then printing new ones as they arrive.
 
-### Configuration Changes
+## Configuration Changes
 
 All of relevant configuration lives inside the `.env` file, next to your `docker-compose.yml` file.
 Modify its values by opening it in a text editor, making the appropriate changes and saving it again.
@@ -165,3 +167,5 @@ For instructions how to do this, please refer to the [ESI Setup Guide].
 [ESI Setup Guide]: ../configuration/esi_configuration.md
 [Certbot Documentation]: https://certbot.eff.org
 [Traefik]: https://containo.us/traefik/
+[Let's Encrypt]: https://letsencrypt.org
+[front of lines]: https://github.com/eveseat/scripts/blob/master/docker-compose/docker-compose.yml#L143-L166
