@@ -8,7 +8,7 @@ repo_name: 'eveseat/docs'
 repo_url: 'https://github.com/eveseat/docs'
 
 # Copyright
-copyright: 'Copyright &copy; 2015 - 2019 Leon Jacobs'
+copyright: 'Copyright &copy; 2015 - 2020 Leon Jacobs'
 
 # Documentation TOC
 nav:
@@ -19,6 +19,7 @@ nav:
       - Manual Installation: installation/manual_installation.md
     - Upgrading:
       - General: upgrading/general.md
+      - From SeAT 3.0: upgrading/from_seat_3_0.md
       - From SeAT 2.0: upgrading/from_seat_2_0.md
       - From SeAT 1.0: upgrading/from_seat_1_0.md
     - Configuration:
